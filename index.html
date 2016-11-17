@@ -1,28 +1,50 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title> 코딩 퍼즐 </title>
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
     <style>
-    
-    .container {
+        body {
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+        }
+        @media (min-width: 48em) {
+            .container {
+                max-width: 46rem;
+            }
+        }
+        /* Main marketing message and sign up button */
+        .jumbotron {
+            text-align: center;
+            border-bottom: .05rem solid #e5e5e5;
+        }
+        .jumbotron .btn {
+            padding: .75rem 1.5rem;
+            font-size: 1.5rem;
+        }
 
-    }
+        @media screen and (min-width: 48em) {
+            
+            /* Remove the bottom border on the jumbotron for visual effect */
+            .jumbotron {
+                border-bottom: 0;
+            }
+        }
 
-    .announcement {
-
-    }
-    
     </style>
 </head>
 <body>
 <div class="container">
-        <div class="announcement">
-            <div> 2016년 12월, 재미있는 SW학습이 여러분을 찾아갑니다.
-            </div>
+        <div class="jumbotron">
+            <p> 2016년 12월, 재미있는 SW학습이 여러분을 찾아갑니다.</p>
             <img src="/img/logo_bw.png">
             <p>
                     메이커스랩은 2014년부터 SW교육을 위한 교육 콘텐츠 및 3D 프린팅을 이용한 콘텐츠 등을 지속적으로
-                    개발해 오고 있습니다.<br>
+                    개발해 오고 있습니다.</p>
+            <p>
                     코딩퍼즐은 2016년 12월 대한민국 초등학생에게 무상으로 제공하는 메이커스랩의 SW교육용 게임 브랜드입니다.
             </p>
             
@@ -30,4 +52,7 @@
         
         </div class="">
 </div>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/tether.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
 </body>
