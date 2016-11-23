@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'nanum-barun-gothic-regular';
+    src: url('../fonts/nanumbarungothicregular.eot');
+    src: url('../fonts/nanumbarungothicregular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/nanumbarungothicregular.woff2') format('woff2'),
+         url('../fonts/nanumbarungothicregular.woff') format('woff'),
+         url('../fonts/nanumbarungothicregular.ttf') format('truetype'),
+         url('../fonts/nanumbarungothicregular.svg#nanum-barun-gothic-regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
