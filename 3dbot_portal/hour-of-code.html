@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="즐겁게 즐기는 퍼즐 코딩">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>교육 > 학습하기</title>
+
+    <!-- Page styles -->
+    <link rel="stylesheet" href="/3dbot_portal/css/nanum-barun-gothic-light.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/3dbot_portal/css/material.min.css">
+    <link rel="stylesheet" href="/3dbot_portal/css/UnityStyle.css">
+    <script src="/3dbot_portal/all_in_one/TemplateData/UnityProgress.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/3dbot_portal/css/styles.css">
+    <script>
+    
+    </script>    
+  </head>
+  <body>
+    <div class="mdl-layout mdl-js-layout">
+      <!--header-->
+      <header role="banner" class="mdl-layout__header theme-hour-of-code">
+        <div class="mdl-layout__header-row theme-title-hour-of-code-light">
+          <h1>
+            <img class="logo-image" src="/3dbot_portal/img/logo_colored.png">
+          </h1>
+          <div class="mdl-layout-spacer"></div>
+          <div class="search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
+            <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
+              <i class="material-icons">search</i>
+            </label>
+            <div class="mdl-textfield__expandable-holder">
+              <input class="mdl-textfield__input" type="text" id="search-field">
+            </div>
+          </div>
+          <div class="navigation-container">
+            <nav class="mdl-navigation">
+              <a class="mdl-navigation__link" > About 코딩퍼즐 </button>
+              <a class="mdl-navigation__link" id="my_page">나의 페이지</button>
+              <a class="mdl-navigation__link" id="practice">코딩퍼즐 학습하기</button>
+              <a class="mdl-navigation__link">게시판</button>
+              <a class="mdl-navigation__link">연락처</button>
+            </nav>
+          </div>
+          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="my_page">
+            <li class="mdl-menu__item">커리큘럼</li>
+            <li class="mdl-menu__item">학습자료</li>
+          </ul>
+          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="practice">
+            <li class="mdl-menu__item">퍼즐크라프트 만들기</li>
+            <li class="mdl-menu__item">퍼즐크라프트 공유하기</li>
+          </ul>
+        </div>        
+      </header>
+      
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">
+          <img class="logo-image" src="/3dbot_portal/img/logo_colored.png">
+        </span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="">About 코딩퍼즐</a>
+          <div class="android-drawer-separator"></div>
+          <span class="mdl-navigation__link" href="">나의 페이지</span>
+          <a class="mdl-navigation__link" href="">학습과정</a>
+          <a class="mdl-navigation__link" href="">학습자료</a>
+          <div class="android-drawer-separator"></div>
+          <span class="mdl-navigation__link" href="">코딩퍼즐 학습</span>
+          <a class="mdl-navigation__link" href="">퍼즐 만들기</a>
+          <a class="mdl-navigation__link" href="">퍼즐 공유하기</a>
+          <div class="android-drawer-separator"></div>
+          <span class="mdl-navigation__link" href="">게시판</span>
+          <a class="mdl-navigation__link" href="">Q &amph; A</a>
+          <div class="android-drawer-separator"></div>
+          <span class="mdl-navigation__link" href="">연락처</span>
+        </nav>
+      </div>
+
+      <!-- subtitle -->
+      <subtitle>
+        <div class="mdl-grid mdl-grid-no-spacing theme-title-hour-of-code page-topic">
+          <div class="mdl-cell mdl-cell-bottom mdl-cell--2-col"></div>
+          <div class="mdl-cell mdl-cell-bottom mdl-cell--8-col">
+            코딩퍼즐 학습하기 > 1 Hour Of Code
+          </div>
+          <div class="mdl-cell mdl-cell-bottom mdl-cell--2-col"></div>
+        </div>        
+      </subtitle>
+
+      <main role="main" class="mdl-layout__content">
+        <section class="content-section">
+          <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell-bottom mdl-cell--2-col"></div>
+            <div class="mdl-cell mdl-cell-bottom mdl-cell--8-col">
+              <div class="template">
+                <div class="template-wrap clear">
+                  <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="840px" width="470px"></canvas>
+                  <div class="fullscreen">
+                    <img src="/3dbot_portal/img/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" />
+                  </div>
+                </div>
+                <script type="text/javascript">
+                  $(document).ready(function() {
+                        $('.logo-image').on('click', function() {
+                          window.location = '/3dbot_portal/index.html';
+                        });
+                        $('.fullscreen').on('click', function() {
+                          $('.template-wrap canvas').css('left', 0); // 풀스크린시, 중앙에 위치시키기
+                          SetFullscreen(1);
+                        });
+                    }).keyup( function(e) {
+                          if (e.keyCode == 27) { // 풀스크린 빠져나올 때, 중앙에 위치시키기
+                            $('.template-wrap canvas').css('left', '-50%');
+                          }
+                    });
+                  var Module = { TOTAL_MEMORY: 268435456,
+                    errorhandler: null, compatibilitycheck: null,
+                    dataUrl:  "/3dbot_portal/all_in_one/Release/webbuild.data", 
+                    codeUrl:  "/3dbot_portal/all_in_one/Release/webbuild.js",
+                    memUrl:   "/3dbot_portal/all_in_one/Release/webbuild.mem",
+                    asmUrl:   "/3dbot_portal/all_in_one/Release/webbuild.asm.js",
+                  };
+                </script>
+                <script src="/3dbot_portal/all_in_one/Release/UnityLoader.js"></script>
+              </div>
+            </div>
+            <div class="mdl-cell mdl-cell-bottom mdl-cell--2-col"></div>
+          </div>
+        </section>
+
+        <!--footer-->
+        <footer class="mdl-mega-footer">
+          <div class="mdl-mega-footer--middle-section">
+            <div class="mdl-grid">
+              <div class="mdl-cell mdl-cell-bottom mdl-cell--2-col"></div>
+              <div class="mdl-cell mdl-cell-bottom mdl-cell--1-col">
+                <img src="/3dbot_portal/img/makerslab_logo.png" style="width:100%;"/>
+              </div>
+              <div class="mdl-cell mdl-cell-bottom mdl-cell--7-col">
+                <p class="mdl-typography--font-light">세종특별자치시 조치원읍 돌마루5길 2 세영오피스텔 메이커스랩© 401호, 우편번호: 30018</p>
+                <p class="mdl-typography--font-light">010-1234-5678</p>
+                <hr>
+                <p class="mdl-typography--font-light">본 콘텐츠의 저작권은 제공처에 있으며, 이를 무단 이용하는 경우, 저작권법 등에 따라 법적책임을 질 수 있습니다. © 2016 MakersLab, Inc.</p>
+              </div>
+              <div class="mdl-cell mdl-cell-bottom mdl-cell--2-col"></div>
+            </div>
+          </div>
+        </footer>
+       
+      </main>
+    </div>
+    <script src="/3dbot_portal/js/material.min.js"></script>
+  </body>
+</html>
