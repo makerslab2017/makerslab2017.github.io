@@ -1,0 +1,296 @@
+/**
+ * Copyright 2015 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+body {
+  margin: 0;
+  padding: 0 20px auto;
+  font-family: naum-barun-gothic-regular, "roboto", "Helvetica Neue", Arial, "맑은 고딕", malgun gothic, "돋움", Dotum, sans-serif;
+}
+
+main {
+  display: block;
+}
+
+a img {
+  border: 0px;
+}
+
+::-webkit-selection, ::-moz-selection, ::selection {
+  background-color:  #6ab344;
+  color: #fff;
+}
+
+.mdl-layout__header, .mdl-layout__header-row {
+  background-color: rgba(255,255,255,0.4);
+  height: 88px;
+}
+
+.layout-transparent {
+  background: url(/3dbot_portal/img/kid-on-ipad.jpg) center / cover;
+  min-height: 500px;
+}
+
+.mdl-layout .mdl-layout__drawer-button {
+  color: black;
+}
+
+.search-box {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.search-box .mdl-textfield__input {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+header {
+  overflow: visible;
+}
+
+header .mdl-menu__container {
+  z-index: 50;
+  margin: 0 !important;
+}
+
+header .material-icons {
+  color: #767777 !important;
+}
+
+header .mdl-layout__drawer-button {
+  background: transparent;
+  color: #767777;
+}
+
+.mdl-layout__header-row .mdl-navigation .mdl-navigation__link {
+  color: black;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+header .mdl-button {
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+.mdl-textfield--expandable {
+  width: auto;
+}
+
+.logo-image {
+  height: 80px;
+  width: 120px;
+}
+
+.section--frontal {
+  height: 400px !important;
+  position: relative;
+}
+
+.section--frontal h3 {
+  
+}
+
+.section--frontal .mdl-grid {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.section--frontal h4 {
+  color: white;
+  font-weight: 700;
+  text-shadow: 1px 1px darkgray;
+  
+  /*-webkit-text-stroke: 1px lightgray;*/
+}
+
+.navigation-container {
+  /* Simple hack to make the overflow happen to the left instead... */
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  width: 800px;
+  transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+      width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mdl-navigation {
+  /* ... and now make sure the content is actually LTR */
+  direction: ltr;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 800px;
+}
+
+.mdl-navigation .mdl-navigation__link {
+  display: inline-block;
+  height: 80px;
+  line-height: 88px;    
+  border-bottom: 4px solid transparent;
+}
+
+.mdl-layout__header-row .mdl-navigation .mdl-navigation__link:hover {
+  border-bottom: 4px solid white; /* #8bc34a;*/
+}
+
+.subtitle {
+  padding: 0 0;
+  margin: 0 0;
+  width: 60px;
+}
+
+.content-section {
+  padding: 0 0;
+  margin: 0 0;
+}
+
+.content-section .content-section-title {
+  margin-left: 12px;
+  padding-bottom: 24px;
+}
+
+
+.card-container .mdl-card__title {
+  background: transparent;
+  height: auto;
+}
+
+.card-container .mdl-card__media {
+  overflow: hidden;
+  background: transparent;
+}
+
+.card-container .mdl-card__media img {
+  width: 100%;
+}
+
+.card-container .mdl-card__title-text {
+  font-weight: 700;
+  text-align: center;
+  height: auto;
+}
+
+.card-container .mdl-card__supporting-text {
+  font-style: 400;
+  height: auto;
+  padding-bottom: 24px;
+}
+
+.card-container .mdl-card__title {
+  text-align: center;  
+}
+
+.page-topic {
+  line-height: 40px;
+  font-size: 1.6em;
+  font-weight: 700;
+  height: 60px;
+}
+
+.theme-student {
+  /*border: 2px solid indianred;*/
+}
+
+.theme-student .theme-title-student, .theme-title-student {
+  background-color:indianred;  
+  color: white;
+}
+
+.theme-title-student-light {
+  background-color: salmon;
+  color: black;
+}
+
+h3.theme-text-student {
+  color: indianred;
+  background-color: white;
+}
+
+.theme-educator {
+  border: 2px solid cornflowerblue;
+}
+
+.theme-educator .theme-title-educator {
+  background-color:cornflowerblue;
+  color: white;
+}
+
+.theme-educator .theme-text-educator {
+  background-color: cornflowerblue;
+  background-color: white;
+}
+
+.theme-hour-of-code {
+  border: 2px solid lightseagreen;
+}
+
+.theme-hour-of-code .theme-title-hour-of-code, .theme-title-hour-of-code {
+  background-color: lightseagreen;
+  color: white;
+}
+
+.theme-title-hour-of-code-light {
+  background-color: palegreen;
+  color: black;
+}
+
+.theme-hour-of-code .theme-text-hour-of-code {
+  color: lightseagreen;
+  background-color: white;
+}
+
+.theme-map-editor {
+  border: 1px solid darkorange;
+}
+
+.theme-title-map-editor-light {
+  background-color: orange;
+  color:white;
+}
+
+.theme-map-editor .theme-title-map-editor, .theme-title-map-editor {
+  background-color: darkorange;
+  color: white;
+}
+
+.theme-map-editor .theme-text-map-editor {
+  color:darkorange;
+  background-color: white;
+}
+
+.footer {
+  background-color: #fafafa;
+  position: relative;
+}
+
+.footer a:hover {
+  color: #8bc34a;
+}
+
+.footer .mdl-mega-footer--middle-section::after {
+  border-bottom: none;
+}
+
+.drawer-separator {
+  height: 1px;
+  background-color: #dcdcdc;
+  margin: 8px 0;
+}
+

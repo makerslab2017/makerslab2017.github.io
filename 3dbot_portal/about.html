@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="즐겁게 즐기는 퍼즐 코딩">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>퍼즐코딩</title>
+    <title>About</title>
 
     <!-- Page styles -->
     <link rel="stylesheet" href="/3dbot_portal/css/nanum-barun-gothic-light.css">
@@ -19,11 +19,14 @@
         $('.theme-student').on('click', function() {
           window.location = '/3dbot_portal/practice.html';
         });
+        $('.theme-educator').on('click', function() {
+          window.location = '/3dbot_portal/educator.html';
+        });
         $('.theme-hour-of-code').on('click', function() {
           window.location = '/3dbot_portal/hour-of-code.html';
         });
-        $('.theme-map-editor').on('click', function() {
-          window.location = '/3dbot_portal/editor.html';
+        $('.theme-progress').on('click', function() {
+          window.location = '/3dbot_portal/progress.html';
         });
     });
 
@@ -34,9 +37,11 @@
       <!--header-->
       <header role="banner" class="layout-transparent mdl-layout__header">
         <div class="mdl-layout__header-row">
+          <h1>
             <a href="/3dbot_portal/index.html">
             <img class="logo-image" src="/3dbot_portal/img/logo_colored.png">
             </a>
+          </h1>
           <div class="mdl-layout-spacer"></div>
           <div class="search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
             <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
@@ -97,88 +102,41 @@
 
       <!--main-->
       <main role="main" class="mdl-layout__content">
-        
         <section class="content-section">
-          <div class="card-container mdl-grid">
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp theme-student">
-              <div class="mdl-card__title theme-title-student">
-                  <h2 class="mdl-card__title-text">학생용</h2>
-              </div>
-              <div class="mdl-card__media">
-                <img src="/3dbot_portal/img/mission.png" />
-              </div>
-              <div class="mdl-card__supporting-text theme-text-student">
-                <span class="mdl-typography--subhead">코딩퍼즐을 시작합니다!</span>
-              </div>              
-            </div>
+          <div class="mdl-grid card-container">
+            <div class="mdl-cell mdl-cell-bottom mdl-cell--2-col"></div>
+            <div class="mdl-cell mdl-cell-bottom mdl-cell--8-col">
+              <h4>
+              '어려운 코딩, 초기 시작이 중요합니다. 포지 않는 근성, 끈기, 노력, Grit!, 전문화된 놀이교육을 통해 아동의 자율성, 코딩의 기개를 기르는 학습을 제공합니다.'
+              </h4>
+              <h4>코딩퍼즐이란?</h4>
+              <p>
+                코딩퍼즐은 한국현 1 Hour Of Code 프로그램을 제공하며, 누구나 무료로 소프트웨어 교육을 받을 수 있도록 개발된 소프트웨어 교육 플랫폼입니다. 2013년 한국 창의재단 과학융합 지원사업 연구를 모태로 하여 3년간 기획 및 연구되어 온 프로젝트이며 국내외 최우수 대학 공학 전문 출신의 대학 교수진들과 <strong>교육부 장관상 수상 21세기 융합 놀이 교육 전문 연구팀들</strong>이 참여하고 있습니다.
+              </p>
+              <p>
+                코딩 논리, 가장 쉽고 효과적으로 배울 수 있도록 체계화된 게임형 놀이 교육을 제공합니다. 홍익대학교와 함께 비영리로 운영되며 학교 선생님, 학생, 부모들 눈높이에 맞춘 다양한 소프트웨어 교육 프로그램을 무상으로 지원합니다.         
+              </p>
 
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp theme-educator">
-              <div class="mdl-card__title theme-title-educator">
-                  <h4 class="mdl-card__title-text">교육자</h4>
-              </div>
-              <div class="mdl-card__media">
-                <img src="/3dbot_portal/img/universe.png" />
-              </div>
-              <div class="mdl-card__supporting-text theme-text-educator">
-                <span class="mdl-typography--subhead">학생들을 지도하고 진도를 확인합니다.</span>
-              </div>
-            </div>
+              <h4> 퍼즐 교육의 특징</h4>
+              "이 세상 모든 아이들의 코딩 학습을 'Fun'하게"
 
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp theme-hour-of-code">
-              <div class="mdl-card__title theme-title-hour-of-code">
-                  <h4 class="mdl-card__title-text">Hour Of Code</h4>
-              </div>
-              <div class="mdl-card__media">
-                <img src="/3dbot_portal/img/stages.png" />
-              </div>
-              <div class="mdl-card__supporting-text theme-text-hour-of-code">
-                <span class="mdl-typography--subhead">하루에 한시간! 소프트웨어 코딩을 배워봅니다.</span>
-              </div>
-            </div>
+              <h4> 자기주도 학습 </h4>
 
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp theme-map-editor">
-              <div class="mdl-card__title theme-title-map-editor">
-                  <h4 class="mdl-card__title-text">퍼즐 에디터</h4>
-              </div>
-              <div class="mdl-card__media">
-                <img src="/3dbot_portal/img/ui.png" />
-              </div>
-              <div class="mdl-card__supporting-text theme-text-map-editor">
-                <span class="mdl-typography--subhead">나만의 코딩퍼즐 맵을 만들어 플레이하고 공유해보세요.</span>
-              </div>
+              
+              <h4> 실습 학습 </h4>
+
+              <h4> 협동 학습 </h4>
+
+              <h4> 창의 학습 </h4>
+
+
+
+
+
             </div>
           </div>
-          
         </section>
-
-       
       </main>
-
-
-      <dialog class="mdl-dialog">
-        <h4 class="mdl-dialog__title"> 교육자용 페이지</h4>
-        <div class="mdl-dialog__content">
-          <p>
-              교육자를 위한 페이지는 준비중입니다. 기대해 주세요.
-          </p>
-        </div>
-        <div class="mdl-dialog__actions">
-          <button type="button" class="mdl-button"> 기다리겠습니다.</button>
-        </div>
-      </dialog>
-
-      <script>
-      $(document).ready(function() {
-        $('.theme-educator').on('click', function() {
-          $dialog = $('dialog');
-          $dialog.showModal();
-          $('.mdl-dialog__actions button').on('click', function() {
-            $dialog.close();
-          });
-        });
-      });
-      </script>
-
 
       <!--footer-->
       <footer class="mdl-mega-footer">
