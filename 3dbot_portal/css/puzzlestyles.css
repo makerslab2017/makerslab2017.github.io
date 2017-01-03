@@ -39,8 +39,52 @@ a img {
 }
 
 .layout-transparent {
-  background: url(/3dbot_portal/img/kid-on-ipad.jpg) center / cover;
-  min-height: 500px;
+    min-height: 0px;
+}
+
+.section--frontal {
+  height: 0px;
+  position: relative;
+}
+
+
+@media screen and (min-height: 640px) {
+  .layout-transparent {
+    background: url(/3dbot_portal/img/kid-on-ipad.jpg) center / cover;
+    min-height: 200px;
+  }
+
+  .section--frontal {
+    height: 130px;
+    position: relative;
+  }
+}
+
+
+
+@media screen and (min-height: 830px) {
+  .layout-transparent {
+    background: url(/3dbot_portal/img/kid-on-ipad.jpg) center / cover;
+    min-height: 300px;
+  }
+    
+  .section--frontal {
+    height: 200px;
+    position: relative;
+  }
+
+}
+
+@media screen and (min-height: 1024px) {
+  .layout-transparent {
+    background: url(/3dbot_portal/img/kid-on-ipad.jpg) center / cover;
+    min-height: 500px;
+  }
+    
+  .section--frontal {
+    height: 400px;
+    position: relative;
+  }
 }
 
 .mdl-layout .mdl-layout__drawer-button {
@@ -97,10 +141,6 @@ header .mdl-button {
   width: 120px;
 }
 
-.section--frontal {
-  height: 400px !important;
-  position: relative;
-}
 
 .section--frontal h3 {
   
@@ -205,7 +245,7 @@ header .mdl-button {
 }
 
 .theme-student {
-  /*border: 2px solid indianred;*/
+  border: 2px solid indianred;
 }
 
 .theme-student .theme-title-student, .theme-title-student {

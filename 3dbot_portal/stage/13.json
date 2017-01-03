@@ -666,9 +666,9 @@
 		[],
 	"LimitedCount": 
 		[
-			16,
+			2,
 			8,
-			8
+			0
 		],
 	"CameraPos": {
 		"x": 15.000536,
@@ -1346,9 +1346,9 @@
 	
 	"\u003CLimitedCount>k__BackingField": 
 		[
-			16,
+			2,
 			8,
-			8
+			0
 		],
 	
 	"\u003CCameraPos>k__BackingField": {

@@ -214,13 +214,15 @@
                   <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="04-01">1</span>
                   <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="04-02">2</span>
                   <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="0109">3</span>
-                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="34">4</span>
-                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="35">5</span>
-                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="36">6</span>
-                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="37">7</span>
-                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="38">8</span>
-                  <button class="mdl-button mdl-js-button mdl-button--raised" data-stage="39">도전1</button>
-                  <button class="mdl-button mdl-js-button mdl-button--raised" data-stage="40">도전2</button>
+                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="04-04">4</span>
+                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="04-05">5</span>
+                  <button class="mdl-button mdl-js-button mdl-button--raised" data-stage="11">도전1</button>
+                  <button class="mdl-button mdl-js-button mdl-button--raised" data-stage="12">도전2</button>
+                  <button class="mdl-button mdl-js-button mdl-button--raised" data-stage="13">도전3</button>
+                  <button class="mdl-button mdl-js-button mdl-button--raised" data-stage="14">도전4</button>
+                  <button class="mdl-button mdl-js-button mdl-button--raised" data-stage="15">도전5</button>
+                  <button class="mdl-button mdl-js-button mdl-button--raised" data-stage="04-11">도전5의 다른 해결책</button>
+                  <button class="mdl-button mdl-js-button mdl-button--raised" data-stage="04-12">도전5의 또다른 해결책</button>
                 </div>
                 <div class="mdl-card__supporting-text mdl-card--border">
                   순서대로 레슨을 선택하고 주어진 지문을 따라 학습을 합니다.                  
@@ -232,19 +234,19 @@
               <div class="lesson-card mdl-card mdl-shadow--2dp">
                 <div class="mdl-card__title" id="day5">
                   <h2> 5차시 </h2><br>
-                  <h4> 기본 명령어를 학습합니다. </h4>
+                  <h4> 함수를 다양하게 적용해봅니다. </h4>
                 </div>
                 <div class="mdl-card__actions mdl-card--border">
-                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="41">1</span>
-                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="42">2</span>
-                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="43">3</span>
-                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="44">4</span>
-                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="45">5</span>
-                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="46">6</span>
-                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="47">7</span>
-                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="48">8</span>
-                  <button class="mdl-button mdl-js-button mdl-button--raised" data-stage="49">도전1</button>
-                  <button class="mdl-button mdl-js-button mdl-button--raised" data-stage="50">도전2</button>
+                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="16">1</span>
+                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="17">2</span>
+                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="18">3</span>
+                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="19">4</span>
+                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="20">5</span>
+                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="0110">6</span>
+                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="0111">7</span>
+                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="0112">8</span>
+                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="0113">9</span>
+                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="0114">10</span>
                 </div>
                 <div class="mdl-card__supporting-text mdl-card--border">
                   순서대로 레슨을 선택하고 주어진 지문을 따라 학습을 합니다.                  
@@ -533,7 +535,7 @@
                                   $unity.show();
                                   Module.previousStage = $me;
                                   Module.SendMessage( 'Level', 'setLevelWithTransition', "/3dbot_portal/stage/" + $me.attr('data-stage') + ".json");
-                                  window.location.hash = $next.parents('.mdl-card__title').attr('id');
+                                  window.location.hash = $next.parents('.lesson-card').children('.mdl-card__title').attr('id');
                               });
                             }, 1000);
                           },

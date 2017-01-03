@@ -15,18 +15,6 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
     <script>
-    $(document).ready(function() {
-        $('.theme-student').on('click', function() {
-          window.location = '/3dbot_portal/practice.html';
-        });
-        $('.theme-hour-of-code').on('click', function() {
-          window.location = '/3dbot_portal/hour-of-code.html';
-        });
-        $('.theme-map-editor').on('click', function() {
-          window.location = '/3dbot_portal/editor.html';
-        });
-    });
-
     </script>
   </head>
   <body>
@@ -156,29 +144,31 @@
 
 
       <dialog class="mdl-dialog">
-        <h4 class="mdl-dialog__title"> 교육자용 페이지</h4>
+        <h4 class="mdl-dialog__title">준비중</h4>
         <div class="mdl-dialog__content">
           <p>
-              교육자를 위한 페이지는 준비중입니다. 기대해 주세요.
+              교육자를 위한 페이지는 준비중에 있습니다. 빠른 시간내로 찾아뵙도록 하겠습니다.
           </p>
         </div>
         <div class="mdl-dialog__actions">
-          <button type="button" class="mdl-button"> 기다리겠습니다.</button>
+          <button type="button" class="mdl-button">기다리겠습니다</button>
         </div>
       </dialog>
 
       <script>
       $(document).ready(function() {
+        dialog = $('dialog')[0];
         $('.theme-educator').on('click', function() {
-          $dialog = $('dialog');
-          $dialog.showModal();
+          dialog.showModal();
           $('.mdl-dialog__actions button').on('click', function() {
-            $dialog.close();
+            dialog.close();
           });
         });
+        $('.theme-student').on('click', function() { window.location.href = './practice.html'; });
+        $('.theme-hour-of-code').on('click', function() { window.location.href = './hour-of-code.html'; });
+        $('.theme-map-editor').on('click', function() { window.location.href = './editor.html'; });
       });
       </script>
-
 
       <!--footer-->
       <footer class="mdl-mega-footer">
