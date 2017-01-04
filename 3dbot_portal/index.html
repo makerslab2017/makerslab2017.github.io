@@ -10,7 +10,8 @@
     <!-- Page styles -->
     <link rel="stylesheet" href="/3dbot_portal/css/nanum-barun-gothic-light.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="/3dbot_portal/css/material.min.css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <link rel="stylesheet" href="/3dbot_portal/css/puzzlestyles.css">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
@@ -18,9 +19,9 @@
     </script>
   </head>
   <body>
-    <div class="mdl-layout mdl-js-layout">
+    <div class="mdl-layout mdl-js-layout mdl-layout__fixed-header">
       <!--header-->
-      <header role="banner" class="layout-transparent mdl-layout__header">
+      <header class="mdl-layout__header layout-transparent">
         <div class="mdl-layout__header-row">
             <a href="/3dbot_portal/index.html">
             <img class="logo-image" src="/3dbot_portal/img/logo_colored.png">
@@ -87,57 +88,92 @@
       <main role="main" class="mdl-layout__content">
         
         <section class="content-section">
-          <div class="card-container mdl-grid">
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp theme-student">
-              <div class="mdl-card__title theme-title-student">
-                  <h2 class="mdl-card__title-text">학생용</h2>
-              </div>
-              <div class="mdl-card__media">
-                <img src="/3dbot_portal/img/mission.png" />
-              </div>
-              <div class="mdl-card__supporting-text theme-text-student">
-                <span class="mdl-typography--subhead">코딩퍼즐을 시작합니다!</span>
-              </div>              
-            </div>
+          <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--1-col"></div>
+            <div class="mdl-cell mdl-cell--10-col">
+              <div class="card-container mdl-grid">
+                <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp theme-student">
+                  <div class="mdl-card__title theme-title-student">
+                      <h2 class="mdl-card__title-text">학생용</h2>
+                  </div>
+                  <div class="mdl-card__media">
+                    <img src="/3dbot_portal/img/mission.png" />
+                  </div>
+                  <div class="mdl-card__supporting-text theme-text-student">
+                    <span class="mdl-typography--subhead">코딩퍼즐을 시작합니다!</span>
+                  </div>              
+                </div>
 
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp theme-educator">
-              <div class="mdl-card__title theme-title-educator">
-                  <h4 class="mdl-card__title-text">교육자</h4>
-              </div>
-              <div class="mdl-card__media">
-                <img src="/3dbot_portal/img/universe.png" />
-              </div>
-              <div class="mdl-card__supporting-text theme-text-educator">
-                <span class="mdl-typography--subhead">학생들을 지도하고 진도를 확인합니다.</span>
-              </div>
-            </div>
+                <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp theme-educator">
+                  <div class="mdl-card__title theme-title-educator">
+                      <h4 class="mdl-card__title-text">교육자</h4>
+                  </div>
+                  <div class="mdl-card__media">
+                    <img src="/3dbot_portal/img/universe.png" />
+                  </div>
+                  <div class="mdl-card__supporting-text theme-text-educator">
+                    <span class="mdl-typography--subhead">학생들을 지도하고 진도를 확인합니다.</span>
+                  </div>
+                </div>
 
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp theme-hour-of-code">
-              <div class="mdl-card__title theme-title-hour-of-code">
-                  <h4 class="mdl-card__title-text">Hour Of Code</h4>
-              </div>
-              <div class="mdl-card__media">
-                <img src="/3dbot_portal/img/stages.png" />
-              </div>
-              <div class="mdl-card__supporting-text theme-text-hour-of-code">
-                <span class="mdl-typography--subhead">하루에 한시간! 소프트웨어 코딩을 배워봅니다.</span>
-              </div>
-            </div>
+                <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp theme-hour-of-code">
+                  <div class="mdl-card__title theme-title-hour-of-code">
+                      <h6 class="mdl-card__title-text">Hour of Code</h6>
+                  </div>
+                  <div class="mdl-card__media">
+                    <img src="/3dbot_portal/img/stages.png" />
+                  </div>
+                  <div class="mdl-card__supporting-text theme-text-hour-of-code">
+                    <span class="mdl-typography--subhead">하루에 한시간! 소프트웨어 코딩을 배워봅니다.</span>
+                  </div>
+                </div>
 
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp theme-map-editor">
-              <div class="mdl-card__title theme-title-map-editor">
-                  <h4 class="mdl-card__title-text">퍼즐 에디터</h4>
-              </div>
-              <div class="mdl-card__media">
-                <img src="/3dbot_portal/img/ui.png" />
-              </div>
-              <div class="mdl-card__supporting-text theme-text-map-editor">
-                <span class="mdl-typography--subhead">나만의 코딩퍼즐 맵을 만들어 플레이하고 공유해보세요.</span>
+                <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp theme-map-editor">
+                  <div class="mdl-card__title theme-title-map-editor">
+                      <h5 class="mdl-card__title-text">퍼즐 에디터</h5>
+                  </div>
+                  <div class="mdl-card__media">
+                    <img src="/3dbot_portal/img/ui.png" />
+                  </div>
+                  <div class="mdl-card__supporting-text theme-text-map-editor">
+                    <span class="mdl-typography--subhead">나만의 코딩퍼즐 맵을 만들어 플레이하고 공유해보세요.</span>
+                  </div>
+                </div>
               </div>
             </div>
+            <div class="mdl-cell mdl-cell--1-col"></div>
+
+          <div class="mdl-grid" style="text-align: center;">
+            <div class="mdl-cell mdl-cell--1-col"> </div>
+            <div class="mdl-cell mdl-cell--10-col">
+              <span>파트너: <img src="http://games3.cafe24.com/wp-content/uploads/2012/08/logo_new-300x129.jpg"></span>
+            </div>
+            <div class="mdl-cell mdl-cell--1-col"> </div>
           </div>
+            
+
+
           
         </section>
+
+        <footer class="mdl-mega-footer">
+          <div class="mdl-mega-footer--middle-section">
+            <div class="mdl-grid">
+              <div class="mdl-cell mdl-cell-bottom mdl-cell--2-col"></div>
+              <div class="mdl-cell mdl-cell-bottom mdl-cell--1-col">
+                <img src="/3dbot_portal/img/makerslab_logo.png" style="width:100%;"/>
+              </div>
+              <div class="mdl-cell mdl-cell-bottom mdl-cell--7-col">
+                <p class="mdl-typography--font-light">30018 세종특별자치시 조치원읍 돌마루5길 2 세영오피스텔 메이커스랩© 401호</p>
+                <p class="mdl-typography--font-light">전화: 010-5305-8680 &nbsp; 이메일: <a href="mailto:the.nayoung@gmail.com">김나영</a></p>
+                <hr>
+                <p class="mdl-typography--font-light">본 콘텐츠의 저작권은 제공처에 있으며, 이를 무단 이용하는 경우, 저작권법 등에 따라 법적책임을 질 수 있습니다. </p>
+                <p class="mdl-typography--font-light">Copyright © 2016, 2017 MakersLab, Inc. All rights reserved. </p>
+              </div>
+              <div class="mdl-cell mdl-cell-bottom mdl-cell--2-col"></div>
+            </div>
+          </div>
+        </footer>
 
        
       </main>
@@ -171,26 +207,9 @@
       </script>
 
       <!--footer-->
-      <footer class="mdl-mega-footer">
-          <div class="mdl-mega-footer--middle-section">
-            <div class="mdl-grid">
-              <div class="mdl-cell mdl-cell-bottom mdl-cell--2-col"></div>
-              <div class="mdl-cell mdl-cell-bottom mdl-cell--1-col">
-                <img src="/3dbot_portal/img/makerslab_logo.png" style="width:100%;"/>
-              </div>
-              <div class="mdl-cell mdl-cell-bottom mdl-cell--7-col">
-                <p class="mdl-typography--font-light">30018 세종특별자치시 조치원읍 돌마루5길 2 세영오피스텔 메이커스랩© 401호</p>
-                <p class="mdl-typography--font-light">전화: 010-5305-8680 &nbsp; 이메일: <a href="mailto:the.nayoung@gmail.com">김나영</a></p>
-                <hr>
-                <p class="mdl-typography--font-light">본 콘텐츠의 저작권은 제공처에 있으며, 이를 무단 이용하는 경우, 저작권법 등에 따라 법적책임을 질 수 있습니다. </p>
-                <p class="mdl-typography--font-light">Copyright © 2016, 2017 MakersLab, Inc. All rights reserved. </p>
-              </div>
-              <div class="mdl-cell mdl-cell-bottom mdl-cell--2-col"></div>
-            </div>
-          </div>
-        </footer>
+      
 
     </div>
-    <script src="/3dbot_portal/js/material.min.js"></script>
+    <!--<script src="/3dbot_portal/js/material.min.js"></script>-->
   </body>
 </html>

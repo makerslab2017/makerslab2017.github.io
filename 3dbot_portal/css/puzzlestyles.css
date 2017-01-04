@@ -22,6 +22,8 @@ body {
 
 main {
   display: block;
+  /*overflow: hidden;*/
+  background-color: white;
 }
 
 a img {
@@ -39,14 +41,15 @@ a img {
 }
 
 .layout-transparent {
-    min-height: 0px;
+    background: url(/3dbot_portal/img/kid-on-ipad.jpg) center / cover;
+    height: 88px;
 }
 
 .section--frontal {
-  height: 0px;
+  height: 88px;
   position: relative;
+  display: none;
 }
-
 
 @media screen and (min-height: 640px) {
   .layout-transparent {
@@ -54,15 +57,18 @@ a img {
     min-height: 200px;
   }
 
+  
+
   .section--frontal {
     height: 130px;
     position: relative;
+    display: block;
   }
 }
 
 
 
-@media screen and (min-height: 830px) {
+@media screen and (min-height: 768px) {
   .layout-transparent {
     background: url(/3dbot_portal/img/kid-on-ipad.jpg) center / cover;
     min-height: 300px;
@@ -71,11 +77,25 @@ a img {
   .section--frontal {
     height: 200px;
     position: relative;
+    display: block;
   }
 
 }
 
-@media screen and (min-height: 1024px) {
+@media screen and (min-height: 840px) {
+  .layout-transparent {
+    background: url(/3dbot_portal/img/kid-on-ipad.jpg) center / cover;
+    min-height: 400px;
+  }
+    
+  .section--frontal {
+    height: 300px;
+    position: relative;
+    display: block;
+  }
+}
+
+@media screen and (min-height: 960px) {
   .layout-transparent {
     background: url(/3dbot_portal/img/kid-on-ipad.jpg) center / cover;
     min-height: 500px;
@@ -84,6 +104,7 @@ a img {
   .section--frontal {
     height: 400px;
     position: relative;
+    display: block;
   }
 }
 
@@ -103,9 +124,10 @@ a img {
   color: rgba(0, 0, 0, 0.87);
 }
 
+/*
 header {
   overflow: visible;
-}
+}*/
 
 header .mdl-menu__container {
   z-index: 50;
@@ -124,7 +146,7 @@ header .mdl-layout__drawer-button {
 .mdl-layout__header-row .mdl-navigation .mdl-navigation__link {
   color: black;
   font-weight: 700;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 header .mdl-button {
@@ -165,7 +187,7 @@ header .mdl-button {
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
-  width: 800px;
+  /*width: 800px;*/
   transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
       width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -176,7 +198,7 @@ header .mdl-button {
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  width: 800px;
+  /*width: 800px;*/
 }
 
 .mdl-navigation .mdl-navigation__link {
@@ -197,8 +219,8 @@ header .mdl-button {
 }
 
 .content-section {
-  padding: 0 0;
-  margin: 0 0;
+
+  background-color: white;
 }
 
 .content-section .content-section-title {
@@ -206,9 +228,13 @@ header .mdl-button {
   padding-bottom: 24px;
 }
 
+.card-container {
+  overflow: hidden;
+}
 
 .card-container .mdl-card__title {
   background: transparent;
+  text-overflow: ellipsis;
   height: auto;
 }
 
@@ -222,7 +248,7 @@ header .mdl-button {
 }
 
 .card-container .mdl-card__title-text {
-  font-weight: 700;
+  font-weight: 500;
   text-align: center;
   height: auto;
 }
@@ -234,7 +260,8 @@ header .mdl-button {
 }
 
 .card-container .mdl-card__title {
-  text-align: center;  
+  text-align: center;
+  text-overflow: ellipsis;
 }
 
 .page-topic {
@@ -245,11 +272,11 @@ header .mdl-button {
 }
 
 .theme-student {
-  border: 2px solid indianred;
+  border: 2px solid #dc5842;
 }
 
 .theme-student .theme-title-student, .theme-title-student {
-  background-color:indianred;  
+  background-color: #dc5842;  
   color: white;
 }
 
@@ -264,25 +291,25 @@ h3.theme-text-student {
 }
 
 .theme-educator {
-  border: 2px solid cornflowerblue;
+  border: 2px solid #4586b2;
 }
 
 .theme-educator .theme-title-educator {
-  background-color:cornflowerblue;
+  background-color: #4586b2;
   color: white;
 }
 
 .theme-educator .theme-text-educator {
-  background-color: cornflowerblue;
+  background-color: #4586b2;
   background-color: white;
 }
 
 .theme-hour-of-code {
-  border: 2px solid lightseagreen;
+  border: 2px solid #55bd82;
 }
 
 .theme-hour-of-code .theme-title-hour-of-code, .theme-title-hour-of-code {
-  background-color: lightseagreen;
+  background-color: #55bd82;
   color: white;
 }
 
@@ -292,12 +319,12 @@ h3.theme-text-student {
 }
 
 .theme-hour-of-code .theme-text-hour-of-code {
-  color: lightseagreen;
+  color: #55bd82;
   background-color: white;
 }
 
 .theme-map-editor {
-  border: 1px solid darkorange;
+  border: 1px solid #f49c30;
 }
 
 .theme-title-map-editor-light {
@@ -306,12 +333,12 @@ h3.theme-text-student {
 }
 
 .theme-map-editor .theme-title-map-editor, .theme-title-map-editor {
-  background-color: darkorange;
+  background-color: #f49c30;
   color: white;
 }
 
 .theme-map-editor .theme-text-map-editor {
-  color:darkorange;
+  color: #f49c30;
   background-color: white;
 }
 
