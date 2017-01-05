@@ -32,21 +32,20 @@ a img {
 
 ::-webkit-selection, ::-moz-selection, ::selection {
   background-color:  #6ab344;
-  color: #fff;
+  color: #eee;
 }
 
 .mdl-layout__header, .mdl-layout__header-row {
   background-color: rgba(255,255,255,0.4);
-  height: 88px;
+  height: 64px;
 }
 
 .layout-transparent {
     background: url(/3dbot_portal/img/kid-on-ipad.jpg) center / cover;
-    height: 88px;
 }
 
 .section--frontal {
-  height: 88px;
+  height: 64px;
   position: relative;
   display: none;
 }
@@ -57,16 +56,12 @@ a img {
     min-height: 200px;
   }
 
-  
-
   .section--frontal {
     height: 130px;
     position: relative;
     display: block;
   }
 }
-
-
 
 @media screen and (min-height: 768px) {
   .layout-transparent {
@@ -124,10 +119,10 @@ a img {
   color: rgba(0, 0, 0, 0.87);
 }
 
-/*
+
 header {
   overflow: visible;
-}*/
+}
 
 header .mdl-menu__container {
   z-index: 50;
@@ -144,7 +139,7 @@ header .mdl-layout__drawer-button {
 }
 
 .mdl-layout__header-row .mdl-navigation .mdl-navigation__link {
-  color: black;
+  color: #222;
   font-weight: 700;
   font-size: 1.1em;
 }
@@ -160,7 +155,10 @@ header .mdl-button {
 
 .logo-image {
   height: 80px;
-  width: 120px;
+}
+
+.logo-horizontal {
+  height: 48px !important;
 }
 
 
@@ -175,7 +173,7 @@ header .mdl-button {
 }
 
 .section--frontal h4 {
-  color: white;
+  color: #eee;
   font-weight: 700;
   text-shadow: 1px 1px darkgray;
   
@@ -203,8 +201,8 @@ header .mdl-button {
 
 .mdl-navigation .mdl-navigation__link {
   display: inline-block;
-  height: 80px;
-  line-height: 88px;    
+  height: 64px;
+  line-height: 68px;    
   border-bottom: 4px solid transparent;
 }
 
@@ -215,7 +213,7 @@ header .mdl-button {
 .subtitle {
   padding: 0 0;
   margin: 0 0;
-  width: 60px;
+  width: 50px;
 }
 
 .content-section {
@@ -249,8 +247,10 @@ header .mdl-button {
 
 .card-container .mdl-card__title-text {
   font-weight: 500;
+  font-size: 1.2em;
   text-align: center;
-  height: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card-container .mdl-card__supporting-text {
@@ -262,6 +262,7 @@ header .mdl-button {
 .card-container .mdl-card__title {
   text-align: center;
   text-overflow: ellipsis;
+  min-width: 150px;
 }
 
 .page-topic {
@@ -272,73 +273,79 @@ header .mdl-button {
 }
 
 .theme-student {
-  border: 2px solid #dc5842;
+  border: 2px solid #f88977;
 }
 
 .theme-student .theme-title-student, .theme-title-student {
-  background-color: #dc5842;  
+  background-color: #f88977;  
   color: white;
 }
 
 .theme-title-student-light {
-  background-color: salmon;
+  background-color: #f0bfb7;
   color: black;
 }
 
 h3.theme-text-student {
-  color: indianred;
+  color: #f88977;
   background-color: white;
 }
 
 .theme-educator {
-  border: 2px solid #4586b2;
+  border: 2px solid #4987b0;
 }
 
 .theme-educator .theme-title-educator {
-  background-color: #4586b2;
+  background-color: #4987b0;
   color: white;
 }
 
+.theme-title-educator-light {
+  background-color: #8db4cd;
+  color: black;
+}
+
+
 .theme-educator .theme-text-educator {
-  background-color: #4586b2;
+  background-color: #4987b0;
   background-color: white;
 }
 
 .theme-hour-of-code {
-  border: 2px solid #55bd82;
+  border: 2px solid #29b5a0;
 }
 
 .theme-hour-of-code .theme-title-hour-of-code, .theme-title-hour-of-code {
-  background-color: #55bd82;
+  background-color: #29b5a0;
   color: white;
 }
 
 .theme-title-hour-of-code-light {
-  background-color: palegreen;
+  background-color: #ace3dc;
   color: black;
 }
 
 .theme-hour-of-code .theme-text-hour-of-code {
-  color: #55bd82;
+  color: #29b5a0;
   background-color: white;
 }
 
 .theme-map-editor {
-  border: 1px solid #f49c30;
+  border: 1px solid #f89c41;
 }
 
 .theme-title-map-editor-light {
-  background-color: orange;
+  background-color: #fcdab4;
   color:white;
 }
 
 .theme-map-editor .theme-title-map-editor, .theme-title-map-editor {
-  background-color: #f49c30;
+  background-color: #f89c41;
   color: white;
 }
 
 .theme-map-editor .theme-text-map-editor {
-  color: #f49c30;
+  color: #f89c41;
   background-color: white;
 }
 
@@ -361,3 +368,143 @@ h3.theme-text-student {
   margin: 8px 0;
 }
 
+.mdl-layout__drawer .mdl-layout-title {
+  margin-top: 20px;
+  margin-left: -10px;
+  text-align: center;
+}
+
+.mdl-layout__drawer .mdl-navigation__link {
+  font-size: 1.2em;
+}
+
+.puzzle-icon {
+  padding: 0px;
+  width: 24px;
+  height: 24px;
+}
+
+.mdl-list__item {
+  border: 1px solid darkgrey;
+  border-radius: 4px;
+  display: block;
+} 
+
+.mdl-list__item-no-border {
+  border: 0;
+}
+
+.mdl-button--colored-done {
+  background-color: greenyellow;
+  color: white;
+}
+
+.lesson-card {
+  width: 100%;
+}
+
+.lesson-card .mdl-card__title h2 {
+    color: #f88977;
+    background-color: white;
+}
+
+.lesson-card .mdl-card__supporting-text {
+  background-color: lightgrey;
+  width: 100%;
+}
+
+.info-feature, .info-subfeature {
+  display: table;
+  white-space: nowrap;
+}
+
+.info-subfeature-span {
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  background-color: darkblue; 
+  display: inline-block;
+  font-size: 0.7em;
+  width: 150px;
+}
+
+.info-feature-span {
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  background-color: #f49c30; 
+  display: inline-block;
+  font-size: 0.7em;
+  width: 200px;
+}
+
+.info-feature:before, .info-feature:after {
+  border-top: 2px solid darkgray;
+  content: '';
+  display: table-cell;
+  position: relative;
+  top: 0.75em;
+  width: 45%;
+}
+
+.mdl-typography--font-lighter {
+  font-size: 12px;
+}
+
+.info-centering {
+  text-align: center;
+}
+
+.info-title {
+  display: table;
+  margin: 0 0 20px;
+  padding: 0 0 0 10px;
+  border-color: #4987b0;
+  clear: left;
+  border-style: solid;
+  border-width: 0 0 0 7px;
+}
+.info-text {
+  font-size: 1.2em;
+}
+
+.curriculum {
+  background-color: lightblue;
+  position: relative;
+  padding: 20px;
+  color: darkslategray;
+}
+
+.clear-fix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.curriculum-title {
+  float: left;
+}
+
+.curriculum-subtitle {
+  float: right;
+}
+
+.curriculum-text {
+  padding: 10px 10px 20px 20px;
+}
+
+.curriculum-media {
+}
+
+.curriculum-media img {
+  float: left;
+  width: 100%;
+}
+
+.curriculum-media .curriculum-btn {
+  position: relative;
+  float: right;
+  width: 70px;
+  bottom: 80px;
+  right: 10px;
+}
