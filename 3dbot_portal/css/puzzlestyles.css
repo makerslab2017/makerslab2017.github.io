@@ -22,7 +22,6 @@ body {
 
 main {
   display: block;
-  /*overflow: hidden;*/
   background-color: white;
 }
 
@@ -213,7 +212,6 @@ header .mdl-button {
 .subtitle {
   padding: 0 0;
   margin: 0 0;
-  width: 50px;
 }
 
 .content-section {
@@ -325,7 +323,7 @@ h3.theme-text-student {
   color: black;
 }
 
-.theme-hour-of-code .theme-text-hour-of-code {
+.theme-text-hour-of-code {
   color: #29b5a0;
   background-color: white;
 }
@@ -395,23 +393,86 @@ h3.theme-text-student {
 }
 
 .mdl-button--colored-done {
-  background-color: greenyellow;
+  background-color: greenyellow !important;
   color: white;
 }
 
 .lesson-card {
   width: 100%;
+  min-height: 100px;
 }
 
-.lesson-card .mdl-card__title h2 {
-    color: #f88977;
+.lesson-card .mdl-card__title{
+    background-color:#ace3dc;
+    color: #222;
+}
+
+.lesson-card .mdl-card__supporting-text {
+  width: 95%;
+}
+
+.lesson-card .mdl-card__category {
+  text-align: center;
+  background-color:#29b5a0;
+  color: white;
+  width: 70px;
+  border-radius: 3px;
+}
+
+.lesson-card .mdl-card__actions {
+  background-color: #a3a3a3;
+}
+
+.lesson-card .mdl-card__actions .mdl-button--raised {
+  
+}
+
+.lesson-card .mdl-card__actions .mdl-button--accent {
+  background-color: rgb(255,64,129) !important;
+  color: white;
+}
+
+
+.lesson-card .mdl-card__actions .mdl-button--icon {
+  line-height: 32px;
+  font-size: 1em;
+}
+
+.lesson-card .mdl-button--clicked {
+  background-color: rgb(255,64,129) !important;
+  color: white !important;
+}
+
+.lesson-card .mdl-color--teal {
+  background-color: #f88977 !important;
+  color: white;
+  margin: 4px;
+}
+
+.mdl-chip--contact {
+  height: 40px;
+  line-height: 40px;
+  margin: 0px 0;
+  color: darkgray;
+  border-radius: 20px;
+  background-color: white;
+  font-size: 1em;
+}
+
+.mdl-chip--contact img {
+  margin: 4px 4px;
+}
+
+.lesson-card .mdl-button {
     background-color: white;
+    color: darkgray;
 }
 
 .lesson-card .mdl-card__supporting-text {
   background-color: lightgrey;
   width: 100%;
 }
+
 
 .info-feature, .info-subfeature {
   display: table;
@@ -453,6 +514,10 @@ h3.theme-text-student {
 
 .info-centering {
   text-align: center;
+}
+
+.info-centering img {
+  width: 100%;
 }
 
 .info-title {
@@ -508,3 +573,16 @@ h3.theme-text-student {
   bottom: 80px;
   right: 10px;
 }
+
+.puzzlecraft-title {
+  color: deepskyblue;
+
+}
+
+.puzzlecraft-container {
+  width: 854px;
+  height:480px;
+  background-image: url('/3dbot_portal/img/puzzlecraft-screen.png');
+}
+
+.puzzlecraft-load-btn { position: relative; z-index: 100; left: -100px; bottom: 100px;}

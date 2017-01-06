@@ -10,15 +10,16 @@
     <!-- Page styles -->
     <link rel="stylesheet" href="/3dbot_portal/css/nanum-barun-gothic-light.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="/3dbot_portal/css/material.min.css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <link rel="stylesheet" href="/3dbot_portal/css/puzzlestyles.css">
     <link rel="stylesheet" href="/3dbot_portal/css/UnityStyle.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script src="/3dbot_portal/all_in_one/TemplateData/UnityProgress.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="mdl-layout mdl-js-layout">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <!--header-->
       <header role="banner" class="mdl-layout__header theme-map-editor">
         <div class="mdl-layout__header-row theme-title-map-editor-light">
@@ -26,33 +27,14 @@
             <img class="logo-image logo-horizontal" src="/3dbot_portal/img/logo_h.png">
           </a>
           <div class="mdl-layout-spacer"></div>
-          <!--
-          <div class="search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
-            <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
-              <i class="material-icons">search</i>
-            </label>
-            <div class="mdl-textfield__expandable-holder">
-              <input class="mdl-textfield__input" type="text" id="search-field">
-            </div>
-          </div>
-          -->
           <div class="navigation-container">
             <nav class="mdl-navigation">
               <a class="mdl-navigation__link" href="./about.html"> About 코딩퍼즐 </a>
               <a class="mdl-navigation__link" href="./practice.html">코딩퍼즐 학습</a>
               <a class="mdl-navigation__link" href="./hour-of-code.html">1 Hour of Code</a>
               <a class="mdl-navigation__link" href="./editor.html">코딩퍼즐 만들기</a>
-              <a class="mdl-navigation__link" href="./contact.html">연락처</a>
             </nav>
           </div>
-          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="my_page">
-            <li class="mdl-menu__item">커리큘럼</li>
-            <li class="mdl-menu__item">학습자료</li>
-          </ul>
-          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="practice">
-            <li class="mdl-menu__item">퍼즐크라프트 만들기</li>
-            <li class="mdl-menu__item">퍼즐크라프트 공유하기</li>
-          </ul>
         </div>        
       </header>
       
@@ -69,9 +51,7 @@
           <div class="drawer-separator"></div>
           <a class="mdl-navigation__link" href="./hour-of-code.html">1 Hour Of Code</a>
           <div class="drawer-separator"></div>
-          <a class="mdl-navigation__link" href="./editor.html">코딩퍼즐 만들기</a>
-          <div class="drawer-separator"></div>
-          <a class="mdl-navigation__link" href="./contact.html">연락처</a>
+          <a class="mdl-navigation__link" href="./editor.html">코딩퍼즐 만들기</a>          
         </nav>
       </div>
 
@@ -80,7 +60,7 @@
         <div class="mdl-grid mdl-grid-no-spacing theme-title-map-editor page-topic">
           <div class="mdl-cell mdl-cell-bottom mdl-cell--2-col"></div>
           <div class="mdl-cell mdl-cell-bottom mdl-cell--8-col">
-                코딩퍼즐 만들기
+                학습하기 > 코딩퍼즐 만들기
           </div>
           <div class="mdl-cell mdl-cell-bottom mdl-cell--2-col"></div>
         </div>        
@@ -92,53 +72,40 @@
             <div class="mdl-cell mdl-cell-bottom mdl-cell--1-col"></div>
             <div class="mdl-cell mdl-cell-bottom mdl-cell--10-col">
               <div>
-                  <p>
-                  여기에서는 코딩퍼즐을 만드는 기능을 제공합니다. 보다 상세한 사용법은 <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" onClick='window.open("https://www.youtube.com/embed/U5UGyF5r5aY")'>다음 비디오</button>를 참조하기 바랍니다.
-                  </p>                  
-                  <ul>
-                    <li> 왼쪽 상단의 메뉴 버튼을 누르고 타일 혹은 오브젝트를 선택합니다. 마우스로 스크롤하시면 더 많은 타일이나 오브젝트를 선택할 수 있습니다.
-                    <li> 원하는 격자 공간 내 위치로 이동하여 마우스 왼쪽 클릭을 하면 해당 그리드 셀에 고정시킬 수 있습니다.
-                    <li> 고정된 후, 동일 물체가 자동으로 복사되어 추가로 배치할 수 있습니다. 더이상 복사해서 배치하지 않으려면 마우스 오른쪽 버튼을 누릅니다.
-                    <li> 그리드에 있는 물체를 마우스로 선택할 수 있으며 화살표키로 상하좌우 이동 가능합니다. del키를 누르면 삭제됩니다.
-                    <li> 원하는 물체를 90도 단위로 회전할 수 있습니다.
-                    <li> 모든 작업이 끝나면 오른쪽 상단에 있는 구름 아이콘을 선택하고 저장하기 버튼을 선택하고 여러분이 만든 것이 카메라 화면에 모두 나오도록 화살표키로 이동시키고 오른쪽 검은 버튼을 눌러주세요.
-                    <li> 마우스 휠로 격자 공간을 줌인, 줌아웃시킬 수 있습니다.
-                    <li> 주의: 퍼즐에는 반드시 하나의 시작 타일이 지정되어 있어야 합니다.
-                  </ul>
+                <h4>퍼즐크래프트</h4>
 
-              </div>
-              
-              <div class="template">
-                <div class="template-wrap clear">
-                  <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" width="854" height="480"></canvas>
-                  <div class="fullscreen">
-                    <img src="/3dbot_portal/img/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" />
+                <p>
+                    퍼즐크래프트는 자신이 코딩퍼즐 게임에서 활용할 수 있는 퍼즐을 자신이 직접 만들 수 있는 도구입니다.
+                    본 페이지에서 제공하는 앱을 통해 손쉽게 만들 수 있습니다.
+                </p>
+
+                <p class="info-centering">
+                  <img src="/3dbot_portal/img/puzzlecraft-1.png">
+                </p>
+
+                <h5 class="puzzlecraft-title" >퍼즐크래프트란?</h5>
+
+                <div class="template">
+                  <div class="template-wrap clear">
+                    <canvas class="emscripten puzzlecraft-container" id="canvas" oncontextmenu="event.preventDefault()"></canvas>
+                    <div class="fullscreen">
+                      <img src="/3dbot_portal/img/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" />
+                    </div>
+                    <div class="puzzlecraft-load-btn">
+                      <img src="/3dbot_portal/img/puzzlecraft-2.png" width="200" height="45" />
+                    </div>
                   </div>
                 </div>
+
+                <br>
                 <script type="text/javascript">
-                  $(document).ready(function() {
-                        $('.logo-image').on('click', function() {
-                          window.location = '/3dbot_portal/index.html';
-                        });
-                        $('.fullscreen').on('click', function() {
-                          $('.template-wrap canvas').css('left', 0); // 풀스크린시, 중앙에 위치시키기
-                          SetFullscreen(1);
-                        });
-                    }).keyup( function(e) {
-                          if (e.keyCode == 27) { // 풀스크린 빠져나올 때, 중앙에 위치시키기
-                            $('.template-wrap canvas').css('left', '-50%');
-                          }
+                $(document).ready(function() {
+                    $('.puzzlecraft-load-btn').on('click', function() {
+                      window.location.href = "./editor_back2.html";
                     });
-                  var Module = { TOTAL_MEMORY: 268435456,
-                    errorhandler: null, compatibilitycheck: null,
-                    dataUrl:  "/3dbot_portal/editor/Release/webbuild.data", 
-                    codeUrl:  "/3dbot_portal/editor/Release/webbuild.js",
-                    memUrl:   "/3dbot_portal/editor/Release/webbuild.mem",
-                    asmUrl:   "/3dbot_portal/editor/Release/webbuild.asm.js",
-                  };
+                });
                 </script>
-                <script src="/3dbot_portal/editor/Release/UnityLoader.js"></script>
-              </div>              
+              </div>
             </div>
             <div class="mdl-cell mdl-cell-bottom mdl-cell--1-col"></div>
           </div>
