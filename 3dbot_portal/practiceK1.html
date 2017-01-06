@@ -649,6 +649,10 @@
                                   $next.empty().append(Module.stageData);
                                   $next.append($unity);
                                   $unity.show();
+                                  $('.fullscreen').on('click', function() {
+                                      $('.template-wrap canvas').css('left', 0); // 풀스크린시, 중앙에 위치시키기
+                                      SetFullscreen(1);
+                                  });
                                   Module.previousStage = $me;
 
                                   if (Module.robotData == null) {
