@@ -10,181 +10,146 @@
     <!-- Page styles -->
     <link rel="stylesheet" href="/3dbot_portal/css/nanum-barun-gothic-light.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-    <link rel="stylesheet" href="/3dbot_portal/css/puzzlestyles.css">
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link rel="stylesheet" href="./css/puzzlestyles.css">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script src="/3dbot_portal/js/jquery.bgswitcher.js"></script>
+    <script src="/3dbot_portal/js/puzzle.js"></script>
   </head>
   <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <!--header-->
-      <header class="mdl-layout__header layout-transparent">
-        <div class="mdl-layout__header-row">
-          <a href="/3dbot_portal/index.html">
-            <img class="logo-image logo-horizontal" src="/3dbot_portal/img/logo_h.png">
-          </a>
-          <div class="mdl-layout-spacer"></div>
-          <div class="navigation-container">
-            <nav class="mdl-navigation">
-              <a class="mdl-navigation__link" href="./about.html"> About 코딩퍼즐 </a>
-              <a class="mdl-navigation__link" href="./practice.html">코딩퍼즐 학습</a>
-              <a class="mdl-navigation__link" href="./hour-of-code.html">1 Hour of Code</a>
-              <a class="mdl-navigation__link" href="./editor.html">코딩퍼즐 만들기</a>
-            </nav>
+    <div class="header-wrapper theme-basic">
+      <div class="container">
+        <nav>
+          <div class="nav-wrapper">
+            <a href="/3dbot_portal/index.html" class="brand-logo">
+              <img class="logo-image logo-horizontal" src="/3dbot_portal/img/logo_h.png">
+            </a>
+            <a href="#" data-activates="mobile-side-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="./about.html"> About 코딩퍼즐 </a>
+              <li><a href="./practice.html">코딩퍼즐 학습</a>
+              <li><a href="./hour-of-code.html">1 Hour of Code</a>
+              <li><a href="./editor.html">코딩퍼즐 만들기</a>
+            </ul>
+            <ul class="side-nav" id="mobile-side-nav">
+              <a href="./index.html"><img class="logo-image " src="/3dbot_portal/img/logo_colored.png"></a>
+              <li><br>
+              <li><br>
+              <li><a href="./about.html">About 코딩퍼즐</a>
+              <li><a href="./practice.html">코딩퍼즐 학습</a>
+              <li><a href="./hour-of-code.html">1 Hour Of Code</a>          
+              <li><a href="./editor.html">코딩퍼즐 만들기</a>
+            </ul>
           </div>
-        </div>  
-
-        <section class="section--frontal">
-          <div class="mdl-grid">
-            <div class="mdl-cell mdl-cell-bottom mdl-cell--2-col"></div>
-            <div class="mdl-cell mdl-cell-bottom mdl-cell--8-col">
-              <h4>
-              소프트웨어 교육의 첫걸음, 코딩퍼즐. 누구나 쉽고 재밌게 소프트웨어를 배울 수 있어요.
-              지금 바로 시작해보세요!
-              </h4>
-            </div>
-            <div class="mdl-cell mdl-cell-bottom mdl-cell--2-col"></div>
-          </div>
-        </section>
-      </header>
-      <div class="mdl-layout__drawer">
-        <span class="mdl-layout-title">
-          <a href="./index.html">
-            <img class="logo-image" src="/3dbot_portal/img/logo_colored.png">
-          </a>
-        </span>
-        <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="./about.html">About 코딩퍼즐</a>
-          <div class="drawer-separator"></div>
-          <a class="mdl-navigation__link" href="./practice.html">코딩퍼즐 학습</a>
-          <div class="drawer-separator"></div>
-          <a class="mdl-navigation__link" href="./hour-of-code.html">1 Hour Of Code</a>
-          <div class="drawer-separator"></div>
-          <a class="mdl-navigation__link" href="./editor.html">코딩퍼즐 만들기</a>
         </nav>
       </div>
-      
+    </div>
 
-      <!--main-->
-      <main role="main" class="mdl-layout__content">
-        
-        <section class="content-section">
-          <div class="mdl-grid">
-            <div class="mdl-cell mdl-cell--1-col"></div>
-            <div class="mdl-cell mdl-cell--10-col">
-              <div class="card-container mdl-grid">
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp theme-student">
-                  <div class="mdl-card__title theme-title-student">
-                      <h2 class="mdl-card__title-text">학생용</h2>
-                  </div>
-                  <div class="mdl-card__media">
-                    <img src="/3dbot_portal/img/main_banner_students.png" />
-                  </div>
-                  <div class="mdl-card__supporting-text theme-text-student">
-                    <span class="mdl-typography--subhead">코딩퍼즐을 시작합니다!</span>
-                  </div>              
-                </div>
-
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp theme-educator">
-                  <div class="mdl-card__title theme-title-educator">
-                      <h4 class="mdl-card__title-text">교육자</h4>
-                  </div>
-                  <div class="mdl-card__media">
-                    <img src="/3dbot_portal/img/main_banner_teachers.png" />
-                  </div>
-                  <div class="mdl-card__supporting-text theme-text-educator">
-                    <span class="mdl-typography--subhead">학생들을 지도하고 진도를 확인합니다.</span>
-                  </div>
-                </div>
-
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp theme-hour-of-code">
-                  <div class="mdl-card__title theme-title-hour-of-code">
-                      <h4 class="mdl-card__title-text">Hour of Code</h4>
-                  </div>
-                  <div class="mdl-card__media">
-                    <img src="/3dbot_portal/img/main_banner_hourofcode.png" />
-                  </div>
-                  <div class="mdl-card__supporting-text theme-text-hour-of-code">
-                    <span class="mdl-typography--subhead">하루에 한시간! 소프트웨어 코딩을 배워봅니다.</span>
-                  </div>
-                </div>
-
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp theme-map-editor">
-                  <div class="mdl-card__title theme-title-map-editor">
-                      <h5 class="mdl-card__title-text">퍼즐 에디터</h5>
-                  </div>
-                  <div class="mdl-card__media">
-                    <img src="/3dbot_portal/img/main_banner_puzzlemaker.png" />
-                  </div>
-                  <div class="mdl-card__supporting-text theme-text-map-editor">
-                    <span class="mdl-typography--subhead">나만의 코딩퍼즐 맵을 만들어 플레이하고 공유해보세요.</span>
-                  </div>
-                </div>
+    <div class="section-frontal">
+      <div class="container flow-text">
+        소프트웨어 교육의 첫걸음, 코딩퍼즐. 누구나 쉽고 재밌게 소프트웨어를 배울 수 있습니다. 지금 바로 시작해보세요!
+      </div>
+    </div>
+    <div class="container hidden-frontal">
+    </div>
+  
+    <div class="main-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m6 l3">
+            <div class="card theme-student hoverable">
+              <div class="card-title theme-title-student center">학생용</div>
+              <div class="card-image">
+                <img src="/3dbot_portal/img/main_banner_students.png" />
+              </div>
+              <div class="card-content theme-text-student">
+                코딩 학습을 시작하세요.
               </div>
             </div>
-            <div class="mdl-cell mdl-cell--1-col"></div>
           </div>
-
-          <div class="mdl-grid">
-            <div class="mdl-cell mdl-cell--1-col"> </div>
-            <div class="mdl-cell mdl-cell--10-col" style="text-align: center;">
-              파트너: <img src="http://games3.cafe24.com/wp-content/uploads/2012/08/logo_new-300x129.jpg" /> <img src="http://www.smba.go.kr/images/smba/logo.png" />
+          <div class="col s12 m6 l3">
+            <div class="card theme-educator hoverable">
+              <div class="card-title theme-title-educator center">교육자용</div>
+              <div class="card-image">
+                <img src="/3dbot_portal/img/main_banner_teachers.png" />
+              </div>
+              <div class="card-content theme-text-educator">
+                학생들의 진도 현황을 확인합니다.
+              </div>
             </div>
-            <div class="mdl-cell mdl-cell--1-col"> </div>
           </div>
-        </section>
+          <div class="col s12 m6 l3">          
+            <div class="card theme-hour-of-code hoverable">
+              <div class="card-title theme-title-hour-of-code center">Hour of Code</div>
+              <div class="card-image">
+                <img src="/3dbot_portal/img/main_banner_hourofcode.png" />
+              </div>
+              <div class="card-content theme-text-hour-of-code">
+                하루에 한시간! 소프트웨어 코딩을 배워봅니다.
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l3">
+            <div class="card theme-map-editor hoverable">
+              <div class="card-title theme-title-map-editor center">학생용</div>
+              <div class="card-image">
+                <img src="/3dbot_portal/img/main_banner_puzzlemaker.png" />
+              </div>
+              <div class="card-content theme-text-map-editor">
+                나만의 코딩퍼즐 맵을 만들어 플레이하고 공유해보세요.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row valign-wrapper">
+          <div class="col s12 m2">
+            파트너:
+          </div>
+          <div class="col s12 m10 valign-wrapper">
+            <img src="http://games3.cafe24.com/wp-content/uploads/2012/08/logo_new-300x129.jpg" /> <img src="http://www.smba.go.kr/images/smba/logo.png" />
+          </div>
+        </div>
+      </div>
+    </div>
 
-        <footer class="mdl-mega-footer">
-          <div class="mdl-mega-footer--middle-section">
-            <div class="mdl-grid">
-              <div class="mdl-cell mdl-cell-bottom mdl-cell--2-col"></div>
-              <div class="mdl-cell mdl-cell-bottom mdl-cell--1-col">
+    <div class="footer-wrapper">
+      <div class="container">
+        <footer class="page-footer">
+          <div class="container">
+            <div class="row grey-text text-darken-1">
+              <div class="col s3">
                 <img src="/3dbot_portal/img/makerslab_logo.png" style="width:100%;"/>
               </div>
-              <div class="mdl-cell mdl-cell-bottom mdl-cell--7-col">
-                <p class="mdl-typography--font-light">30018 세종특별자치시 조치원읍 돌마루5길 2 세영오피스텔 메이커스랩© 401호</p>
-                <p class="mdl-typography--font-light">전화: 010-5305-8680 &nbsp; 이메일: <a href="mailto:the.nayoung@gmail.com">김나영</a></p>
+              <div class="col s9">
+                30018 세종특별자치시 조치원읍 돌마루5길 2 세영오피스텔 메이커스랩© 401호
+                <p>전화: 010-5305-8680 &nbsp; 이메일: <a href="mailto:the.nayoung@gmail.com">김나영</a></p>
                 <hr>
-                <p class="mdl-typography--font-lighter">본 콘텐츠의 저작권은 제공처에 있으며, 이를 무단 이용하는 경우, 저작권법 등에 따라 법적책임을 질 수 있습니다. </p>
-                <p class="mdl-typography--font-light">Copyright © 2016, 2017 MakersLab, Inc. All rights reserved. </p>
-              </div>
-              <div class="mdl-cell mdl-cell-bottom mdl-cell--2-col"></div>
+                <p style="font-size: 0.8rem;">본 콘텐츠의 저작권은 제공처에 있으며, 이를 무단 이용하는 경우, 저작권법 등에 따라 법적책임을 질 수 있습니다. </p>
+              </div>    
             </div>
           </div>
+          <div class="container grey-text text-darken-1 center">
+              Copyright © 2014 - 2017 MakersLab, Inc. All rights reserved.
+          <a class="right"></a>
+          </div>
         </footer>
-
-       
-      </main>
-
-
-      <dialog class="mdl-dialog">
-        <h4 class="mdl-dialog__title">준비중</h4>
-        <div class="mdl-dialog__content">
-          <p>
-              교육자를 위한 페이지는 준비중에 있습니다. 빠른 시간내로 찾아뵙도록 하겠습니다.
-          </p>
-        </div>
-        <div class="mdl-dialog__actions">
-          <button type="button" class="mdl-button">확인</button>
-        </div>
-      </dialog>
-
-      <script>
-      $(document).ready(function() {
-        dialog = $('dialog')[0];
-        $('.theme-educator').on('click', function() {
-          dialog.showModal();
-          $('.mdl-dialog__actions button').on('click', function() {
-            dialog.close();
-          });
-        });
-        $('.theme-student').on('click', function() { window.location.href = './practice.html'; });
-        $('.theme-hour-of-code').on('click', function() { window.location.href = './hour-of-code.html'; });
-        $('.theme-map-editor').on('click', function() { window.location.href = './editor.html'; });
-      });
-      </script>
-
+      </div>
     </div>
+  </div>
+
+  <script>
+    $(document).ready(function() {
+      $('.theme-student').on('click', function() { window.location.href = './practice.html'; });
+      $('.theme-educator').on('click', function() { window.location.href = './educator.html'; });
+      $('.theme-hour-of-code').on('click', function() { window.location.href = './hour-of-code.html'; });
+      $('.theme-map-editor').on('click', function() { window.location.href = './editor.html'; });
+      $('.section-frontal').bgswitcher({
+        images: ["/3dbot_portal/img/kid-on-ipad.jpg", "/3dbot_portal/img/kid-on-keyboard.jpg"],
+        start: true
+      });
+    });    
+  </script>
   </body>
 </html>

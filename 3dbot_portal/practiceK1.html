@@ -10,729 +10,765 @@
     <!-- Page styles -->
     <link rel="stylesheet" href="/3dbot_portal/css/nanum-barun-gothic-light.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-    <link rel="stylesheet" href="/3dbot_portal/css/puzzlestyles.css">
-    <link rel="stylesheet" href="/3dbot_portal/css/UnityStyle.css">
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <script src="/3dbot_portal/per_stage/TemplateData/UnityProgress.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link rel="stylesheet" href="./css/puzzlestyles.css">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script src="/3dbot_portal/js/puzzle.js"></script>
   </head>
   <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <!--header-->
-      <header role="banner" class="mdl-layout__header mdl-layout--fixed-header">
-        <div class="mdl-layout__header-row theme-title-student-light">
-          <a href="/3dbot_portal/index.html">
-            <img class="logo-image logo-horizontal" src="/3dbot_portal/img/logo_h.png">
-          </a>
-          <div class="mdl-layout-spacer"></div>
-          <div class="navigation-container">
-            <nav class="mdl-navigation">
-              <a class="mdl-navigation__link" href="./about.html"> About 코딩퍼즐 </a>
-              <a class="mdl-navigation__link" href="./practice.html">코딩퍼즐 학습</a>
-              <a class="mdl-navigation__link" href="./hour-of-code.html">1 Hour of Code</a>
-              <a class="mdl-navigation__link" href="./editor.html">코딩퍼즐 만들기</a>
-            </nav>
+    <div class="header-wrapper theme-title-student-light">
+      <div class="container">
+        <nav>
+          <div class="nav-wrapper">
+            <a href="/3dbot_portal/index.html" class="brand-logo">
+              <img class="logo-image logo-horizontal" src="/3dbot_portal/img/logo_h.png">
+            </a>
+            <a href="#" data-activates="mobile-side-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="./about.html"> About 코딩퍼즐 </a>
+              <li><a href="./practice.html">코딩퍼즐 학습</a>
+              <li><a href="./hour-of-code.html">1 Hour of Code</a>
+              <li><a href="./editor.html">코딩퍼즐 만들기</a>
+            </ul>
+            <ul class="side-nav" id="mobile-side-nav">
+              <a href="./index.html"><img class="logo-image " src="/3dbot_portal/img/logo_colored.png"></a>
+              <li><br>
+              <li><br>
+              <li><a href="./about.html">About 코딩퍼즐</a>
+              <li><a href="./practice.html">코딩퍼즐 학습</a>
+              <li><a href="./hour-of-code.html">1 Hour Of Code</a>          
+              <li><a href="./editor.html">코딩퍼즐 만들기</a>
+            </ul>
           </div>
-        </div>        
-      </header>
-      
-      <div class="mdl-layout__drawer">
-        <span class="mdl-layout-title">
-          <a href="./index.html">
-            <img class="logo-image" src="/3dbot_portal/img/logo_colored.png">
-          </a>
-        </span>
-        <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="./about.html">About 코딩퍼즐</a>
-          <div class="drawer-separator"></div>
-          <a class="mdl-navigation__link" href="./practice.html">코딩퍼즐 학습</a>
-          <div class="drawer-separator"></div>
-          <a class="mdl-navigation__link" href="./hour-of-code.html">1 Hour Of Code</a>
-          <div class="drawer-separator"></div>
-          <a class="mdl-navigation__link" href="./editor.html">코딩퍼즐 만들기</a>
         </nav>
+        
       </div>
+    </div>
 
-      <!-- subtitle -->
-      <subtitle>
-        <div class="mdl-grid mdl-grid-no-spacing theme-title-student page-topic">
-          <div class="mdl-cell mdl-cell-bottom mdl-cell--2-col"></div>
-          <div class="mdl-cell mdl-cell-bottom mdl-cell--8-col">
-                학습정보 > 초등학교 대상 초급 교과과정
+    <div class="main-wrapper theme-title-student">
+      <div class="container">
+        <div class="col s12">
+          <a href="#!" class="breadcrumb"> 학습정보</a>
+          <a href="#!" class="breadcrumb"> 초등학교 대상 초급 교과과정</a>
+        </div>    
+      </div>
+    </div>
+
+    <div class="main-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="grey lighten-3">
+            <h4 class="center">
+              초등학생을 위한 15회 교육과정
+            </h4>
+            <p>
+              이 과정은 자기 주도 및 자기 진도에 맞춰 학습할 수 있는 한 학기 분량의 교과과정입니다.
+              각 과정들은 5 ~ 20개의 레슨으로 구성되어 있으며 레슨 전체 분량은 한 학기에 해당합니다.
+              유치원에 다니는 아이들부터 중학교 저학년까지도 참여할 수 있으며 학습을 돕기 위해 무료로 전문적인 워크샵을 제공합니다.
+              바로 연락주세요.
+            <p>
+            <p class="center">
+              <img class="responsive-img" src="/3dbot_portal/img/student-lecture-1.png" />
+            </p>
           </div>
-          <div class="mdl-cell mdl-cell-bottom mdl-cell--2-col"></div>
-        </div>
-      </subtitle>
+          
+          
+          <div id="loading" class="center">
+            <br>
+            <p>코딩교육 앱을 로딩하고 있습니다. 잠시만 기다려 주세요.</p>
+          </div>
 
-      <!--main-->
-      <main role="main" class="mdl-layout__content">
-        <section class="content-section">
-          <div class="mdl-grid">
-            <div class="mdl-cell mdl-cell-bottom mdl-cell--2-col"></div>
-            <div class="mdl-cell mdl-cell-bottom mdl-cell--8-col">
-              <div style="background-color: #f0f0f0; padding: 50px;">
-                <div class="info-centering">
-                  <h4>  초등학생을 위한 15회 교육과정 </h4>
-                </div>
-                <p>
-                  이 과정은 자기 주도 및 자기 진도에 맞춰 학습할 수 있는 한 학기 분량의 교과과정입니다.
-                  각 과정들은 5 ~ 20개의 레슨으로 구성되어 있으며 레슨 전체 분량은 한 학기에 해당합니다.
-                  유치원에 다니는 아이들부터 중학교 저학년까지도 참여할 수 있으며 학습을 돕기 위해 무료로 전문적인 워크샵을 제공합니다.
-                  바로 연락주세요.
-                <p>
-
-                <div class="info-centering">
-                  <img width="100%" src="/3dbot_portal/img/student-lecture-1.png" />
-                </div>
-                <br>
+          <div class="template center" >
+            <div class="template-wrap clear" >
+              <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="840px" width="470px" style="border-radius: 10px; border: 10px solid #888;"></canvas>
+              <div class="fullscreen">
+                <img src="/3dbot_portal/img/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" />
               </div>
-              
-              <div id="loading" class="info-centering">
-                <br>
-                <p>코딩교육 앱을 로딩하고 있습니다. 잠시만 기다려 주세요.</p>
-              </div>              
+            </div>
+          </div>
+         
 
-              <div class="template" >
-                <div class="template-wrap clear" >
-                  <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="840px" width="470px" style="border-radius: 10px; border: 10px solid #888;"></canvas>
-                  <div class="fullscreen">
-                    <img src="/3dbot_portal/img/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" />
+          <div class="col s12">
+            <ul class="collapsible" data-collapsible="accordion">
+              <li>
+                <div class="collapsible-header" id="day1">
+                  <div class="card lesson-card">
+                    <div class="card-title">
+                      <a class="btn-floating disabled"><i class="material-icons theme-title-hour-of-code">keyboard_arrow_right</i></a>
+                      <strong>1차시</strong> 기본 명령어 및 사용법을 알아봅니다.
+                      <span class="level theme-title-hour-of-code right center">초급</span>
+                    </div>
+                    <div class="card-action">
+                      <a class="btn-floating" data-stage="01">1</a>
+                      <a class="btn-floating" data-stage="0101">2</a>
+                      <a class="btn-floating" data-stage="0102">3</a>
+                      <a class="chip" data-stage="0103">
+                        <img src="/3dbot_portal/img/student-lecture-button2_challenge.png" />
+                        도전1
+                      </a>
+                      <a class="chip vertical-align" data-stage="03">
+                        <img src="/3dbot_portal/img/student-lecture-button2_challenge.png" />
+                        도전2
+                      </a>
+                      <a class="chip" data-stage="04">
+                        <img src="/3dbot_portal/img/student-lecture-button2_challenge.png" />
+                        도전3
+                      </a>
+                      <a class="chip" data-stage="09">
+                        <img src="/3dbot_portal/img/student-lecture-button2_challenge.png" />
+                        도전4
+                      </a>
+                      <a class="chip" data-stage="06">
+                        <img src="/3dbot_portal/img/student-lecture-button2_challenge.png" />
+                        도전5
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-
-              <div class="lesson-card mdl-card mdl-shadow--2dp">
-                <div class="mdl-card__title" id="day1">
-                  <i class="material-icons theme-title-hour-of-code" style="border-radius: 12px;">keyboard_arrow_right</i>
-                  <strong>&nbsp; 1차시 &nbsp;</strong> 기본 명령어 및 사용법을 알아봅니다.
-                  <div class="mdl-layout-spacer"></div>
-                  <div class="mdl-card__category">초급</div>
+                <div class="collapsible-body">
+                  <div class="card-content">
+                  </div>
                 </div>
-                <div class="mdl-card__actions mdl-card--border">
-                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="01">1</span>
-                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="0101">2</span>
-                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="0102">3</span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="0103">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button2_challenge.png" />
-                    <span class="mdl-chip__text" >도전1</span>
-                  </span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="03">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button2_challenge.png" />
-                    <span class="mdl-chip__text" >도전2</span>
-                  </span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="04">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button2_challenge.png" />
-                    <span class="mdl-chip__text" >도전3</span>
-                  </span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="09">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button2_challenge.png" />
-                    <span class="mdl-chip__text" >도전4</span>
-                  </span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="06">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button2_challenge.png" />
-                    <span class="mdl-chip__text" >도전5</span>
-                  </span>
-                </div>
-                <div class="mdl-card__supporting-text mdl-card--border">
-                  순서대로 레슨을 선택하고 주어진 지문을 따라 학습을 합니다.                  
-                </div>
-              </div>
-
+              </li>
               <br>
-
-              <div class="lesson-card mdl-card mdl-shadow--2dp">
-                <div class="mdl-card__title" id="day2">
-                  <i class="material-icons theme-title-hour-of-code" style="border-radius: 12px;">keyboard_arrow_right</i>
-                  <strong>&nbsp; 2차시 &nbsp;</strong> 점프와 순간이동을 소개합니다.
-                  <div class="mdl-layout-spacer"></div>
-                  <div class="mdl-card__category">초급</div>
+              <li>
+                <div class="collapsible-header" id="day2">
+                  <div class="card lesson-card">
+                    <div class="card-title">
+                      <a class="btn-floating disabled"><i class="material-icons theme-title-hour-of-code">keyboard_arrow_right</i></a>
+                      <strong>2차시 </strong> 점프와 순간이동을 소개합니다.
+                      <div class="level theme-title-hour-of-code right">초급</div>
+                    </div>
+                    <div class="card-action">
+                      <a class="btn-floating" data-stage="0104">1</a>
+                      <a class="btn-floating" data-stage="02">2</a>
+                      <a class="chip" data-stage="05">
+                        <img src="/3dbot_portal/img/student-lecture-button2_challenge.png" />
+                        <span>도전1</span>
+                      </a>
+                      <a class="chip" data-stage="07">
+                        <img src="/3dbot_portal/img/student-lecture-button2_challenge.png" />
+                        <span>도전2</span>
+                      </a>
+                      <a class="chip" data-stage="08">
+                        <img src="/3dbot_portal/img/student-lecture-button2_challenge.png" />
+                        <span>도전3</span>
+                      </a>
+                      <a class="chip" data-stage="10">
+                        <img src="/3dbot_portal/img/student-lecture-button2_challenge.png" />
+                        <span>도전4</span>
+                      </a>
+                      <a class="chip" data-stage="0105">
+                        <img src="/3dbot_portal/img/student-lecture-button3_warfield.png" />
+                        <span>전장으로</span>
+                      </a>
+                    </div>
+                  </div>
                 </div>
-                <div class="mdl-card__actions mdl-card--border">
-                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="0104">1</span>
-                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="02">2</span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="05">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button2_challenge.png" />
-                    <span class="mdl-chip__text" >도전1</span>
-                  </span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="07">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button2_challenge.png" />
-                    <span class="mdl-chip__text" >도전2</span>
-                  </span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="08">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button2_challenge.png" />
-                    <span class="mdl-chip__text" >도전3</span>
-                  </span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="10">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button2_challenge.png" />
-                    <span class="mdl-chip__text" >도전4</span>
-                  </span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="0105">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button3_warfield.png" />
-                    <span class="mdl-chip__text" >전장으로</span>
-                  </span>
+                <div class="collapsible-body">
+                  <div class="card-content">                    
+                  </div>
                 </div>
-                <div class="mdl-card__supporting-text mdl-card--border">
-                  순서대로 레슨을 선택하고 주어진 지문을 따라 학습을 합니다.                  
-                </div>
-              </div>
-
+              </li>
               <br>
-
-              <div class="lesson-card mdl-card mdl-shadow--2dp">
-                <div class="mdl-card__title" id="day3">
-                  <i class="material-icons theme-title-hour-of-code" style="border-radius: 12px;">keyboard_arrow_right</i>
-                  <strong>&nbsp; 3차시 &nbsp;</strong> 지금까지 내용을 복습해 봅니다.
-                  <div class="mdl-layout-spacer"></div>
-                  <div class="mdl-card__category">초급</div>
+              <li>
+                <div class="collapsible-header" id="day3">
+                  <div class="card lesson-card">
+                    <div class="card-title">
+                      <a class="btn-floating disabled"><i class="material-icons theme-title-hour-of-code">keyboard_arrow_right</i></a>
+                      <strong>3차시</strong> 지금까지 내용을 복습해 봅니다.
+                      <div class="level theme-title-hour-of-code right">초급</div>
+                    </div>
+                    <div class="card-action">
+                      <a class="chip" data-stage="24">
+                        <img src="/3dbot_portal/img/student-lecture-button4_review.png" />
+                        <span>복습1</span>
+                      </a>
+                      <a class="chip" data-stage="26">
+                        <img src="/3dbot_portal/img/student-lecture-button4_review.png" />
+                        <span>복습2</span>
+                      </a>
+                      <a class="chip" data-stage="0106">
+                        <img src="/3dbot_portal/img/student-lecture-button4_review.png" />
+                        <span>복습3</span>
+                      </a>
+                      <a class="chip" data-stage="0107">
+                        <img src="/3dbot_portal/img/student-lecture-button4_review.png" />
+                        <span>복습4</span>
+                      </a>
+                      <a class="chip" data-stage="0108">
+                        <img src="/3dbot_portal/img/student-lecture-button4_review.png" />
+                        <span>복습5</span>
+                      </a>
+                    </div>
+                  </div>
                 </div>
-                <div class="mdl-card__actions mdl-card--border">
-                  <span class="mdl-chip mdl-chip--contact" data-stage="24">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button4_review.png" />
-                    <span class="mdl-chip__text" >복습1</span>
-                  </span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="26">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button4_review.png" />
-                    <span class="mdl-chip__text" >복습2</span>
-                  </span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="0106">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button4_review.png" />
-                    <span class="mdl-chip__text" >복습3</span>
-                  </span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="0107">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button4_review.png" />
-                    <span class="mdl-chip__text" >복습4</span>
-                  </span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="0108">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button4_review.png" />
-                    <span class="mdl-chip__text" >복습5</span>
-                  </span>
+                <div class="collapsible-body">
+                  <div class="card-content">
+                  </div>
                 </div>
-                <div class="mdl-card__supporting-text mdl-card--border">
-                  순서대로 레슨을 선택하고 주어진 지문을 따라 학습을 합니다.                  
-                </div>
-              </div>
-
+              </li>
               <br>
-
-              <div class="lesson-card mdl-card mdl-shadow--2dp">
-                <div class="mdl-card__title" id="day4">
-                  <i class="material-icons theme-title-hour-of-code" style="border-radius: 12px;">keyboard_arrow_right</i>
-                  <strong>&nbsp; 4차시 &nbsp;</strong> 함수를 배워봅니다.
-                  <div class="mdl-layout-spacer"></div>
-                  <div class="mdl-card__category">중급</div>
+              <li>
+                <div class="collapsible-header" id="day4">
+                  <div class="card lesson-card">
+                    <div class="card-title">
+                      <a class="btn-floating disabled"><i class="material-icons theme-title-hour-of-code">keyboard_arrow_right</i></a>
+                      <strong>4차시</strong> 함수를 배워봅니다.
+                      <div class="level theme-title-hour-of-code right">중급</div>
+                    </div>                  
+                    <div class="card-action">
+                      <a class="btn-floating" data-stage="04-01">1</a>
+                      <a class="btn-floating" data-stage="04-02">2</a>
+                      <a class="btn-floating" data-stage="0109">3</a>
+                      <a class="btn-floating" data-stage="04-04">4</a>
+                      <a class="btn-floating" data-stage="04-05">5</a>
+                      <a class="chip" data-stage="11">
+                        <img src="/3dbot_portal/img/student-lecture-button2_challenge.png" />
+                        <span>도전1</span>
+                      </a>
+                      <a class="chip" data-stage="12">
+                        <img src="/3dbot_portal/img/student-lecture-button2_challenge.png" />
+                        <span>도전2</span>
+                      </a>
+                      <a class="chip" data-stage="13">
+                        <img src="/3dbot_portal/img/student-lecture-button2_challenge.png" />
+                        <span>도전3</span>
+                      </a>
+                      <a class="chip" data-stage="14">
+                        <img src="/3dbot_portal/img/student-lecture-button2_challenge.png" />
+                        <span>도전4</span>
+                      </a>
+                      <a class="chip" data-stage="15">
+                        <img src="/3dbot_portal/img/student-lecture-button2_challenge.png" />
+                        <span>도전5</span>
+                      </a>
+                      <a class="chip" data-stage="04-11">
+                        <img src="/3dbot_portal/img/student-lecture-button4_review.png" />
+                        <span>복습 도전5</span>
+                      </a>
+                      <a class="chip" data-stage="04-12">
+                        <img src="/3dbot_portal/img/student-lecture-button4_review.png" />
+                        <span>또다른 복습 도전5</span>
+                      </a>
+                    </div>
+                  </div>
                 </div>
-                <div class="mdl-card__actions mdl-card--border">
-                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="04-01">1</span>
-                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="04-02">2</span>
-                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="0109">3</span>
-                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="04-04">4</span>
-                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="04-05">5</span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="11">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button2_challenge.png" />
-                    <span class="mdl-chip__text" >도전1</span>
-                  </span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="12">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button2_challenge.png" />
-                    <span class="mdl-chip__text" >도전2</span>
-                  </span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="13">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button2_challenge.png" />
-                    <span class="mdl-chip__text" >도전3</span>
-                  </span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="14">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button2_challenge.png" />
-                    <span class="mdl-chip__text" >도전4</span>
-                  </span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="15">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button2_challenge.png" />
-                    <span class="mdl-chip__text" >도전5</span>
-                  </span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="04-11">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button4_review.png" />
-                    <span class="mdl-chip__text" >복습 도전5</span>
-                  </span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="04-12">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button4_review.png" />
-                    <span class="mdl-chip__text" >또다른 복습 도전5</span>
-                  </span>
+                <div class="collapsible-body">
+                  <div class="card-content">
+                  </div>
                 </div>
-                <div class="mdl-card__supporting-text mdl-card--border">
-                  순서대로 레슨을 선택하고 주어진 지문을 따라 학습을 합니다.                  
-                </div>
-              </div>              
-
+              </li>
               <br>
-
-              <div class="lesson-card mdl-card mdl-shadow--2dp">
-                <div class="mdl-card__title" id="day5">
-                  <i class="material-icons theme-title-hour-of-code" style="border-radius: 12px;">keyboard_arrow_right</i>
-                  <strong>&nbsp; 5차시 &nbsp;</strong> 함수를 다양하게 적용해 봅니다.
-                  <div class="mdl-layout-spacer"></div>
-                  <div class="mdl-card__category">중급</div>
+              <li>
+                <div class="collapsible-header" id="day5">
+                  <div class="card lesson-card">
+                    <div class="card-title">
+                      <a class="btn-floating disabled"><i class="material-icons theme-title-hour-of-code">keyboard_arrow_right</i></a>
+                      <strong>5차시</strong> 함수를 다양하게 적용해 봅니다.
+                      <div class="level theme-title-hour-of-code right">중급</div>
+                    </div>
+                    <div class="card-action">
+                      <a class="chip" data-stage="16">
+                        <img src="/3dbot_portal/img/student-lecture-button4_review.png" />
+                        <span>복습1</span>
+                      </a>
+                      <a class="chip" data-stage="17">
+                        <img src="/3dbot_portal/img/student-lecture-button4_review.png" />
+                        <span>복습2</span>
+                      </a>
+                      <a class="chip" data-stage="18">
+                        <img src="/3dbot_portal/img/student-lecture-button4_review.png" />
+                        <span>복습3</span>
+                      </a>
+                      <a class="chip" data-stage="19">
+                        <img src="/3dbot_portal/img/student-lecture-button4_review.png" />
+                        <span>복습4</span>
+                      </a>
+                      <a class="chip" data-stage="20">
+                        <img src="/3dbot_portal/img/student-lecture-button4_review.png" />
+                        <span>복습5</span>
+                      </a>
+                      <a class="chip" data-stage="0110">
+                        <img src="/3dbot_portal/img/student-lecture-button4_review.png" />
+                        <span>복습6</span>
+                      </>
+                      <a class="chip" data-stage="0111">
+                        <img src="/3dbot_portal/img/student-lecture-button4_review.png" />
+                        <span>복습7</span>
+                      </a>
+                      <a class="chip" data-stage="0112">
+                        <img src="/3dbot_portal/img/student-lecture-button4_review.png" />
+                        <span>복습8</span>
+                      </a>
+                      <a class="chip" data-stage="0113">
+                        <img src="/3dbot_portal/img/student-lecture-button4_review.png" />
+                        <span>복습9</span>
+                      </a>
+                      <a class="chip" data-stage="0114">
+                        <img src="/3dbot_portal/img/student-lecture-button4_review.png" />
+                        <span>복습10</span>
+                      </a>
+                      <a class="chip" data-stage="31">
+                        <img src="/3dbot_portal/img/student-lecture-button4_review.png" />
+                        <span>복습11</span>
+                      </a>
+                      <a class="chip" data-stage="32">
+                        <img src="/3dbot_portal/img/student-lecture-button4_review.png" />
+                        <span>복습12</span>
+                      </a>
+                      <a class="chip" data-stage="33">
+                        <img src="/3dbot_portal/img/student-lecture-button4_review.png" />
+                        <span>복습13</span>
+                      </a>
+                      <a class="chip" data-stage="34">
+                        <img src="/3dbot_portal/img/student-lecture-button4_review.png" />
+                        <span>복습14</span>
+                      </a>
+                      <a class="chip" data-stage="35">
+                        <img src="/3dbot_portal/img/student-lecture-button4_review.png" />
+                        <span>복습15</span>
+                      </a>
+                    </div>
+                  </div>
                 </div>
-                <div class="mdl-card__actions mdl-card--border">
-                  <span class="mdl-chip mdl-chip--contact" data-stage="16">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button4_review.png" />
-                    <span class="mdl-chip__text" >복습1</span>
-                  </span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="17">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button4_review.png" />
-                    <span class="mdl-chip__text" >복습2</span>
-                  </span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="18">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button4_review.png" />
-                    <span class="mdl-chip__text" >복습3</span>
-                  </span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="19">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button4_review.png" />
-                    <span class="mdl-chip__text" >복습4</span>
-                  </span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="20">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button4_review.png" />
-                    <span class="mdl-chip__text" >복습5</span>
-                  </span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="0110">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button4_review.png" />
-                    <span class="mdl-chip__text" >복습6</span>
-                  </span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="0111">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button4_review.png" />
-                    <span class="mdl-chip__text" >복습7</span>
-                  </span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="0112">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button4_review.png" />
-                    <span class="mdl-chip__text" >복습8</span>
-                  </span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="0113">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button4_review.png" />
-                    <span class="mdl-chip__text" >복습9</span>
-                  </span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="0114">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button4_review.png" />
-                    <span class="mdl-chip__text" >복습10</span>
-                  </span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="31">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button4_review.png" />
-                    <span class="mdl-chip__text" >복습11</span>
-                  </span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="32">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button4_review.png" />
-                    <span class="mdl-chip__text" >복습12</span>
-                  </span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="33">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button4_review.png" />
-                    <span class="mdl-chip__text" >복습13</span>
-                  </span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="34">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button4_review.png" />
-                    <span class="mdl-chip__text" >복습14</span>
-                  </span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="35">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button4_review.png" />
-                    <span class="mdl-chip__text" >복습15</span>
-                  </span>
+                <div class="collapsible-body">
+                  <div class="card-content">
+                    순서대로 레슨을 선택하고 주어진 지문을 따라 학습을 합니다.                  
+                  </div>
                 </div>
-                <div class="mdl-card__supporting-text mdl-card--border">
-                  순서대로 레슨을 선택하고 주어진 지문을 따라 학습을 합니다.                  
-                </div>
-              </div>
-
-              <br>        
-
-              <div class="lesson-card mdl-card mdl-shadow--2dp">
-                <div class="mdl-card__title" id="day6">
-                  <i class="material-icons theme-title-hour-of-code" style="border-radius: 12px;">keyboard_arrow_right</i>
-                  <strong>&nbsp; 6차시 &nbsp;</strong> 두개의 함수를 사용해 봅니다.
-                  <div class="mdl-layout-spacer"></div>
-                  <div class="mdl-card__category">중급</div>
-                </div>
-                <div class="mdl-card__actions mdl-card--border">
-                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="36">1</span>
-                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="37">2</span>
-                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="38">3</span>
-                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="39">4</span>
-                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="40">5</span>
-                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="41">6</span>
-                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="42">7</span>
-                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="43">8</span>
-                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="44">9</span>
-                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="45">10</span>
-                  
-                </div>
-                <div class="mdl-card__supporting-text mdl-card--border">
-                  순서대로 레슨을 선택하고 주어진 지문을 따라 학습을 합니다.                  
-                </div>
-              </div>              
-              
+              </li>
               <br>
-
-              <div class="lesson-card mdl-card mdl-shadow--2dp">
-                <div class="mdl-card__title" id="day7">
-                  <i class="material-icons theme-title-hour-of-code" style="border-radius: 12px;">keyboard_arrow_right</i>
-                  <strong>&nbsp; 7차시 &nbsp;</strong> 무한 반복을 활용해 명령어 갯수를 줄여봅니다.
-                  <div class="mdl-layout-spacer"></div>
-                  <div class="mdl-card__category">중급</div>
+              <li>
+                <div class="collapsible-header" id="day6">
+                  <div class="card lesson-card">
+                    <div class="card-title">
+                      <a class="btn-floating disabled"><i class="material-icons theme-title-hour-of-code">keyboard_arrow_right</i></a>
+                      <strong>6차시</strong> 두개의 함수를 사용해 봅니다.
+                      <div class="level theme-title-hour-of-code right">중급</div>
+                    </div>
+                    <div class="card-action">
+                      <a class="btn-floating" data-stage="36">1</a>
+                      <a class="btn-floating" data-stage="37">2</a>
+                      <a class="btn-floating" data-stage="38">3</a>
+                      <a class="btn-floating" data-stage="39">4</a>
+                      <a class="btn-floating" data-stage="40">5</a>
+                      <a class="btn-floating" data-stage="41">6</a>
+                      <a class="btn-floating" data-stage="42">7</a>
+                      <a class="btn-floating" data-stage="43">8</a>
+                      <a class="btn-floating" data-stage="44">9</a>
+                      <a class="btn-floating" data-stage="45">10</a>
+                    </div>
+                  </div>
                 </div>
-                <div class="mdl-card__actions mdl-card--border">
-                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="07-01">1</span>
-                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="07-02">2</span>
-                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="07-03">3</span>
-                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="07-04">4</span>
-                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="48">5</span>
-                  <span class="mdl-button mdl-js-button mdl-button--icon mdl-button--fab" data-stage="07-06">6</span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="07-05">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button2_challenge.png" />
-                    <span class="mdl-chip__text" >도전</span>
-                  </span>
+                <div class="collapsible-body">
+                  <div class="card-content">
+                  </div>
                 </div>
-                <div class="mdl-card__supporting-text mdl-card--border">
-                  순서대로 레슨을 선택하고 주어진 지문을 따라 학습을 합니다.                  
-                </div>
-              </div>
-
+              </li>
               <br>
-
-              <div class="lesson-card mdl-card mdl-shadow--2dp">
-                <div class="mdl-card__title" id="day8">
-                  <i class="material-icons theme-title-hour-of-code" style="border-radius: 12px;">keyboard_arrow_right</i>
-                  <strong>&nbsp; 8차시 &nbsp;</strong> 무한 반복을 반복해서 연습합니다.
-                  <div class="mdl-layout-spacer"></div>
-                  <div class="mdl-card__category">중급</div>
+              <li>
+                <div class="collapsible-header" id="day7">
+                  <div class="card lesson-card">
+                    <div class="card-title">
+                      <a class="btn-floating disabled"><i class="material-icons theme-title-hour-of-code">keyboard_arrow_right</i></a>
+                      <trong>7차시</strong> 무한 반복을 활용해 명령어 갯수를 줄여봅니다.
+                      <div class="level theme-title-hour-of-code right">중급</div>
+                    </div>
+                    <div class="card-action">
+                      <a class="btn-floating" data-stage="07-01">1</a>
+                      <a class="btn-floating" data-stage="07-02">2</a>
+                      <a class="btn-floating" data-stage="07-03">3</a>
+                      <a class="btn-floating" data-stage="07-04">4</a>
+                      <a class="btn-floating" data-stage="48">5</a>
+                      <a class="btn-floating" data-stage="07-06">6</a>
+                      <a class="chip" data-stage="07-05">
+                        <img src="/3dbot_portal/img/student-lecture-button2_challenge.png" />
+                        <span>도전</span>
+                      </a>
+                    </div>
+                  </div>
                 </div>
-                <div class="mdl-card__actions mdl-card--border">
-                  <span class="mdl-chip mdl-chip--contact" data-stage="0128">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button4_review.png" />
-                    <span class="mdl-chip__text" >복습1</span>
-                  </span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="08-01">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button4_review.png" />
-                    <span class="mdl-chip__text" >복습2</span>
-                  </span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="47">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button4_review.png" />
-                    <span class="mdl-chip__text" >복습3</span>
-                  </span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="49">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button4_review.png" />
-                    <span class="mdl-chip__text" >복습4</span>
-                  </span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="50">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button4_review.png" />
-                    <span class="mdl-chip__text" >복습5</span>
-                  </span>
+                <div class="collapsible-body">
+                  <div class="card-content">                    
+                  </div>
                 </div>
-                <div class="mdl-card__supporting-text mdl-card--border">
-                  순서대로 레슨을 선택하고 주어진 지문을 따라 학습을 합니다.                  
-                </div>
-              </div>
-
+              </li>
               <br>
-
-              <div class="lesson-card mdl-card mdl-shadow--2dp">
-                <div class="mdl-card__title" id="day9">
-                  <i class="material-icons theme-title-hour-of-code" style="border-radius: 12px;">keyboard_arrow_right</i>
-                  <strong>&nbsp; 9차시 &nbsp;</strong> 최종 응용 과제를 풀어 봅니다.
-                  <div class="mdl-layout-spacer"></div>
-                  <div class="mdl-card__category">고급</div>
+              <li>
+                <div class="collapsible-header" id="day8">
+                  <div class="card lesson-card">
+                    <div class="card-title">
+                      <a class="btn-floating disabled"><i class="material-icons theme-title-hour-of-code">keyboard_arrow_right</i></a>
+                      <strong>8차시</strong> 무한 반복을 반복해서 연습합니다.
+                      <div class="level theme-title-hour-of-code right">중급</div>
+                    </div>
+                    <div class="card-action">
+                      <a class="chip" data-stage="0128">
+                        <img src="/3dbot_portal/img/student-lecture-button4_review.png" />
+                        <span>복습1</span>
+                      </a>
+                      <a class="chip" data-stage="08-01">
+                        <img src="/3dbot_portal/img/student-lecture-button4_review.png" />
+                        <span>복습2</span>
+                      </a>
+                      <a class="chip" data-stage="47">
+                        <img src="/3dbot_portal/img/student-lecture-button4_review.png" />
+                        <span>복습3</span>
+                      </a>
+                      <a class="chip" data-stage="49">
+                        <img src="/3dbot_portal/img/student-lecture-button4_review.png" />
+                        <span>복습4</span>
+                      </a>
+                      <a class="chip" data-stage="50">
+                        <img src="/3dbot_portal/img/student-lecture-button4_review.png" />
+                        <span>복습5</span>
+                      </a>
+                    </div>
+                  </div>
                 </div>
-                <div class="mdl-card__actions mdl-card--border">
-                  <span class="mdl-chip mdl-chip--contact" data-stage="0115">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button3_warfield.png" />
-                    <span class="mdl-chip__text" >전장1</span>
-                  </span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="0116">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button3_warfield.png" />
-                    <span class="mdl-chip__text" >전장2</span>
-                  </span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="0117">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button3_warfield.png" />
-                    <span class="mdl-chip__text" >전장3</span>
-                  </span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="0118">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button3_warfield.png" />
-                    <span class="mdl-chip__text" >전장4</span>
-                  </span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="0119">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button3_warfield.png" />
-                    <span class="mdl-chip__text" >전장5</span>
-                  </span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="0120">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button3_warfield.png" />
-                    <span class="mdl-chip__text" >전장6</span>
-                  </span>
-                </div>
-                <div class="mdl-card__supporting-text mdl-card--border">
-                  순서대로 레슨을 선택하고 주어진 지문을 따라 학습을 합니다.                  
-                </div>
-              </div>
-
-              <br>
-
-              <div class="lesson-card mdl-card mdl-shadow--2dp">
-                <div class="mdl-card__title" id="day10">
-                  <i class="material-icons theme-title-hour-of-code" style="border-radius: 12px;">keyboard_arrow_right</i>
-                  <strong>&nbsp; 10차시 &nbsp;</strong> 최종 응용 과제를 풀어 봅니다.
-                  <div class="mdl-layout-spacer"></div>
-                  <div class="mdl-card__category">고급</div>
-                </div>
-                <div class="mdl-card__actions mdl-card--border">
-                  <span class="mdl-chip mdl-chip--contact" data-stage="0121">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button3_warfield.png" />
-                    <span class="mdl-chip__text" >전장1</span>
-                  </span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="0122">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button3_warfield.png" />
-                    <span class="mdl-chip__text" >전장2</span>
-                  </span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="0123">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button3_warfield.png" />
-                    <span class="mdl-chip__text" >전장3</span>
-                  </span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="0124">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button3_warfield.png" />
-                    <span class="mdl-chip__text" >전장4</span>
-                  </span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="0125">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button3_warfield.png" />
-                    <span class="mdl-chip__text" >전장5</span>
-                  </span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="0126">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button3_warfield.png" />
-                    <span class="mdl-chip__text" >전장6</span>
-                  </span>
-                  <span class="mdl-chip mdl-chip--contact" data-stage="0130">
-                    <img class="mdl-chip__contact" src="/3dbot_portal/img/student-lecture-button3_warfield.png" />
-                    <span class="mdl-chip__text" >전장7</span>
-                  </span>
-                </div>
-                <div class="mdl-card__supporting-text mdl-card--border">
-                  순서대로 레슨을 선택하고 주어진 지문을 따라 학습을 합니다.                  
-                </div>
-              </div>
-              
-              <br>
-
-              <div class="lesson-card mdl-card mdl-shadow--2dp">
-                <div class="mdl-card__title" id="day11">
-                  <i class="material-icons theme-title-hour-of-code" style="border-radius: 12px;">keyboard_arrow_right</i>
-                  <strong>&nbsp; 보드 게임 &nbsp;</strong> 보드 게임을 활용한 협동 코딩 (언플러그드 활동)
-                  <div class="mdl-layout-spacer"></div>
-                  <div class="mdl-card__category">초급</div>
-                </div>
-                <div class="mdl-card__actions mdl-card--border">
-                </div>
-                <div class="mdl-card__supporting-text mdl-card--border">
-                  준비 중입니다.
-                </div>
-              </div>
-
-              <br>
-
-              <div class="lesson-card mdl-card mdl-shadow--2dp">
-                <div class="mdl-card__title" id="day12">
-                  <i class="material-icons theme-title-hour-of-code" style="border-radius: 12px;">keyboard_arrow_right</i>
-                  <strong>&nbsp; 아두이노 로봇 &nbsp;</strong> 로봇에게 명령하기
-                  <div class="mdl-layout-spacer"></div>
-                  <div class="mdl-card__category">초급</div>
-                </div>
-                <div class="mdl-card__actions mdl-card--border">
-                </div>
-                <div class="mdl-card__supporting-text mdl-card--border">
-                  준비 중입니다.
-                </div>
-              </div>
-              
-              <br>
-
-              <div class="lesson-card mdl-card mdl-shadow--2dp">
-                <div class="mdl-card__title" id="day13">
-                  <i class="material-icons theme-title-hour-of-code" style="border-radius: 12px;">keyboard_arrow_right</i>
-                  <strong>&nbsp; 로봇 개인화 &nbsp;</strong> 여러분만의 로봇을 만들어 보세요.
-                  <div class="mdl-layout-spacer"></div>
-                  <div class="mdl-card__category">중급</div>
-                </div>
-                <div class="mdl-card__actions mdl-card--border">
-                  <p>
-                    <a href="./hour-of-code_back.html"><button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" >1 Hour of Code </button></a> 에서는 여러분만의 개성있는 로봇을 직접 만들 수 있습니다. 그리고 만든 로봇을 직접 조정해서 위의 미션들을 다시 풀 수 있습니다.
-                  </p>
-                </div>
-                <div class="mdl-card__supporting-text mdl-card--border">
-                  버튼을 눌러 보세요.
-                </div>
-              </div>
-
-              <br>
-
-              <div class="lesson-card mdl-card mdl-shadow--2dp">
-                <div class="mdl-card__title" id="day14">
-                  <i class="material-icons theme-title-hour-of-code" style="border-radius: 12px;">keyboard_arrow_right</i>
-                  <strong>&nbsp; 퍼즐 제작 &nbsp;</strong> 여러분만의 퍼즐을 제작해 보세요.
-                  <div class="mdl-layout-spacer"></div>
-                  <div class="mdl-card__category">고급</div>
-                </div>
-                <div class="mdl-card__actions mdl-card--border">
-                  <p>
-                    <a href="./editor.html"><button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent"> 나만의 코딩 퍼즐 만들기</button></a> 에서는 여러분만의 코딩퍼즐을 만들 수 있습니다. 여러분의 상상력을 펼쳐 보세요.
-                  </p>
-                  <p>
-                    <button id="loadFromEditedStage" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent"> 코딩퍼즐 불러 오기 </button> 지금 여러분이 만든 코딩퍼즐을 여기에서 직접 플레이해볼 수 있습니다.
-                  </p>
-                </div>
-                <div class="mdl-card__supporting-text mdl-card--border">
-                  버튼을 눌러 보세요.
-                </div>
-              </div>
-
-              <br>
-
-              <div class="lesson-card mdl-card mdl-shadow--2dp">
-                <div class="mdl-card__title" id="day15">
-                  <i class="material-icons theme-title-hour-of-code" style="border-radius: 12px;">keyboard_arrow_right</i>
-                  <strong>&nbsp; 퍼즐 공유 &nbsp;</strong> 여러분이 만든 코딩퍼즐을 친구와 공유해서 누가 더 나은 퍼즐을 만들었는지 대결해 보아요.
-                  <div class="mdl-layout-spacer"></div>
-                  <div class="mdl-card__category">고급</div>
-                </div>
-                <div class="mdl-card__actions mdl-card--border">
-                </div>
-                <div class="mdl-card__supporting-text mdl-card--border">
-                  준비 중입니다.
-                </div>
-              </div>
-
-              <br>
-
-              <script type="text/javascript">
-                    $.threedbot = function(module) {
-                      return { TOTAL_MEMORY: 268435456,
-                          errorhandler: null, compatibilitycheck: null,
-                          splashStyle: "Light",
-                          backgroundColor: "#222C36",
-                          dataUrl:  "/3dbot_portal/" + module + "/Release/webbuild.data",
-                          codeUrl:  "/3dbot_portal/" + module + "/Release/webbuild.js",
-                          memUrl:   "/3dbot_portal/" + module + "/Release/webbuild.mem",
-                          asmUrl:   "/3dbot_portal/" + module + "/Release/webbuild.asm.js",
-                          OnMissionComplete: function() {
-                            if (this.previousStage == null) return;
-                            this.previousStage.addClass('mdl-button--colored-done');
-                            $next = this.previousStage.next();
-                            if ( ($next.is('span') || $next.is('button')) && $next.attr('data-stage') != null)
-                              this.loadStage( $next );
-                            else {
-                              this.previousStage.removeClass('mdl-button--clicked');
-                              this.previousStage.parent().next().empty();
-                            }
-                          },
-                          onRuntimeInitialized: function() {
-                            setTimeout( function() {
-                              $unity.fadeOut("slow", function() {
-                                $unity.detach();
-                                $('#loading').detach();
-                              });
-                            }, 20000);
-                          },
-                          loadStage: function($me) {
-                            if (this.previousStage != null) {
-                              this.previousStage.removeClass('mdl-button--clicked');
-                              this.previousStage.parent().next().empty();
-                            }
-                            $me.addClass('mdl-button--clicked');
-                            setTimeout(function() {
-                              Module.stageData = null;
-                              $.get('/3dbot_portal/stage/' + $me.attr('data-stage') + '.html',
-                              function(data) {
-                                  Module.stageData = data;
-                              }).always( function() {
-                                  $unity.detach();
-                                  $next = $me.parent().next();
-                                  $next.empty().append(Module.stageData);
-                                  $next.append($unity);
-                                  $unity.show();
-                                  $('.fullscreen').on('click', function() {
-                                      $('.template-wrap canvas').css('left', 0); // 풀스크린시, 중앙에 위치시키기
-                                      SetFullscreen(1);
-                                  });
-                                  Module.previousStage = $me;
-
-                                  if (Module.robotData == null) {
-                                    Module.robotData = localStorage.getItem('latestCustomizedRobotInfo');
-                                    if (Module.robotData != null)
-                                      Module.SendMessage( 'UI', 'loadRobotFromString', Module.robotData);
-                                  }
-                                  $.get("/3dbot_portal/stage/" + $me.attr('data-stage') + ".json", function(stageData) {
-                                    Module.SendMessage( 'Level', 'setLevelWithString', JSON.stringify(stageData));
-                                  window.location.hash = $next.parents('.lesson-card').children('.mdl-card__title').attr('id');
-                                  });
-                              });
-                            }, 1000);
-                          },
-                          previousStage : null,
-                          stageData: null,
-                          robotData: null
-                      }
-                    };
-
-                    $(document).ready(function() {
-                        $.ajaxSetup({cache: false});
-                        $unity = $('.template');
-
-                        $('.fullscreen').on('click', function() {
-                          $('.template-wrap canvas').css('left', 0); // 풀스크린시, 중앙에 위치시키기
-                          SetFullscreen(1);
-                        });
-                        $('.lesson-card .mdl-button, .lesson-card .mdl-chip--contact').on('click', function() {    
-                          if ($(this).attr('id') != 'loadFromEditedStage') {
-                            Module.loadStage($(this));
-                            return;
-                          }
-                          if (Module.previousStage != null) {
-                              Module.previousStage.removeClass('mdl-button--clicked');
-                              $next = Module.previousStage.next();
-                              Module.previousStage.parent().next().empty();
-                          }
-                          $unity.detach();
-                          $next = $(this).parent().next();
-                          Module.stageData = localStorage.getItem('latestEditedStage');
-                          if (Module.stageData == null) return;
-                          $next.empty().append($unity);
-                          $unity.show();
-                          Module.previousStage = $(this);
-                          Module.SendMessage('Level', 'setLevelWithString', Module.stageData);
-                        });
-                    }).keyup( function(e) {
-                          if (e.keyCode == 27) { // 풀스크린 빠져나올 때, 중앙에 위치시키기
-                            $('.template-wrap canvas').css('left', '-50%');
-                          }
-                    });
-                    Module = $.threedbot('per_stage');
+                <div class="collapsible-body">
+                  <div class="card-content">
                     
-              </script>
-              <script src="/3dbot_portal/per_stage/Release/UnityLoader.js"></script>
-            </div>
-            <div class="mdl-cell mdl-cell-bottom mdl-cell--2-col"></div>
+                  </div>
+                </div>
+              </li>
+              <br>
+              <li>
+                <div class="collapsible-header" id="day9">
+                  <div class="card lesson-card">
+                    <div class="card-title">
+                      <a class="btn-floating disabled"><i class="material-icons theme-title-hour-of-code">keyboard_arrow_right</i></a>
+                      <strong>9차시</strong> 최종 응용 과제를 풀어 봅니다.
+                      <div class="level theme-title-hour-of-code right">고급</div>
+                    </div>
+                    <div class="card-action">
+                      <a class="chip" data-stage="0115">
+                        <img src="/3dbot_portal/img/student-lecture-button3_warfield.png" />
+                        <span>전장1</span>
+                      </a>
+                      <a class="chip" data-stage="0116">
+                        <img src="/3dbot_portal/img/student-lecture-button3_warfield.png" />
+                        <span>전장2</span>
+                      </a>
+                      <a class="chip" data-stage="0117">
+                        <img src="/3dbot_portal/img/student-lecture-button3_warfield.png" />
+                        <span>전장3</span>
+                      </a>
+                      <a class="chip" data-stage="0118">
+                        <img src="/3dbot_portal/img/student-lecture-button3_warfield.png" />
+                        <span>전장4</span>
+                      </a>
+                      <a class="chip" data-stage="0119">
+                        <img src="/3dbot_portal/img/student-lecture-button3_warfield.png" />
+                        <span>전장5</span>
+                      </a>
+                      <a class="chip" data-stage="0120">
+                        <img src="/3dbot_portal/img/student-lecture-button3_warfield.png" />
+                        <span>전장6</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapsible-body">
+                  <div class="card-content">
+                  </div>
+                </div>
+              </li>
+              <br>
+              <li>
+                <div class="collapsible-header" id="day10">
+                  <div class="card lesson-card">
+                    <div class="card-title">
+                      <a class="btn-floating disabled"><i class="material-icons theme-title-hour-of-code">keyboard_arrow_right</i></a>
+                      <strong>10차시</strong> 최종 응용 과제를 풀어 봅니다.  
+                      <div class="level theme-title-hour-of-code right">고급</div>
+                    </div>
+                    <div class="card-action">
+                      <a class="chip" data-stage="0121">
+                        <img src="/3dbot_portal/img/student-lecture-button3_warfield.png" />
+                        <span>전장1</span>
+                      </a>
+                      <a class="chip" data-stage="0122">
+                        <img src="/3dbot_portal/img/student-lecture-button3_warfield.png" />
+                        <span>전장2</span>
+                      </a>
+                      <a class="chip" data-stage="0123">
+                        <img src="/3dbot_portal/img/student-lecture-button3_warfield.png" />
+                        <span>전장3</span>
+                      </a>
+                      <a class="chip" data-stage="0124">
+                        <img src="/3dbot_portal/img/student-lecture-button3_warfield.png" />
+                        <span>전장4</span>
+                      </a>
+                      <a class="chip" data-stage="0125">
+                        <img src="/3dbot_portal/img/student-lecture-button3_warfield.png" />
+                        <span>전장5</span>
+                      </a>
+                      <a class="chip" data-stage="0126">
+                        <img src="/3dbot_portal/img/student-lecture-button3_warfield.png" />
+                        <span>전장6</span>
+                      </a>
+                      <a class="chip" data-stage="0130">
+                        <img src="/3dbot_portal/img/student-lecture-button3_warfield.png" />
+                        <span>전장7</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapsible-body">
+                  <div class="card-content">
+                  </div>
+                </div>
+              </li>
+              <br>
+              <li>
+                <div class="collapsible-header" id="day11">
+                  <div class="card lesson-card">
+                    <div class="card-title">
+                      <a class="btn-floating disabled"><i class="material-icons theme-title-hour-of-code">keyboard_arrow_right</i></a>
+                      <strong>보드 게임</strong> 보드 게임을 활용한 협동 코딩 (언플러그드 활동)  
+                      <div class="level theme-title-hour-of-code right">초급</div>
+                    </div>
+                    <div class="card-action">
+                      준비 중입니다.
+                    </div>
+                  </div>
+                </div>
+                <div class="collapsible-body">
+                  <div class="card-content">                    
+                  </div>
+                </div>
+              </li>
+              <br>
+              <li>
+                <div class="collapsible-header" id="day12">
+                  <div class="card lesson-card">
+                    <div class="card-title">
+                      <a class="btn-floating disabled"><i class="material-icons theme-title-hour-of-code">keyboard_arrow_right</i></a>
+                      <strong>아두이노 로봇</strong> 로봇에게 명령하기
+                      <div class="level theme-title-hour-of-code right">초급</div>
+                    </div>
+                    <div class="card-action">
+                      준비 중입니다.
+                    </div>
+                  </div>
+                </div>
+                <div class="collapsible-body">
+                  <div class="card-content">
+                  </div>
+                </div>
+              </li>
+              <br>
+              <li>
+                <div class="collapsible-header" id="day13">
+                  <div class="card lesson-card">
+                    <div class="card-title">
+                      <a class="btn-floating disabled"><i class="material-icons theme-title-hour-of-code">keyboard_arrow_right</i></a>
+                      <strong>로봇 개인화</strong> 여러분만의 로봇을 만들어 보세요.
+                      <div class="level theme-title-hour-of-code right">중급</div>
+                    </div>
+                    <div class="card-action">
+                      <p>
+                        <a class="btn" href="./hour-of-code_back.html">1 Hour of Code</a> 에서는 여러분만의 개성있는 로봇을 직접 만들 수 있습니다. 그리고 만든 로봇을 직접 조정해서 위의 미션들을 다시 풀 수 있습니다.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapsible-body">
+                  <div class="card-content">
+                  </div>
+                </div>
+              </li>
+              <br>
+              <li>
+                <div class="collapsible-header" id="day14">
+                  <div class="card lesson-card">
+                    <div class="card-title">
+                      <a class="btn-floating disabled"><i class="material-icons theme-title-hour-of-code">keyboard_arrow_right</i></a>
+                      <strong>퍼즐 제작</strong> 여러분만의 퍼즐을 제작해 보세요.
+                      <div class="level theme-title-hour-of-code right">고급</div>
+                    </div>
+                    <div class="card-action">
+                      <p>
+                        <a class="btn" href="./editor.html">나만의 코딩퍼즐 만들기</a> 에서는 여러분만의 코딩퍼즐을 만들 수 있습니다. 여러분의 상상력을 펼쳐 보세요.
+                      </p>
+                      <p>
+                        <a id="loadFromEditedStage" class="btn ">코딩퍼즐 불러 오기 </a> 지금 여러분이 만든 코딩퍼즐을 여기에서 직접 플레이해볼 수 있습니다.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapsible-body">
+                  <div class="card-content">
+                  </div>
+                </div>
+              </li>
+              <br>
+              <li>
+                <div class="collapsible-header" id="day15">
+                  <div class="card lesson-card">
+                    <div class="card-title">
+                      <a class="btn-floating disabled"><i class="material-icons theme-title-hour-of-code">keyboard_arrow_right</i></a>
+                      <strong>퍼즐 공유</strong> 여러분이 만든 코딩퍼즐을 친구와 공유해서 누가 더 나은 퍼즐을 만들었는지 대결해 보아요.
+                      <div class="level theme-title-hour-of-code right">고급</div>
+                    </div>
+                    <div class="card-action">
+                      준비 중입니다.
+                    </div>
+                  </div>
+                </div>
+                <div class="collapsible-body">
+                  <div class="card-content">
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
-        </section>
-        <!--footer-->
-        <footer class="mdl-mega-footer">
-          <div class="mdl-mega-footer--middle-section">
-            <div class="mdl-grid">
-              <div class="mdl-cell mdl-cell-bottom mdl-cell--2-col"></div>
-              <div class="mdl-cell mdl-cell-bottom mdl-cell--1-col">
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-wrapper">
+      <div class="container">
+        <footer class="page-footer">
+          <div class="container">
+            <div class="row grey-text text-darken-1">
+              <div class="col s3">
                 <img src="/3dbot_portal/img/makerslab_logo.png" style="width:100%;"/>
               </div>
-              <div class="mdl-cell mdl-cell-bottom mdl-cell--7-col">
-                <p class="mdl-typography--font-light">30018 세종특별자치시 조치원읍 돌마루5길 2 세영오피스텔 메이커스랩© 401호</p>
-                <p class="mdl-typography--font-light">전화: 010-5305-8680 &nbsp; 이메일: <a href="mailto:the.nayoung@gmail.com">김나영</a></p>
+              <div class="col s9">
+                30018 세종특별자치시 조치원읍 돌마루5길 2 세영오피스텔 메이커스랩© 401호
+                <p>전화: 010-5305-8680 &nbsp; 이메일: <a href="mailto:the.nayoung@gmail.com">김나영</a></p>
                 <hr>
-                <p class="mdl-typography--font-lighter">본 콘텐츠의 저작권은 제공처에 있으며, 이를 무단 이용하는 경우, 저작권법 등에 따라 법적책임을 질 수 있습니다. </p>
-                <p class="mdl-typography--font-light">Copyright © 2016, 2017 MakersLab, Inc. All rights reserved. </p>
-              </div>
-              <div class="mdl-cell mdl-cell-bottom mdl-cell--2-col"></div>
+                <p style="font-size: 0.8rem;">본 콘텐츠의 저작권은 제공처에 있으며, 이를 무단 이용하는 경우, 저작권법 등에 따라 법적책임을 질 수 있습니다. </p>
+              </div>    
             </div>
           </div>
+          <div class="container grey-text text-darken-1 center">
+              Copyright © 2014 - 2017 MakersLab, Inc. All rights reserved.
+          <a class="right"></a>
+          </div>
         </footer>
-      </main>
+      </div>
     </div>
+
+    <script type="text/javascript">
+    $.threedbot = function(module) {
+      return { TOTAL_MEMORY: 268435456,
+          errorhandler: null, compatibilitycheck: null,
+          splashStyle: "Light",
+          backgroundColor: "#222C36",
+          dataUrl:  "/3dbot_portal/" + module + "/Release/webbuild.data",
+          codeUrl:  "/3dbot_portal/" + module + "/Release/webbuild.js",
+          memUrl:   "/3dbot_portal/" + module + "/Release/webbuild.mem",
+          asmUrl:   "/3dbot_portal/" + module + "/Release/webbuild.asm.js",
+          OnMissionComplete: function() {
+            if (Module.isFullScreen == true) {
+              SetFullscreen(0);
+              $('.template-wrap canvas').css('left', '-50%');
+              Module.isFullScreen = false;
+            }
+            
+            if (this.previousStage == null) return;
+            this.previousStage.addClass('button-done');
+            $next = this.previousStage.next();            
+            if ( ($next.is('span') || $next.is('button') || $next.is('a')) && $next.attr('data-stage') != null)
+              this.loadStage( $next );
+            else {
+              this.previousStage.removeClass('button-clicked');
+              this.previousStage.parent().next().empty();
+            }
+          },
+          onRuntimeInitialized: function() {
+            setTimeout( function() {
+              $unity.fadeOut("slow", function() {
+                $unity.detach();
+                $('#loading').detach();
+              });
+            }, 20000);
+          },
+          loadStage: function($me) {
+            if (this.previousStage != null) {
+              this.previousStage.removeClass('button-clicked');
+              this.previousStage.parent().parent().parent().next().empty();
+            }
+            $me.addClass('button-clicked');
+            setTimeout(function() {
+              Module.stageData = null;
+              $.get('/3dbot_portal/stage/' + $me.attr('data-stage') + '.html',
+              function(data) {
+                  Module.stageData = data;
+              }).always( function() {
+                  $unity.detach();
+                  $next = $me.parent().parent().parent().next();
+                  $next.empty().append(Module.stageData);
+                  $next.append($unity);
+                  $unity.show();
+                  $('.fullscreen').on('click', function() {
+                      $('.template-wrap canvas').css('left', 0); // 풀스크린시, 중앙에 위치시키기
+                      Module.isFullScreen = true;
+                      SetFullscreen(1);
+                  });
+                  Module.previousStage = $me;
+
+                  if (Module.robotData == null) {
+                    Module.robotData = localStorage.getItem('latestCustomizedRobotInfo');
+                    if (Module.robotData != null)
+                      Module.SendMessage( 'UI', 'loadRobotFromString', Module.robotData);
+                  }
+                  $.get("/3dbot_portal/stage/" + $me.attr('data-stage') + ".json", function(stageData) {
+                    Module.SendMessage( 'Level', 'setLevelWithString', JSON.stringify(stageData));
+                    window.location.hash = $next.prev().attr('id');
+                  });
+              });
+            }, 1000);
+          },
+          previousStage : null,
+          stageData: null,
+          robotData: null,
+          isFullScreen: false
+      }
+    };
+
+    $(document).ready(function() {
+        $.ajaxSetup({cache: false});
+        $unity = $('.template');
+
+        $('.fullscreen').on('click', function() {
+          $('.template-wrap canvas').css('left', 0); // 풀스크린시, 중앙에 위치시키기
+          SetFullscreen(1);
+        });
+        $('.btn-floating:not(.disabled), .chip').on('click', function() {    
+          if ($(this).parent().parent().parent().attr('id') != 'loadFromEditedStage') {
+            Module.loadStage($(this));
+            return;
+          }
+          if (Module.previousStage != null) {
+              Module.previousStage.removeClass('button-clicked');
+              $next = Module.previousStage.next();
+              Module.previousStage.parent().parent().parent().next().empty();
+          }
+          $unity.detach();
+          $next = $(this).parent().parent().parent().next();
+          Module.stageData = localStorage.getItem('latestEditedStage');
+          if (Module.stageData == null) return;
+          $next.empty().append($unity);
+          $unity.show();
+          Module.previousStage = $(this);
+          Module.SendMessage('Level', 'setLevelWithString', Module.stageData);
+        });
+    }).keyup( function(e) {
+          if (e.keyCode == 27) { // 풀스크린 빠져나올 때, 중앙에 위치시키기
+            Module.isFullScreen = false;
+            $('.template-wrap canvas').css('left', '-50%');
+          }
+    });
+    Module = $.threedbot('per_stage');
+    
+    </script>
+    <script src="/3dbot_portal/per_stage/Release/UnityLoader.js"></script>
   </body>
 </html>

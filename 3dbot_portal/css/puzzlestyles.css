@@ -18,6 +18,8 @@ body {
   margin: 0;
   padding: 0 20px auto;
   font-family: naum-barun-gothic-regular, "roboto", "Helvetica Neue", Arial, "맑은 고딕", malgun gothic, "돋움", Dotum, sans-serif;
+  background-color: #f5f5f5;
+  font-size: 1.0rem;
 }
 
 main {
@@ -34,179 +36,62 @@ a img {
   color: #eee;
 }
 
-.mdl-layout__header, .mdl-layout__header-row {
-  background-color: rgba(255,255,255,0.4);
-  height: 64px;
+.section-frontal {
+  height: 480px;
+  position: absolute;
+  background: url(/3dbot_portal/img/kid-on-ipad.jpg) center / cover;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  z-index: -1;
 }
 
-.layout-transparent {
-    background: url(/3dbot_portal/img/kid-on-ipad.jpg) center / cover;
-}
-
-.section--frontal {
-  height: 64px;
+.section-frontal .container {
   position: relative;
-  display: none;
+  top: 350px;
 }
 
-@media screen and (min-height: 640px) {
-  .layout-transparent {
-    background: url(/3dbot_portal/img/kid-on-ipad.jpg) center / cover;
-    min-height: 200px;
-  }
-
-  .section--frontal {
-    height: 130px;
-    position: relative;
-    display: block;
-  }
+.hidden-frontal {
+  height: 416px;
+  display: hidden;
 }
 
-@media screen and (min-height: 768px) {
-  .layout-transparent {
-    background: url(/3dbot_portal/img/kid-on-ipad.jpg) center / cover;
-    min-height: 300px;
-  }
-    
-  .section--frontal {
-    height: 200px;
-    position: relative;
-    display: block;
-  }
-
+.main-wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: white;
 }
 
-@media screen and (min-height: 840px) {
-  .layout-transparent {
-    background: url(/3dbot_portal/img/kid-on-ipad.jpg) center / cover;
-    min-height: 400px;
-  }
-    
-  .section--frontal {
-    height: 300px;
-    position: relative;
-    display: block;
-  }
+.card-content {
+  min-height: 150px;
 }
 
-@media screen and (min-height: 960px) {
-  .layout-transparent {
-    background: url(/3dbot_portal/img/kid-on-ipad.jpg) center / cover;
-    min-height: 500px;
-  }
-    
-  .section--frontal {
-    height: 400px;
-    position: relative;
-    display: block;
-  }
+.header-wrapper {
+  margin: 0;
+  background-color: rgba(255,255,255,0.4);
 }
 
-.mdl-layout .mdl-layout__drawer-button {
-  color: black;
-}
-
-.search-box {
-  -webkit-order: 2;
-  -ms-flex-order: 2;
-  order: 2;
-  margin-left: 16px;
-  margin-right: 16px;
-}
-
-.search-box .mdl-textfield__input {
-  color: rgba(0, 0, 0, 0.87);
-}
-
-
-header {
-  overflow: visible;
-}
-
-header .mdl-menu__container {
-  z-index: 50;
-  margin: 0 !important;
-}
-
-header .material-icons {
-  color: #767777 !important;
-}
-
-header .mdl-layout__drawer-button {
-  background: transparent;
-  color: #767777;
-}
-
-.mdl-layout__header-row .mdl-navigation .mdl-navigation__link {
-  color: #222;
-  font-weight: 700;
-  font-size: 1.1em;
-}
-
-header .mdl-button {
-  font-weight: 700;
-  font-size: 1.2em;
-}
-
-.mdl-textfield--expandable {
-  width: auto;
+nav {
+  box-shadow: 0 0 0 0 rgba(0,0,0,0.14);
+  background-color: transparent;
 }
 
 .logo-image {
+  margin: 5px;
   height: 80px;
 }
 
 .logo-horizontal {
-  height: 48px !important;
+  margin: 0px 4px;
+  padding: 2px;
+  height: 60px !important;
 }
 
-
-.section--frontal h3 {
-  
-}
-
-.section--frontal .mdl-grid {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
-.section--frontal h4 {
+.section-frontal{
   color: #eee;
   font-weight: 700;
   text-shadow: 1px 1px darkgray;
-  
-  /*-webkit-text-stroke: 1px lightgray;*/
-}
-
-.navigation-container {
-  /* Simple hack to make the overflow happen to the left instead... */
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  /*width: 800px;*/
-  transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-      width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.mdl-navigation {
-  /* ... and now make sure the content is actually LTR */
-  direction: ltr;
-  -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  /*width: 800px;*/
-}
-
-.mdl-navigation .mdl-navigation__link {
-  display: inline-block;
-  height: 64px;
-  line-height: 68px;    
-  border-bottom: 4px solid transparent;
-}
-
-.mdl-layout__header-row .mdl-navigation .mdl-navigation__link:hover {
-  border-bottom: 4px solid white; /* #8bc34a;*/
 }
 
 .subtitle {
@@ -214,67 +99,39 @@ header .mdl-button {
   margin: 0 0;
 }
 
-.content-section {
-
-  background-color: white;
-}
-
-.content-section .content-section-title {
-  margin-left: 12px;
-  padding-bottom: 24px;
-}
-
 .card-container {
   overflow: hidden;
 }
 
-.card-container .mdl-card__title {
-  background: transparent;
-  text-overflow: ellipsis;
-  height: auto;
+nav a, nav ul a {
+  color: black;
 }
 
-.card-container .mdl-card__media {
-  overflow: hidden;
-  background: transparent;
+nav a:hover, nav ul a:hover {
+  border-bottom: 4px solid white; /* #8bc34a;*/
+  font-weight: 900;
 }
 
-.card-container .mdl-card__media img {
-  width: 100%;
+nav .brand-logo:hover {
+  border-bottom: 0px solid white;
 }
 
-.card-container .mdl-card__title-text {
-  font-weight: 500;
-  font-size: 1.2em;
-  text-align: center;
-  overflow: hidden;
-  text-overflow: ellipsis;
+nav a.button-collapse:hover {
+  border-bottom: 0px solid white;
+  color: #f88977;
+  font-weight: 900;
 }
 
-.card-container .mdl-card__supporting-text {
-  font-style: 400;
-  height: auto;
-  padding-bottom: 24px;
-}
-
-.card-container .mdl-card__title {
-  text-align: center;
-  text-overflow: ellipsis;
-  min-width: 150px;
-}
-
-.page-topic {
-  line-height: 40px;
-  font-size: 1.6em;
-  font-weight: 700;
-  height: 60px;
+.theme-basic {
+  background-color: rgba(255,255,255,0.4);
+  color: black;
 }
 
 .theme-student {
   border: 2px solid #f88977;
 }
 
-.theme-student .theme-title-student, .theme-title-student {
+.theme-title-student {
   background-color: #f88977;  
   color: white;
 }
@@ -284,7 +141,7 @@ header .mdl-button {
   color: black;
 }
 
-h3.theme-text-student {
+.theme-text-student {
   color: #f88977;
   background-color: white;
 }
@@ -293,7 +150,7 @@ h3.theme-text-student {
   border: 2px solid #4987b0;
 }
 
-.theme-educator .theme-title-educator {
+.theme-title-educator {
   background-color: #4987b0;
   color: white;
 }
@@ -303,9 +160,8 @@ h3.theme-text-student {
   color: black;
 }
 
-
-.theme-educator .theme-text-educator {
-  background-color: #4987b0;
+.theme-text-educator {
+  color: #4987b0;
   background-color: white;
 }
 
@@ -313,7 +169,7 @@ h3.theme-text-student {
   border: 2px solid #29b5a0;
 }
 
-.theme-hour-of-code .theme-title-hour-of-code, .theme-title-hour-of-code {
+.theme-title-hour-of-code {
   background-color: #29b5a0;
   color: white;
 }
@@ -337,142 +193,15 @@ h3.theme-text-student {
   color:white;
 }
 
-.theme-map-editor .theme-title-map-editor, .theme-title-map-editor {
+.theme-title-map-editor {
   background-color: #f89c41;
   color: white;
 }
 
-.theme-map-editor .theme-text-map-editor {
+.theme-text-map-editor {
   color: #f89c41;
   background-color: white;
 }
-
-.footer {
-  background-color: #fafafa;
-  position: relative;
-}
-
-.footer a:hover {
-  color: #8bc34a;
-}
-
-.footer .mdl-mega-footer--middle-section::after {
-  border-bottom: none;
-}
-
-.drawer-separator {
-  height: 1px;
-  background-color: #dcdcdc;
-  margin: 8px 0;
-}
-
-.mdl-layout__drawer .mdl-layout-title {
-  margin-top: 20px;
-  margin-left: -10px;
-  text-align: center;
-}
-
-.mdl-layout__drawer .mdl-navigation__link {
-  font-size: 1.2em;
-}
-
-.puzzle-icon {
-  padding: 0px;
-  width: 24px;
-  height: 24px;
-}
-
-.mdl-list__item {
-  border: 1px solid darkgrey;
-  border-radius: 4px;
-  display: block;
-} 
-
-.mdl-list__item-no-border {
-  border: 0;
-}
-
-.mdl-button--colored-done {
-  background-color: greenyellow !important;
-  color: white;
-}
-
-.lesson-card {
-  width: 100%;
-  min-height: 100px;
-}
-
-.lesson-card .mdl-card__title{
-    background-color:#ace3dc;
-    color: #222;
-}
-
-.lesson-card .mdl-card__supporting-text {
-  width: 95%;
-}
-
-.lesson-card .mdl-card__category {
-  text-align: center;
-  background-color:#29b5a0;
-  color: white;
-  width: 70px;
-  border-radius: 3px;
-}
-
-.lesson-card .mdl-card__actions {
-  background-color: #a3a3a3;
-}
-
-.lesson-card .mdl-card__actions .mdl-button--raised {
-  
-}
-
-.lesson-card .mdl-card__actions .mdl-button--accent {
-  background-color: rgb(255,64,129) !important;
-  color: white;
-}
-
-
-.lesson-card .mdl-card__actions .mdl-button--icon {
-  line-height: 32px;
-  font-size: 1em;
-}
-
-.lesson-card .mdl-button--clicked {
-  background-color: rgb(255,64,129) !important;
-  color: white !important;
-}
-
-.lesson-card .mdl-color--teal {
-  background-color: #f88977 !important;
-  color: white;
-  margin: 4px;
-}
-
-.mdl-chip--contact {
-  height: 40px;
-  line-height: 40px;
-  margin: 0px 0;
-  color: darkgray;
-  border-radius: 20px;
-  background-color: white;
-  font-size: 1em;
-}
-
-.mdl-chip--contact img {
-  margin: 4px 4px;
-}
-
-.lesson-card .mdl-button {
-    background-color: white;
-    color: darkgray;
-}
-
-.lesson-card .mdl-card__supporting-text {
-  background-color: lightgrey;
-  width: 100%;
-}
-
 
 .info-feature, .info-subfeature {
   display: table;
@@ -480,13 +209,12 @@ h3.theme-text-student {
 }
 
 .info-subfeature-span {
-  text-align: center;
   border-radius: 5px;
   color: white;
   background-color: darkblue; 
   display: inline-block;
   font-size: 0.7em;
-  width: 150px;
+  width: 200px;
 }
 
 .info-feature-span {
@@ -496,7 +224,7 @@ h3.theme-text-student {
   background-color: #f49c30; 
   display: inline-block;
   font-size: 0.7em;
-  width: 200px;
+  width: 250px;
 }
 
 .info-feature:before, .info-feature:after {
@@ -508,18 +236,6 @@ h3.theme-text-student {
   width: 45%;
 }
 
-.mdl-typography--font-lighter {
-  font-size: 12px;
-}
-
-.info-centering {
-  text-align: center;
-}
-
-.info-centering img {
-  width: 100%;
-}
-
 .info-title {
   display: table;
   margin: 0 0 20px;
@@ -529,8 +245,132 @@ h3.theme-text-student {
   border-style: solid;
   border-width: 0 0 0 7px;
 }
+
 .info-text {
   font-size: 1.2em;
+}
+
+.footer-wrapper {
+  background-color: #f5f5f5;
+}
+
+.footer-copyright {
+  border-radius: 10px 10px 0 0;
+}
+
+footer.page-footer {
+  background-color: #f5f5f5 !important;
+  color: #757575 !important;
+}
+
+footer.page-footer::after {
+  border-bottom: none;
+}
+
+.puzzle-icon {
+  padding: 0px;
+  width: 24px;
+  height: 24px;
+}
+
+.button-done {
+  background-color: greenyellow !important;
+  color: white;
+}
+
+.collapsible {
+  border-width: 0;
+  box-shadow: 0 0 0 0 rgba(0,0,0,0);
+}
+
+.collapsible-header, .collapsible-body {
+  border-bottom-width: 0;
+}
+
+.lesson-card {
+  width: 100%;
+}
+
+.lesson-card .card-title {
+    background-color:#ace3dc;
+    color: #222;
+}
+
+.lesson-card .card-action {
+  background-color: #a3a3a3;
+}
+
+.lesson-card .level {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  background-color:#29b5a0;
+  color: white;
+  font-size: 0.7em;
+  line-height: 30px;
+  height: 30px;
+  border-radius: 3px;
+  margin: 7px 5px;
+}
+
+.lesson-card .card-action .button-accent {
+  background-color: rgb(255,64,129) !important;
+  color: white;
+}
+
+.lesson-card .button-clicked {
+  background-color: rgb(255,64,129) !important;
+  color: white !important;
+}
+
+.lesson-card .color-teal {
+  background-color: #f88977 !important;
+  color: white;
+  margin: 4px;
+}
+
+.lesson-card .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
+  margin-right: 5px;
+}
+
+.lesson-card .btn-floating {
+  text-align: center;
+  background-color: white;
+  color: darkgray;
+}
+
+.collapsible-header i {
+  text-align: center;
+  width: 100%;
+}
+
+.lesson-card .chip {
+  margin: 0 5px;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 20px;
+  color: darkgray !important;
+  padding: 0 10px 0 0;
+  background-color: white;
+}
+
+.lesson-card .chip img {
+  margin: 4px;
+}
+
+.lesson-card .card-content {
+  background-color: lightgrey;
+  width: 100%;
+}
+
+.horizontal .card-image img {
+  border-radius: 50% !important;
+}
+
+.collapsible .collapsible-body {
+  background-color: lightblue;
+  color: darkslategray;
 }
 
 .curriculum {
@@ -574,9 +414,9 @@ h3.theme-text-student {
   right: 10px;
 }
 
+
 .puzzlecraft-title {
   color: deepskyblue;
-
 }
 
 .puzzlecraft-container {
@@ -585,4 +425,4 @@ h3.theme-text-student {
   background-image: url('/3dbot_portal/img/puzzlecraft-screen.png');
 }
 
-.puzzlecraft-load-btn { position: relative; z-index: 100; left: -100px; bottom: 100px;}
+.puzzlecraft-load-btn { position: relative; z-index: 100; bottom: 100px;}

@@ -10,278 +10,290 @@
     <!-- Page styles -->
     <link rel="stylesheet" href="/3dbot_portal/css/nanum-barun-gothic-light.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-    <link rel="stylesheet" href="/3dbot_portal/css/puzzlestyles.css">
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link rel="stylesheet" href="./css/puzzlestyles.css">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script src="/3dbot_portal/js/puzzle.js"></script>
   </head>
   <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <!--header-->
-      <header class="mdl-layout__header">
-        <div class="mdl-layout__header-row" style="background-color: #f0f0f0;">
-            <a href="/3dbot_portal/index.html">
-            <img class="logo-image logo-horizontal" src="/3dbot_portal/img/logo_h.png">
+    <div class="header-wrapper">
+      <div class="container">
+        <nav>
+          <div class="nav-wrapper">
+            <a href="/3dbot_portal/index.html" class="brand-logo">
+              <img class="logo-image logo-horizontal" src="/3dbot_portal/img/logo_h.png">
             </a>
-          <div class="mdl-layout-spacer"></div>
-          <!--
-          <div class="search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
-            <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
-              <i class="material-icons">search</i>
-            </label>
-            <div class="mdl-textfield__expandable-holder">
-              <input class="mdl-textfield__input" type="text" id="search-field">
-            </div>
+            <a href="#" data-activates="mobile-side-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="./about.html"> About 코딩퍼즐 </a>
+              <li><a href="./practice.html">코딩퍼즐 학습</a>
+              <li><a href="./hour-of-code.html">1 Hour of Code</a>
+              <li><a href="./editor.html">코딩퍼즐 만들기</a>
+            </ul>
+            <ul class="side-nav" id="mobile-side-nav">
+              <a href="./index.html"><img class="logo-image " src="/3dbot_portal/img/logo_colored.png"></a>
+              <li><br>
+              <li><br>
+              <li><a href="./about.html">About 코딩퍼즐</a>
+              <li><a href="./practice.html">코딩퍼즐 학습</a>
+              <li><a href="./hour-of-code.html">1 Hour Of Code</a>          
+              <li><a href="./editor.html">코딩퍼즐 만들기</a>
+            </ul>
           </div>
-          -->
-          <div class="navigation-container">
-            <nav class="mdl-navigation">
-              <a class="mdl-navigation__link" href="./about.html"> About 코딩퍼즐 </a>
-              <a class="mdl-navigation__link" href="./practice.html">코딩퍼즐 학습</a>
-              <a class="mdl-navigation__link" href="./hour-of-code.html">1 Hour of Code</a>
-              <a class="mdl-navigation__link" href="./editor.html">코딩퍼즐 만들기</a>
-            </nav>
-          </div>
-        </div>
-      </header>
-       <div class="mdl-layout__drawer">
-        <span class="mdl-layout-title">
-          <a href="./index.html">
-            <img class="logo-image" src="/3dbot_portal/img/logo_colored.png">
-          </a>
-        </span>
-        <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="./about.html">About 코딩퍼즐</a>
-          <div class="drawer-separator"></div>
-          <a class="mdl-navigation__link" href="./practice.html">코딩퍼즐 학습</a>
-          <div class="drawer-separator"></div>
-          <a class="mdl-navigation__link" href="./hour-of-code.html">1 Hour Of Code</a>
-          <div class="drawer-separator"></div>
-          <a class="mdl-navigation__link" href="./editor.html">코딩퍼즐 만들기</a>
-          <div class="drawer-separator"></div>
-          <a class="mdl-navigation__link" href="./contact.html">연락처</a>
         </nav>
       </div>
-      
+    </div>
 
-      <!--main-->
-      <main role="main" class="mdl-layout__content">
-        <section class="content-section">
-          <div class="mdl-grid">
-            <div class="mdl-cell mdl-cell-bottom mdl-cell--2-col"></div>
-            <div class="mdl-cell mdl-cell-bottom mdl-cell--8-col">
+    <div class="main-wrapper">
+      <div class="container">
+        <div class="row">
+          <div>
+            <h5 class="info-title">코딩퍼즐 소개</h5>
+            <p class="center">
+              <img src="/3dbot_portal/img/info-1.png"/>
+            </p>
 
-
-              <h4 class="info-title">코딩퍼즐 소개</h4>
-              <p class="info-centering">
-                <img src="/3dbot_portal/img/info-1.png"/>
-              </p>
-
-              <p class="info-centering" style="font-size: 1.2em;">
+            <p class="center" style="font-size: 1.2em;">
                 "어려운 코딩, 초기 시작이 중요합니다. 포지 않는 근성, 끈기, 노력, Grit!<br> 전문화된 놀이교육을 통해 아동의 자율성, 코딩의 기개를 기르는 학습을 제공합니다."
-              </p>
+            </p>
 
-              <p><img width="100%" src="/3dbot_portal/img/info-2.png"></p>
+            <p>
+              <img class="responsive-img" src="/3dbot_portal/img/info-2.png">
+            </p>
 
-              <!--
-              <p style="background: url('/3dbot_portal/img/')">
-                코딩퍼즐은 한국현 1 Hour Of Code 프로그램을 제공하며, 누구나 무료로 소프트웨어 교육을 받을 수 있도록 개발된 소프트웨어 교육 플랫폼입니다. 2013년 한국 창의재단 과학융합 지원사업 연구를 모태로 하여 3년간 기획 및 연구되어 온 프로젝트이며 국내외 최우수 대학 공학 전문 출신의 대학 교수진들과 <strong>교육부 장관상 수상 21세기 융합 놀이 교육 전문 연구팀들</strong>이 참여하고 있습니다.
-              </p>
-              <p>
-                코딩 논리, 가장 쉽고 효과적으로 배울 수 있도록 체계화된 게임형 놀이 교육을 제공합니다. 홍익대학교와 함께 비영리로 운영되며 학교 선생님, 학생, 부모들 눈높이에 맞춘 다양한 소프트웨어 교육 프로그램을 무상으로 지원합니다.         
-              </p>
-              -->
-              <p class="info-centering"><button class="mdl-button mdl-js-button mdl-button--raised">Why 코딩 학습? 더 알아보러 가기</button></p>
+            <!--
+            <p style="background: url('/3dbot_portal/img/')">
+              코딩퍼즐은 한국현 1 Hour Of Code 프로그램을 제공하며, 누구나 무료로 소프트웨어 교육을 받을 수 있도록 개발된 소프트웨어 교육 플랫폼입니다. 2013년 한국 창의재단 과학융합 지원사업 연구를 모태로 하여 3년간 기획 및 연구되어 온 프로젝트이며 국내외 최우수 대학 공학 전문 출신의 대학 교수진들과 <strong>교육부 장관상 수상 21세기 융합 놀이 교육 전문 연구팀들</strong>이 참여하고 있습니다.
+            </p>
+            <p>
+              코딩 논리, 가장 쉽고 효과적으로 배울 수 있도록 체계화된 게임형 놀이 교육을 제공합니다. 홍익대학교와 함께 비영리로 운영되며 학교 선생님, 학생, 부모들 눈높이에 맞춘 다양한 소프트웨어 교육 프로그램을 무상으로 지원합니다.         
+            </p>
+            -->
 
-              <br>
+            <p class="center">
+              <a class="waves-effect waves-light btn">Why 코딩 학습? 더 알아보러 가기</a>
+            </p>
 
-              <h4 class="info-title">코딩퍼즐 교육의 특징</h4>
-              <p class="info-text info-centering"> "이 세상 모든 아이들의 코딩 학습을 'Fun'하게" </p>
-              <p><img width="100%" src="/3dbot_portal/img/info-3.png"></p>
+          </div>
+          <br>
 
-              <br>
+          <div>
+            <h5 class="info-title">코딩퍼즐 교육의 특징</h4>
+            <p class="center"> "이 세상 모든 아이들의 코딩 학습을 'Fun'하게" </p>
+            <p>
+              <img class="responsive-img" src="/3dbot_portal/img/info-3.png">
+            </p>
+          </div>        
+          <br>
 
-              <h4 class="info-feature"><span class="info-feature-span">자기주도 학습</span> </h4>
-
-              <div class="mdl-grid">
-                <div class="mdl-cell mdl-cell-bottom mdl-cell--6-col info-centering">
-                    <h4><span class="info-subfeature-span" style="position: relative; top: 30px;"> 게임모드</span></h4>
-                    <p class="info-centering" style="border-radius: 30px; border: 1px solid dimgray; padding: 30px 30px 100px 30px;">
-                    <img width="100%" src="/3dbot_portal/img/info-4.png">
-                    </p>
-                    <p class="info-centering" style="position: relative; top: -100px; padding: 0px 30px;">
-                        <strong>게임모드를 통해 자연스럽게 SW 코딩 알고리즘을 재미있게 익힐 수 있도록 유도</strong>
-                      </p>
-                   
-                </div>
-                <div class="mdl-cell mdl-cell-bottom mdl-cell--6-col" style="position: relative; top: 70px;">
-                  <p>
+          <div>
+            <div class="row">
+              <h4 class="info-feature">
+                <span class="info-feature-span">자기주도 학습</span> 
+              </h4>
+              <div class="col s5">
+                <h4 class="center">
+                  <span class="info-subfeature-span" style="position: relative; top: 30px;">게임모드</span>
+                </h4>
+                <p class="center" style="border-radius: 30px; border: 1px solid dimgray; padding: 30px 30px 100px 30px;">
+                  <img class="responsive-img" src="/3dbot_portal/img/info-4.png">
+                </p>
+                <p class="center"style="position: relative; top: -100px; padding: 0px 30px;">
+                  <strong>게임모드를 통해 자연스럽게 SW 코딩 알고리즘을 재미있게 익힐 수 있도록 유도</strong>
+                    
+              </div>
+              <div class="col s7" style="position: relative; top: 70px;">
+                <p>
                   코딩 퍼즐은 한국형 Hour of Code. "1시간 만에 배우는 코딩학습"을 제공하기 위해 기획되었습니다.
                   게임 모드를 통해 재미있고 자연스럽게 SW 코딩 알고리즘을 익힐 수 있습니다. 게임학습
                   특유의 매력은 누가 시키지 않아도 학생 스스로 능동적이며 자발적으로 참여하도록
                   유도한다는 것입니다.
-                  </p>
-                  <p>
-                    <button class="mdl-button mdl-js-button mdl-button--raised"> 지금 시작하기 <i class="material-icons">play_arrow</i></button>
-                  </p>
-                </div>
-
+                </p>
+                <p>
+                  <a class="waves-effect waves-light btn"> 지금 시작하기 
+                      <i class="material-icons">play_arrow</i>
+                  </a>
+                </p>
               </div>
+            </div>
+          </div>
+          <br>
 
-              <br>     
-
-              
-              <h4 class="info-feature"><span class="info-feature-span">실습 학습</span></h4>
-
-              <div class="mdl-grid">
-                <div class="mdl-cell mdl-cell-bottom mdl-cell--6-col" style="position: relative; top: 70px;">
-                  <p>
+          <div>
+            <div class="row">
+              <h4 class="info-feature">
+                <span class="info-feature-span">실습 학습</span>
+              </h4>
+              <div class="col s7" style="position: relative; top: 70px;">
+                <p>
                   학습 모드에서는 체계적인 코딩 커리큘럼을 제공합니다. 코딩교육에 필요한 순차, 함수, 반복,
                   조건을 주어진 과제를 통해 배우게 됩니다. 배운 내용은 복습할 수 있고 응용하여 다양한 패턴으로 심화 학습
                   할 수 있습니다.
-                  </p>
-                  <p>
+                </p>
+                <p>
                   학습 진행 사항을 한눈에 확인 할 수 있는 프로그램도 별도로 제공합니다. 각 난이도별 진행 상황과
                   알고리즘 패턴 별 진행상황을 확인할 수 있으며 사용자의 학습방향과 목표를 설정할 수 있습니다.
-                  </p>
-                  <p>
-                    <button class="mdl-button mdl-js-button mdl-button--raised"> 지금 시작하기 <i class="material-icons">play_arrow</i></button>
-                  </p>
-                </div>
-                <div class="mdl-cell mdl-cell-bottom mdl-cell--6-col info-centering">
-                    <h4><span class="info-subfeature-span" style="position: relative; top: 30px;">학습 모드</span></h4>
-                    <p class="info-centering" style="border-radius: 30px; border: 1px solid dimgray; padding: 30px 30px 100px 30px;">
-                    <img width="100%" src="/3dbot_portal/img/info-5.png">
-                    </p>
-                    <p class="info-centering" style="position: relative; top: -120px; padding: 0px 30px;">
-                        <strong>체계적인 학습커리큘럼을 통해 배우는 SW 코딩교육. 학습 모드를 통해 분석, 패턴인식, 추상화, 알고리즘 설계를 배우고 실행하는 과정</strong>
-                    </p>
-                </div>
+                </p>
+                <p class="center">
+                  <a class="waves-effect waves-light btn"> 지금 시작하기 
+                    <i class="material-icons">play_arrow</i>
+                  </a>
+                </p>
+              </div>            
+              <div class="col s5">
+                <h4 class="center">
+                    <span class="info-subfeature-span" style="position: relative; top: 30px;">학습 모드</span>
+                </h4>
+                <p class="center" style="border-radius: 30px; border: 1px solid dimgray; padding: 30px 30px 100px 30px;">
+                  <img class="responsive-img" src="/3dbot_portal/img/info-5.png">
+                </p>
+                <p class="center" style="position: relative; top: -120px; padding: 0px 30px;">
+                    <strong>체계적인 학습커리큘럼을 통해 배우는 SW 코딩교육. 학습 모드를 통해 분석, 패턴인식, 추상화, 알고리즘 설계를 배우고 실행하는 과정</strong>
+                </p>
               </div>
-
-              <h4 class="info-feature"><span class="info-feature-span">협동 학습</span> </h4>
-
-              <div class="mdl-grid">
-                <div class="mdl-cell mdl-cell-bottom mdl-cell--6-col info-centering">
-                    <h4><span class="info-subfeature-span" style="position: relative; top: 30px;"> 협동학습 모드</span></h4>
-                    <p class="info-centering" style="border-radius: 30px; border: 1px solid dimgray; padding: 30px 30px 100px 30px;">
-                    <img width="100%" src="/3dbot_portal/img/info-7.png">
-                    </p>
-                    <p class="info-centering" style="position: relative; top: -120px; padding: 0px 30px;">
-                        <strong>보드게임, 아두이노 로봇을 이용한 언플러그드 코딩교육을 제공. 문제 해결 과정을 통해 협업과 커뮤니케이션, 소통능력 배양</strong>
-                      </p>
-                   
-                </div>
-                <div class="mdl-cell mdl-cell-bottom mdl-cell--6-col" style="position: relative; top: 70px;">
-                  <p>
-                      코딩 퍼즐 플래닛 타이탄은 SW 코딩 알고리즘을 학습할 수 있는 보드게임입니다. 
-                      최대 4인까지 즐길 수 있는 이 플래닛 타이탄은 상대편의 전략에 따라 자신이
-                      짜놓은 알고리즘을 실시간으로 수정하며 대결하는 전략게임 요소를 포함하고 있습니다.
-                      다수의 학생이 협동하여 문제 해결을 찾아가는 과정을 통해 협업과 소통을 동시에
-                      경험할 수 있습니다.
-                  </p>
-                  <p>
-                      코딩 퍼즐 로봇은 4차산업 혁명의 시대에 맞춘 메이커 문화를 반영하여 3D 프린터, 아두이노를
-                      사용하여 직접 제작 및 구동을 할 수 있도록 설계되었습니다. 협동하여 로봇을 제어하는 과정을
-                      통해 프로그래밍 논리를 기를 수 ㅇㅆ는 학습을 제공합니다.
-                  </p>
-                  <p>
-                    <button class="mdl-button mdl-js-button mdl-button--raised"> 지금 시작하기 <i class="material-icons">play_arrow</i></button>
-                  </p>
-                </div>
-              </div>
-
-              <br>     
-
-
-              <h4 class="info-feature"><span class="info-feature-span">창의학습</span> </h4>
-
-              <div class="mdl-grid">
-                <div class="mdl-cell mdl-cell-bottom mdl-cell--6-col" style="position: relative; top: 70px;">
-                  <p>
-                    학생들은 퍼즐메이커를 이용하여 프로그램 논리에 따라 자신의 맵을 만들고 직접 플레이할 수 있습니다.
-                    자신이 만든 맵을 홈페이지와 모바일 어플리케이션을 통해 공유할 수 있고 친구들이 만든 맵을
-                    플레이해 볼 수 있습니다.
-                  </p>
-                  <p>
-                    퍼즐메이커에는 다양한 캐릭터, 배경맵을 제공하고 있으며 창의적인 사고까지 함께 학습할 수 있습니다.
-                    디자인 씽킹 기반의 창의 학습도 함께 제공할 예정입니다.
-                  </p>
-                  <p>
-                      <button class="mdl-button mdl-js-button mdl-button--raised"> 지금 시작하기 <i class="material-icons">play_arrow</i></button>
-                  </p>
-                </div>
-                <div class="mdl-cell mdl-cell-bottom mdl-cell--6-col info-centering">
-                    <h4><span class="info-subfeature-span" style="position: relative; top: 30px;">창의 학습 모드</span></h4>
-                    <p class="info-centering" style="border-radius: 30px; border: 1px solid dimgray; padding: 30px 30px 100px 30px;">
-                    <img width="100%" src="/3dbot_portal/img/info-6.png">
-                    </p>
-                    <p class="info-centering" style="position: relative; top: -120px; padding: 0px 30px;">
-                        <strong>코딩학습의 심화 과정으로 자신이 직접 코등속 패턴을 설계하고 자신만의 게임으로 만드는 디자인 융합 학습 활동 </strong>
-                    </p>
-                </div>
-              </div>
-
-              
-
-              <h4 class="info-title">교육과정 소개</h4>
-              <div style="background-color: #f0f0f0; padding: 20px;">
-                  <p>
-                    <strong>막연한 코딩 교육, 무엇을 어떻게 배워야 할까요?</strong>
-                  </p>
-                  <p>
-                    아래 도표를 참고하여 단계별 학습하기를 참고하세요.
-                  </p>
-                  <p>
-                    코딩 교육도 <strong>수학과 마찬가지로 기초가 중요합니다.</strong>
-                    수학을 암기하여 푼 경험이 있으신가요? 코딩교육도 암기식으로 배우게 될 경우,
-                    어려운 문제로 넘어가면 쉽게 포기해 버립니다. 초급부터 고급과정까지
-                    <strong>코딩퍼즐이 끈기를 기르는 논리 사고훈련을 통해 여러분의 기초를
-                      탄탄히 다져 드리겠습니다.</strong>
-                  </p>
-                  <p>
-                    생소한 코딩학습! 동기부여가 중요합니다. 오바마 전 미국대통령은 "스마트폰을 가지고 놀이만 하지 말고 직접 만들어 보라"고 했듯이, 배움의 활용을 통한 동기부여를 높여보세요. 퍼즐크라프트가 제공하는 게임제작과 같이 흥미로운
-                    프로젝트들에 참여해 보세요. 배움의 의지을 더욱 견고하게 해 줄 것입니다.
-                  </p>
-              </div>
-              <p class="info-centering">
-                <img width="100%" src="/3dbot_portal/img/info-8.png"/>                
-              </p>
-              <p class="info-centering">
-              <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"> 코딩 교육과정 더 알아보러 가기<i class="material-icons">play_arrow</i></button>
-              </p>
-
-              
-
-
-
             </div>
           </div>
-        </section>
+        
+          <br>
 
-        <!--footer-->
-        <footer class="mdl-mega-footer">
-          <div class="mdl-mega-footer--middle-section">
-            <div class="mdl-grid">
-              <div class="mdl-cell mdl-cell-bottom mdl-cell--2-col"></div>
-              <div class="mdl-cell mdl-cell-bottom mdl-cell--1-col">
+          <div>
+            <div class="row">
+              <h4 class="info-feature">
+                <span class="info-feature-span">협동 학습</span>
+              </h4>
+
+              <div class="col s5">
+                <h4 class="center">
+                  <span class="info-subfeature-span" style="position: relative; top: 30px;"> 협동학습 모드</span>
+                </h4>
+                <p class="center" style="border-radius: 30px; border: 1px solid dimgray; padding: 30px 30px 100px 30px;">
+                  <img class="responsive-img" src="/3dbot_portal/img/info-7.png">
+                </p>
+                <p class="center" style="position: relative; top: -120px; padding: 0px 30px;">
+                    <strong>보드게임, 아두이노 로봇을 이용한 언플러그드 코딩교육을 제공. 문제 해결 과정을 통해 협업과 커뮤니케이션, 소통능력 배양</strong>
+                </p>
+              </div>
+              <div class="col s7" style="position: relative; top: 70px;">
+                <p>
+                    코딩 퍼즐 플래닛 타이탄은 SW 코딩 알고리즘을 학습할 수 있는 보드게임입니다. 
+                    최대 4인까지 즐길 수 있는 이 플래닛 타이탄은 상대편의 전략에 따라 자신이
+                    짜놓은 알고리즘을 실시간으로 수정하며 대결하는 전략게임 요소를 포함하고 있습니다.
+                    다수의 학생이 협동하여 문제 해결을 찾아가는 과정을 통해 협업과 소통을 동시에
+                    경험할 수 있습니다.
+                </p>
+                <p>
+                    코딩 퍼즐 로봇은 4차산업 혁명의 시대에 맞춘 메이커 문화를 반영하여 3D 프린터, 아두이노를
+                    사용하여 직접 제작 및 구동을 할 수 있도록 설계되었습니다. 협동하여 로봇을 제어하는 과정을
+                    통해 프로그래밍 논리를 기를 수 ㅇㅆ는 학습을 제공합니다.
+                </p>
+                <p class="center">
+                  <a class="waves-effect waves-light btn"> 지금 시작하기 
+                    <i class="material-icons">play_arrow</i>
+                  </a>
+                </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br>     
+
+          <div>
+            <div class="row">
+              <h4 class="info-feature">
+                <span class="info-feature-span">창의학습</span>
+              </h4>
+              <div class="col s7" style="position: relative; top: 70px;">
+                <p>
+                  학생들은 퍼즐메이커를 이용하여 프로그램 논리에 따라 자신의 맵을 만들고 직접 플레이할 수 있습니다.
+                  자신이 만든 맵을 홈페이지와 모바일 어플리케이션을 통해 공유할 수 있고 친구들이 만든 맵을
+                  플레이해 볼 수 있습니다.
+                </p>
+                <p>
+                  퍼즐메이커에는 다양한 캐릭터, 배경맵을 제공하고 있으며 창의적인 사고까지 함께 학습할 수 있습니다.
+                  디자인 씽킹 기반의 창의 학습도 함께 제공할 예정입니다.
+                </p>
+                <p class="center">
+                  <a class="waves-effect waves-light btn"> 지금 시작하기 
+                    <i class="material-icons">play_arrow</i>
+                  </a>
+                </p>
+              </div>
+              <div class="col s5">
+                <h4 class="center">
+                  <span class="info-subfeature-span" style="position: relative; top: 30px;">창의 학습 모드</span>
+                </h4>
+                <p class="center" style="border-radius: 30px; border: 1px solid dimgray; padding: 30px 30px 100px 30px;">
+                  <img class="responsive-img" src="/3dbot_portal/img/info-6.png">
+                </p>
+                <p class="center" style="position: relative; top: -120px; padding: 0px 30px;">
+                    <strong>코딩학습의 심화 과정으로 자신이 직접 코등속 패턴을 설계하고 자신만의 게임으로 만드는 디자인 융합 학습 활동 </strong>
+                </p>
+              </div>
+            </div>
+          </div>
+          <br>
+
+          <div>    
+            <div class="row">
+              <h5 class="info-title">교육과정 소개</h5>
+              <div style="background-color: #f0f0f0; padding: 20px;">
+                <p>
+                  <strong>막연한 코딩 교육, 무엇을 어떻게 배워야 할까요?</strong>
+                </p>
+                <p>
+                  아래 도표를 참고하여 단계별 학습하기를 참고하세요.
+                </p>
+                <p>
+                  코딩 교육도 <strong>수학과 마찬가지로 기초가 중요합니다.</strong>
+                  수학을 암기하여 푼 경험이 있으신가요? 코딩교육도 암기식으로 배우게 될 경우,
+                  어려운 문제로 넘어가면 쉽게 포기해 버립니다. 초급부터 고급과정까지
+                  <strong>코딩퍼즐이 끈기를 기르는 논리 사고훈련을 통해 여러분의 기초를
+                    탄탄히 다져 드리겠습니다.</strong>
+                </p>
+                <p>
+                  생소한 코딩학습! 동기부여가 중요합니다. 오바마 전 미국대통령은 "스마트폰을 가지고 놀이만 하지 말고 직접 만들어 보라"고 했듯이, 배움의 활용을 통한 동기부여를 높여보세요. 퍼즐크라프트가 제공하는 게임제작과 같이 흥미로운
+                  프로젝트들에 참여해 보세요. 배움의 의지을 더욱 견고하게 해 줄 것입니다.
+                </p>
+              </div>
+              <p class="center">
+                <img class="responsive-img" src="/3dbot_portal/img/info-8.png"/>                
+              </p>
+              <p class="center">
+                <a class="waves-effect waves-light btn"> 코딩 교육과정 더 알아보러 가기
+                  <i class="material-icons">play_arrow</i>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-wrapper">
+      <div class="container">
+        <footer class="page-footer">
+          <div class="container">
+            <div class="row grey-text text-darken-1">
+              <div class="col s3">
                 <img src="/3dbot_portal/img/makerslab_logo.png" style="width:100%;"/>
               </div>
-              <div class="mdl-cell mdl-cell-bottom mdl-cell--7-col">
-                <p class="mdl-typography--font-light">30018 세종특별자치시 조치원읍 돌마루5길 2 세영오피스텔 메이커스랩© 401호</p>
-                <p class="mdl-typography--font-light">전화: 010-5305-8680 &nbsp; 이메일: <a href="mailto:the.nayoung@gmail.com">김나영</a></p>
+              <div class="col s9">
+                30018 세종특별자치시 조치원읍 돌마루5길 2 세영오피스텔 메이커스랩© 401호
+                <p>전화: 010-5305-8680 &nbsp; 이메일: <a href="mailto:the.nayoung@gmail.com">김나영</a></p>
                 <hr>
-                <p class="mdl-typography--font-lighter">본 콘텐츠의 저작권은 제공처에 있으며, 이를 무단 이용하는 경우, 저작권법 등에 따라 법적책임을 질 수 있습니다. </p>
-                <p class="mdl-typography--font-light">Copyright © 2016, 2017 MakersLab, Inc. All rights reserved. </p>
-              </div>
-              <div class="mdl-cell mdl-cell-bottom mdl-cell--2-col"></div>
+                <p style="font-size: 0.8rem;">본 콘텐츠의 저작권은 제공처에 있으며, 이를 무단 이용하는 경우, 저작권법 등에 따라 법적책임을 질 수 있습니다. </p>
+              </div>    
             </div>
           </div>
+          <div class="container grey-text text-darken-1 center">
+              Copyright © 2014 - 2017 MakersLab, Inc. All rights reserved.
+          <a class="right"></a>
+          </div>
         </footer>
-      </main>
-
-     
+      </div>
     </div>
   </body>
 </html>
