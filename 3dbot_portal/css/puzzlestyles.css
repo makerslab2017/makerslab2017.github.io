@@ -110,6 +110,7 @@ nav a, nav ul a {
 nav a:hover, nav ul a:hover {
   border-bottom: 4px solid white; /* #8bc34a;*/
   font-weight: 900;
+  color: white;
 }
 
 nav .brand-logo:hover {
@@ -120,6 +121,18 @@ nav a.button-collapse:hover {
   border-bottom: 0px solid white;
   color: #f88977;
   font-weight: 900;
+}
+
+.btn {
+  background-color: pink;
+}
+
+.btn:hover {
+  background-color: deeppink;
+}
+
+.breadcrumb:before {
+  font-size: 1em;
 }
 
 .theme-basic {
@@ -380,40 +393,13 @@ footer.page-footer::after {
   color: darkslategray;
 }
 
-.clear-fix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.curriculum-title {
-  float: left;
-}
-
-.curriculum-subtitle {
-  float: right;
-}
-
-.curriculum-text {
-  padding: 10px 10px 20px 20px;
-}
-
-.curriculum-media {
-}
-
-.curriculum-media img {
-  float: left;
-  width: 100%;
-}
-
-.curriculum-media .curriculum-btn {
+.curriculum-btn {
   position: relative;
   float: right;
   width: 70px;
   bottom: 80px;
   right: 10px;
 }
-
 
 .puzzlecraft-title {
   color: deepskyblue;
