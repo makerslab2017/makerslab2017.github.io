@@ -16,6 +16,7 @@
   crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
     <script src="/3dbot_portal/js/puzzle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.16/clipboard.min.js"></script>
   </head>
   <body>
     <div class="header-wrapper theme-title-map-editor-light">
@@ -70,6 +71,13 @@
           </p>
 
           <h5 class="puzzlecraft-title" >퍼즐크래프트란?</h5>
+          <div class="input-field">
+            <select onChange="loadStage()">
+              <option value="latest"> 가장최근 저장된 것 불러오기</option>
+            </select>
+            <label> 스테이지 선택하기</label>
+          </div>
+
           <div class="template center">
             <div class="template-wrap clear">
               <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" width="854px" height="480px"></canvas>
@@ -78,10 +86,13 @@
               </div>
             </div>
           </div>
-
+          
           <div class="center">
-            <a id="loadTest" class="btn pink">마지막에 제작한 코딩퍼즐 불어오기</a>
+            <button id="copyTo" class="btn pink" data-clipboard-text="test">
+            현재 작업 결과 클립보드에 복사하기
+            </button>
           </div>
+          
         </div>
       </div>
     </div>
@@ -111,6 +122,24 @@
                
 
     <script type="text/javascript">
+    function pad(n, width) {
+      n = n + '';
+      return n.length >= width ? n : new Array(width - n.length + 1).join('0') + n;
+    }
+
+    function loadStage(me) {
+      var current = $('select').val();
+      Module.SendMessage('MapEditor', 'clear');
+      if (current == 'latest') {
+        var stageData = localStorage.getItem('latestEditedStage');
+        Module.SendMessage('UI', 'Load', stageData);
+      } else {
+        $.get( current + '.json', function(data) {
+          Module.SendMessage('UI', 'Load', JSON.stringify(data));
+        });
+      }
+    }
+
     $(document).ready(function() {
           $('.logo-image').on('click', function() {
             window.location = '/3dbot_portal/index.html';
@@ -119,9 +148,17 @@
             $('.template-wrap canvas').css('left', 0); // 풀스크린시, 중앙에 위치시키기
             SetFullscreen(1);
           });
-          $('#loadTest').on('click', function() {
-            var stageData = localStorage.getItem('latestEditedStage');
-            Module.SendMessage('UI', 'Load', stageData);
+          for (i=1; i<=50; i++) {
+            $('.input-field select').append('<option value="./stage/stage' + pad(i,2) + '"> stage' + pad(i,2) + '</option>');
+          }
+          for (i=1; i<=30; i++) {
+            $('.input-field select').append('<option value="./stage/stage01' + pad(i,2) + '"> stage01' + pad(i,2) + '</option>');
+          }
+          $('select').material_select();
+          new Clipboard('#copyTo', {
+            text: function(trigger) {
+              return localStorage.getItem('latestEditedStage');
+            }
           });
       }).keyup( function(e) {
             if (e.keyCode == 27) { // 풀스크린 빠져나올 때, 중앙에 위치시키기

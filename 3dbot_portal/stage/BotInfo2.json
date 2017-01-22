@@ -2,7 +2,7 @@
 	"Parts": 
 		[
 			{
-				"Name": "bot_head_blue/0_bot_head_blue",
+				"Name": "bot_head_blue",
 				"ColorA": {
 					"r": 1,
 					"g": 1,
@@ -10,20 +10,20 @@
 					"a": 1
 				},
 				"ColorB": {
-					"r": 1,
-					"g": 1,
-					"b": 1,
+					"r": 0.545098066,
+					"g": 0.435294122,
+					"b": 0.2784314,
 					"a": 1
 				},
 				"ColorC": {
-					"r": 1,
-					"g": 1,
+					"r": 0.1764706,
+					"g": 0.5254902,
 					"b": 1,
 					"a": 1
 				},
 				"Position": {
 					"x": 0,
-					"y": 0.299999774,
+					"y": 0.234999478,
 					"z": 0
 				},
 				"Scale": {
@@ -38,42 +38,42 @@
 					"w": -1.62920685E-07
 				},
 				
-				"\u003CName>k__BackingField": "bot_head_blue/0_bot_head_blue",
+				"_name": "bot_head_blue",
 				
-				"\u003CColorA>k__BackingField": {
+				"_colorA": {
 					"r": 1,
 					"g": 1,
 					"b": 1,
 					"a": 1
 				},
 				
-				"\u003CColorB>k__BackingField": {
-					"r": 1,
-					"g": 1,
+				"_colorB": {
+					"r": 0.545098066,
+					"g": 0.435294122,
+					"b": 0.2784314,
+					"a": 1
+				},
+				
+				"_colorC": {
+					"r": 0.1764706,
+					"g": 0.5254902,
 					"b": 1,
 					"a": 1
 				},
 				
-				"\u003CColorC>k__BackingField": {
-					"r": 1,
-					"g": 1,
-					"b": 1,
-					"a": 1
-				},
-				
-				"\u003CPosition>k__BackingField": {
+				"_position": {
 					"x": 0,
-					"y": 0.299999774,
+					"y": 0.234999478,
 					"z": 0
 				},
 				
-				"\u003CScale>k__BackingField": {
+				"_scale": {
 					"x": 13,
 					"y": 13,
 					"z": 13
 				},
 				
-				"\u003CRotation>k__BackingField": {
+				"_rotation": {
 					"x": 0,
 					"y": 1,
 					"z": 0,
@@ -81,181 +81,23 @@
 				}
 			},
 			{
-				"Name": "bot_body_blue/0_bot_body_blue",
+				"Name": "bot_body_green",
 				"ColorA": {
 					"r": 1,
 					"g": 1,
-					"b": 1,
+					"b": 0.521568656,
 					"a": 1
 				},
 				"ColorB": {
-					"r": 1,
-					"g": 1,
-					"b": 1,
+					"r": 0.34117648,
+					"g": 0.68235296,
+					"b": 0.698039234,
 					"a": 1
 				},
 				"ColorC": {
-					"r": 1,
-					"g": 1,
-					"b": 1,
-					"a": 1
-				},
-				"Position": {
-					"x": 0,
-					"y": 0.3,
-					"z": 0
-				},
-				"Scale": {
-					"x": 13,
-					"y": 13,
-					"z": 13
-				},
-				"Rotation": {
-					"x": 0,
-					"y": 1,
-					"z": 0,
-					"w": -1.62920685E-07
-				},
-				
-				"\u003CName>k__BackingField": "bot_body_blue/0_bot_body_blue",
-				
-				"\u003CColorA>k__BackingField": {
-					"r": 1,
-					"g": 1,
-					"b": 1,
-					"a": 1
-				},
-				
-				"\u003CColorB>k__BackingField": {
-					"r": 1,
-					"g": 1,
-					"b": 1,
-					"a": 1
-				},
-				
-				"\u003CColorC>k__BackingField": {
-					"r": 1,
-					"g": 1,
-					"b": 1,
-					"a": 1
-				},
-				
-				"\u003CPosition>k__BackingField": {
-					"x": 0,
-					"y": 0.3,
-					"z": 0
-				},
-				
-				"\u003CScale>k__BackingField": {
-					"x": 13,
-					"y": 13,
-					"z": 13
-				},
-				
-				"\u003CRotation>k__BackingField": {
-					"x": 0,
-					"y": 1,
-					"z": 0,
-					"w": -1.62920685E-07
-				}
-			},
-			{
-				"Name": "bot_arm_left_green/0_bot_arm_left_green",
-				"ColorA": {
-					"r": 1,
-					"g": 1,
-					"b": 1,
-					"a": 1
-				},
-				"ColorB": {
-					"r": 1,
-					"g": 1,
-					"b": 1,
-					"a": 1
-				},
-				"ColorC": {
-					"r": 1,
-					"g": 1,
-					"b": 1,
-					"a": 1
-				},
-				"Position": {
-					"x": -0.05850005,
-					"y": 0.3,
-					"z": 1.906173E-08
-				},
-				"Scale": {
-					"x": 13,
-					"y": 13,
-					"z": 13
-				},
-				"Rotation": {
-					"x": 0,
-					"y": 1,
-					"z": 0,
-					"w": -1.62920685E-07
-				},
-				
-				"\u003CName>k__BackingField": "bot_arm_left_green/0_bot_arm_left_green",
-				
-				"\u003CColorA>k__BackingField": {
-					"r": 1,
-					"g": 1,
-					"b": 1,
-					"a": 1
-				},
-				
-				"\u003CColorB>k__BackingField": {
-					"r": 1,
-					"g": 1,
-					"b": 1,
-					"a": 1
-				},
-				
-				"\u003CColorC>k__BackingField": {
-					"r": 1,
-					"g": 1,
-					"b": 1,
-					"a": 1
-				},
-				
-				"\u003CPosition>k__BackingField": {
-					"x": -0.05850005,
-					"y": 0.3,
-					"z": 1.906173E-08
-				},
-				
-				"\u003CScale>k__BackingField": {
-					"x": 13,
-					"y": 13,
-					"z": 13
-				},
-				
-				"\u003CRotation>k__BackingField": {
-					"x": 0,
-					"y": 1,
-					"z": 0,
-					"w": -1.62920685E-07
-				}
-			},
-			{
-				"Name": "bot_arm_right_green/0_bot_arm_right_green",
-				"ColorA": {
-					"r": 1,
-					"g": 1,
-					"b": 1,
-					"a": 1
-				},
-				"ColorB": {
-					"r": 1,
-					"g": 1,
-					"b": 1,
-					"a": 1
-				},
-				"ColorC": {
-					"r": 1,
-					"g": 1,
-					"b": 1,
+					"r": 0.007843138,
+					"g": 0.9411765,
+					"b": 0.694117665,
 					"a": 1
 				},
 				"Position": {
@@ -272,53 +114,53 @@
 					"x": 0,
 					"y": 1,
 					"z": 0,
-					"w": -1.62920685E-07
+					"w": 0
 				},
 				
-				"\u003CName>k__BackingField": "bot_arm_right_green/0_bot_arm_right_green",
+				"_name": "bot_body_green",
 				
-				"\u003CColorA>k__BackingField": {
+				"_colorA": {
 					"r": 1,
 					"g": 1,
-					"b": 1,
+					"b": 0.521568656,
 					"a": 1
 				},
 				
-				"\u003CColorB>k__BackingField": {
-					"r": 1,
-					"g": 1,
-					"b": 1,
+				"_colorB": {
+					"r": 0.34117648,
+					"g": 0.68235296,
+					"b": 0.698039234,
 					"a": 1
 				},
 				
-				"\u003CColorC>k__BackingField": {
-					"r": 1,
-					"g": 1,
-					"b": 1,
+				"_colorC": {
+					"r": 0.007843138,
+					"g": 0.9411765,
+					"b": 0.694117665,
 					"a": 1
 				},
 				
-				"\u003CPosition>k__BackingField": {
+				"_position": {
 					"x": 0,
 					"y": 0.3,
 					"z": 0
 				},
 				
-				"\u003CScale>k__BackingField": {
+				"_scale": {
 					"x": 13,
 					"y": 13,
 					"z": 13
 				},
 				
-				"\u003CRotation>k__BackingField": {
+				"_rotation": {
 					"x": 0,
 					"y": 1,
 					"z": 0,
-					"w": -1.62920685E-07
+					"w": 0
 				}
 			},
 			{
-				"Name": "bot_leg_left_red/0_bot_leg_left_red",
+				"Name": "bot_arm_left_red",
 				"ColorA": {
 					"r": 0.9852941,
 					"g": 0.332282215,
@@ -338,9 +180,9 @@
 					"a": 1
 				},
 				"Position": {
-					"x": -0.0298999548,
-					"y": 0.485899985,
-					"z": -0.0858
+					"x": 0,
+					"y": 0.3,
+					"z": 2.6474612E-07
 				},
 				"Scale": {
 					"x": 13,
@@ -354,42 +196,42 @@
 					"w": -1.62920685E-07
 				},
 				
-				"\u003CName>k__BackingField": "bot_leg_left_red/0_bot_leg_left_red",
+				"_name": "bot_arm_left_red",
 				
-				"\u003CColorA>k__BackingField": {
+				"_colorA": {
 					"r": 0.9852941,
 					"g": 0.332282215,
 					"b": 0.318771631,
 					"a": 1
 				},
 				
-				"\u003CColorB>k__BackingField": {
+				"_colorB": {
 					"r": 0.8897059,
 					"g": 0.788643956,
 					"b": 0.366349459,
 					"a": 1
 				},
 				
-				"\u003CColorC>k__BackingField": {
+				"_colorC": {
 					"r": 1,
 					"g": 1,
 					"b": 1,
 					"a": 1
 				},
 				
-				"\u003CPosition>k__BackingField": {
-					"x": -0.0298999548,
-					"y": 0.485899985,
-					"z": -0.0858
+				"_position": {
+					"x": 0,
+					"y": 0.3,
+					"z": 2.6474612E-07
 				},
 				
-				"\u003CScale>k__BackingField": {
+				"_scale": {
 					"x": 13,
 					"y": 13,
 					"z": 13
 				},
 				
-				"\u003CRotation>k__BackingField": {
+				"_rotation": {
 					"x": 0,
 					"y": 1,
 					"z": 0,
@@ -397,29 +239,187 @@
 				}
 			},
 			{
-				"Name": "bot_leg_right_red/0_bot_leg_right_red",
+				"Name": "bot_arm_right_black",
 				"ColorA": {
-					"r": 0.9852941,
-					"g": 0.332282215,
-					"b": 0.318771631,
+					"r": 0.980392158,
+					"g": 0.623529434,
+					"b": 0.243137255,
 					"a": 1
 				},
 				"ColorB": {
-					"r": 0.8897059,
-					"g": 0.788643956,
-					"b": 0.366349459,
+					"r": 0.0235294122,
+					"g": 0.0392156877,
+					"b": 0.02745098,
 					"a": 1
 				},
 				"ColorC": {
+					"r": 0.623529434,
+					"g": 0.623529434,
+					"b": 0.623529434,
+					"a": 1
+				},
+				"Position": {
+					"x": 0,
+					"y": 0.3,
+					"z": 0
+				},
+				"Scale": {
+					"x": 13,
+					"y": 13,
+					"z": 13
+				},
+				"Rotation": {
+					"x": 0,
+					"y": 1,
+					"z": 0,
+					"w": 0
+				},
+				
+				"_name": "bot_arm_right_black",
+				
+				"_colorA": {
+					"r": 0.980392158,
+					"g": 0.623529434,
+					"b": 0.243137255,
+					"a": 1
+				},
+				
+				"_colorB": {
+					"r": 0.0235294122,
+					"g": 0.0392156877,
+					"b": 0.02745098,
+					"a": 1
+				},
+				
+				"_colorC": {
+					"r": 0.623529434,
+					"g": 0.623529434,
+					"b": 0.623529434,
+					"a": 1
+				},
+				
+				"_position": {
+					"x": 0,
+					"y": 0.3,
+					"z": 0
+				},
+				
+				"_scale": {
+					"x": 13,
+					"y": 13,
+					"z": 13
+				},
+				
+				"_rotation": {
+					"x": 0,
+					"y": 1,
+					"z": 0,
+					"w": 0
+				}
+			},
+			{
+				"Name": "bot_leg_left_black",
+				"ColorA": {
+					"r": 0.980392158,
+					"g": 0.623529434,
+					"b": 0.243137255,
+					"a": 1
+				},
+				"ColorB": {
+					"r": 0.0235294122,
+					"g": 0.0392156877,
+					"b": 0.02745098,
+					"a": 1
+				},
+				"ColorC": {
+					"r": 0.623529434,
+					"g": 0.623529434,
+					"b": 0.623529434,
+					"a": 1
+				},
+				"Position": {
+					"x": 0,
+					"y": 0.3,
+					"z": -1.49011612E-08
+				},
+				"Scale": {
+					"x": 13,
+					"y": 13,
+					"z": 13
+				},
+				"Rotation": {
+					"x": 0,
+					"y": 1,
+					"z": 0,
+					"w": 0
+				},
+				
+				"_name": "bot_leg_left_black",
+				
+				"_colorA": {
+					"r": 0.980392158,
+					"g": 0.623529434,
+					"b": 0.243137255,
+					"a": 1
+				},
+				
+				"_colorB": {
+					"r": 0.0235294122,
+					"g": 0.0392156877,
+					"b": 0.02745098,
+					"a": 1
+				},
+				
+				"_colorC": {
+					"r": 0.623529434,
+					"g": 0.623529434,
+					"b": 0.623529434,
+					"a": 1
+				},
+				
+				"_position": {
+					"x": 0,
+					"y": 0.3,
+					"z": -1.49011612E-08
+				},
+				
+				"_scale": {
+					"x": 13,
+					"y": 13,
+					"z": 13
+				},
+				
+				"_rotation": {
+					"x": 0,
+					"y": 1,
+					"z": 0,
+					"w": 0
+				}
+			},
+			{
+				"Name": "bot_leg_right_blue",
+				"ColorA": {
 					"r": 1,
 					"g": 1,
+					"b": 1,
+					"a": 1
+				},
+				"ColorB": {
+					"r": 0.545098066,
+					"g": 0.435294122,
+					"b": 0.2784314,
+					"a": 1
+				},
+				"ColorC": {
+					"r": 0.1764706,
+					"g": 0.5254902,
 					"b": 1,
 					"a": 1
 				},
 				"Position": {
 					"x": 0.0298999548,
-					"y": 0.485899985,
-					"z": -0.0858000144
+					"y": 0.3,
+					"z": -2.01165676E-07
 				},
 				"Scale": {
 					"x": 13,
@@ -433,42 +433,42 @@
 					"w": -1.62920685E-07
 				},
 				
-				"\u003CName>k__BackingField": "bot_leg_right_red/0_bot_leg_right_red",
+				"_name": "bot_leg_right_blue",
 				
-				"\u003CColorA>k__BackingField": {
-					"r": 0.9852941,
-					"g": 0.332282215,
-					"b": 0.318771631,
-					"a": 1
-				},
-				
-				"\u003CColorB>k__BackingField": {
-					"r": 0.8897059,
-					"g": 0.788643956,
-					"b": 0.366349459,
-					"a": 1
-				},
-				
-				"\u003CColorC>k__BackingField": {
+				"_colorA": {
 					"r": 1,
 					"g": 1,
 					"b": 1,
 					"a": 1
 				},
 				
-				"\u003CPosition>k__BackingField": {
-					"x": 0.0298999548,
-					"y": 0.485899985,
-					"z": -0.0858000144
+				"_colorB": {
+					"r": 0.545098066,
+					"g": 0.435294122,
+					"b": 0.2784314,
+					"a": 1
 				},
 				
-				"\u003CScale>k__BackingField": {
+				"_colorC": {
+					"r": 0.1764706,
+					"g": 0.5254902,
+					"b": 1,
+					"a": 1
+				},
+				
+				"_position": {
+					"x": 0.0298999548,
+					"y": 0.3,
+					"z": -2.01165676E-07
+				},
+				
+				"_scale": {
 					"x": 13,
 					"y": 13,
 					"z": 13
 				},
 				
-				"\u003CRotation>k__BackingField": {
+				"_rotation": {
 					"x": 0,
 					"y": 1,
 					"z": 0,
@@ -478,13 +478,12 @@
 		],
 	"StickerMesh": 
 		[],
+	"selectedRobotName": "save_test2",
 	
-	"selectedRobotName": "save_testBBB",
-	
-	"\u003CParts>k__BackingField": 
+	"_parts": 
 		[
 			{
-				"Name": "bot_head_blue/0_bot_head_blue",
+				"Name": "bot_head_blue",
 				"ColorA": {
 					"r": 1,
 					"g": 1,
@@ -492,20 +491,20 @@
 					"a": 1
 				},
 				"ColorB": {
-					"r": 1,
-					"g": 1,
-					"b": 1,
+					"r": 0.545098066,
+					"g": 0.435294122,
+					"b": 0.2784314,
 					"a": 1
 				},
 				"ColorC": {
-					"r": 1,
-					"g": 1,
+					"r": 0.1764706,
+					"g": 0.5254902,
 					"b": 1,
 					"a": 1
 				},
 				"Position": {
 					"x": 0,
-					"y": 0.299999774,
+					"y": 0.234999478,
 					"z": 0
 				},
 				"Scale": {
@@ -520,42 +519,42 @@
 					"w": -1.62920685E-07
 				},
 				
-				"\u003CName>k__BackingField": "bot_head_blue/0_bot_head_blue",
+				"_name": "bot_head_blue",
 				
-				"\u003CColorA>k__BackingField": {
+				"_colorA": {
 					"r": 1,
 					"g": 1,
 					"b": 1,
 					"a": 1
 				},
 				
-				"\u003CColorB>k__BackingField": {
-					"r": 1,
-					"g": 1,
+				"_colorB": {
+					"r": 0.545098066,
+					"g": 0.435294122,
+					"b": 0.2784314,
+					"a": 1
+				},
+				
+				"_colorC": {
+					"r": 0.1764706,
+					"g": 0.5254902,
 					"b": 1,
 					"a": 1
 				},
 				
-				"\u003CColorC>k__BackingField": {
-					"r": 1,
-					"g": 1,
-					"b": 1,
-					"a": 1
-				},
-				
-				"\u003CPosition>k__BackingField": {
+				"_position": {
 					"x": 0,
-					"y": 0.299999774,
+					"y": 0.234999478,
 					"z": 0
 				},
 				
-				"\u003CScale>k__BackingField": {
+				"_scale": {
 					"x": 13,
 					"y": 13,
 					"z": 13
 				},
 				
-				"\u003CRotation>k__BackingField": {
+				"_rotation": {
 					"x": 0,
 					"y": 1,
 					"z": 0,
@@ -563,181 +562,23 @@
 				}
 			},
 			{
-				"Name": "bot_body_blue/0_bot_body_blue",
+				"Name": "bot_body_green",
 				"ColorA": {
 					"r": 1,
 					"g": 1,
-					"b": 1,
+					"b": 0.521568656,
 					"a": 1
 				},
 				"ColorB": {
-					"r": 1,
-					"g": 1,
-					"b": 1,
+					"r": 0.34117648,
+					"g": 0.68235296,
+					"b": 0.698039234,
 					"a": 1
 				},
 				"ColorC": {
-					"r": 1,
-					"g": 1,
-					"b": 1,
-					"a": 1
-				},
-				"Position": {
-					"x": 0,
-					"y": 0.3,
-					"z": 0
-				},
-				"Scale": {
-					"x": 13,
-					"y": 13,
-					"z": 13
-				},
-				"Rotation": {
-					"x": 0,
-					"y": 1,
-					"z": 0,
-					"w": -1.62920685E-07
-				},
-				
-				"\u003CName>k__BackingField": "bot_body_blue/0_bot_body_blue",
-				
-				"\u003CColorA>k__BackingField": {
-					"r": 1,
-					"g": 1,
-					"b": 1,
-					"a": 1
-				},
-				
-				"\u003CColorB>k__BackingField": {
-					"r": 1,
-					"g": 1,
-					"b": 1,
-					"a": 1
-				},
-				
-				"\u003CColorC>k__BackingField": {
-					"r": 1,
-					"g": 1,
-					"b": 1,
-					"a": 1
-				},
-				
-				"\u003CPosition>k__BackingField": {
-					"x": 0,
-					"y": 0.3,
-					"z": 0
-				},
-				
-				"\u003CScale>k__BackingField": {
-					"x": 13,
-					"y": 13,
-					"z": 13
-				},
-				
-				"\u003CRotation>k__BackingField": {
-					"x": 0,
-					"y": 1,
-					"z": 0,
-					"w": -1.62920685E-07
-				}
-			},
-			{
-				"Name": "bot_arm_left_green/0_bot_arm_left_green",
-				"ColorA": {
-					"r": 1,
-					"g": 1,
-					"b": 1,
-					"a": 1
-				},
-				"ColorB": {
-					"r": 1,
-					"g": 1,
-					"b": 1,
-					"a": 1
-				},
-				"ColorC": {
-					"r": 1,
-					"g": 1,
-					"b": 1,
-					"a": 1
-				},
-				"Position": {
-					"x": -0.05850005,
-					"y": 0.3,
-					"z": 1.906173E-08
-				},
-				"Scale": {
-					"x": 13,
-					"y": 13,
-					"z": 13
-				},
-				"Rotation": {
-					"x": 0,
-					"y": 1,
-					"z": 0,
-					"w": -1.62920685E-07
-				},
-				
-				"\u003CName>k__BackingField": "bot_arm_left_green/0_bot_arm_left_green",
-				
-				"\u003CColorA>k__BackingField": {
-					"r": 1,
-					"g": 1,
-					"b": 1,
-					"a": 1
-				},
-				
-				"\u003CColorB>k__BackingField": {
-					"r": 1,
-					"g": 1,
-					"b": 1,
-					"a": 1
-				},
-				
-				"\u003CColorC>k__BackingField": {
-					"r": 1,
-					"g": 1,
-					"b": 1,
-					"a": 1
-				},
-				
-				"\u003CPosition>k__BackingField": {
-					"x": -0.05850005,
-					"y": 0.3,
-					"z": 1.906173E-08
-				},
-				
-				"\u003CScale>k__BackingField": {
-					"x": 13,
-					"y": 13,
-					"z": 13
-				},
-				
-				"\u003CRotation>k__BackingField": {
-					"x": 0,
-					"y": 1,
-					"z": 0,
-					"w": -1.62920685E-07
-				}
-			},
-			{
-				"Name": "bot_arm_right_green/0_bot_arm_right_green",
-				"ColorA": {
-					"r": 1,
-					"g": 1,
-					"b": 1,
-					"a": 1
-				},
-				"ColorB": {
-					"r": 1,
-					"g": 1,
-					"b": 1,
-					"a": 1
-				},
-				"ColorC": {
-					"r": 1,
-					"g": 1,
-					"b": 1,
+					"r": 0.007843138,
+					"g": 0.9411765,
+					"b": 0.694117665,
 					"a": 1
 				},
 				"Position": {
@@ -754,53 +595,53 @@
 					"x": 0,
 					"y": 1,
 					"z": 0,
-					"w": -1.62920685E-07
+					"w": 0
 				},
 				
-				"\u003CName>k__BackingField": "bot_arm_right_green/0_bot_arm_right_green",
+				"_name": "bot_body_green",
 				
-				"\u003CColorA>k__BackingField": {
+				"_colorA": {
 					"r": 1,
 					"g": 1,
-					"b": 1,
+					"b": 0.521568656,
 					"a": 1
 				},
 				
-				"\u003CColorB>k__BackingField": {
-					"r": 1,
-					"g": 1,
-					"b": 1,
+				"_colorB": {
+					"r": 0.34117648,
+					"g": 0.68235296,
+					"b": 0.698039234,
 					"a": 1
 				},
 				
-				"\u003CColorC>k__BackingField": {
-					"r": 1,
-					"g": 1,
-					"b": 1,
+				"_colorC": {
+					"r": 0.007843138,
+					"g": 0.9411765,
+					"b": 0.694117665,
 					"a": 1
 				},
 				
-				"\u003CPosition>k__BackingField": {
+				"_position": {
 					"x": 0,
 					"y": 0.3,
 					"z": 0
 				},
 				
-				"\u003CScale>k__BackingField": {
+				"_scale": {
 					"x": 13,
 					"y": 13,
 					"z": 13
 				},
 				
-				"\u003CRotation>k__BackingField": {
+				"_rotation": {
 					"x": 0,
 					"y": 1,
 					"z": 0,
-					"w": -1.62920685E-07
+					"w": 0
 				}
 			},
 			{
-				"Name": "bot_leg_left_red/0_bot_leg_left_red",
+				"Name": "bot_arm_left_red",
 				"ColorA": {
 					"r": 0.9852941,
 					"g": 0.332282215,
@@ -820,9 +661,9 @@
 					"a": 1
 				},
 				"Position": {
-					"x": -0.0298999548,
-					"y": 0.485899985,
-					"z": -0.0858
+					"x": 0,
+					"y": 0.3,
+					"z": 2.6474612E-07
 				},
 				"Scale": {
 					"x": 13,
@@ -836,42 +677,42 @@
 					"w": -1.62920685E-07
 				},
 				
-				"\u003CName>k__BackingField": "bot_leg_left_red/0_bot_leg_left_red",
+				"_name": "bot_arm_left_red",
 				
-				"\u003CColorA>k__BackingField": {
+				"_colorA": {
 					"r": 0.9852941,
 					"g": 0.332282215,
 					"b": 0.318771631,
 					"a": 1
 				},
 				
-				"\u003CColorB>k__BackingField": {
+				"_colorB": {
 					"r": 0.8897059,
 					"g": 0.788643956,
 					"b": 0.366349459,
 					"a": 1
 				},
 				
-				"\u003CColorC>k__BackingField": {
+				"_colorC": {
 					"r": 1,
 					"g": 1,
 					"b": 1,
 					"a": 1
 				},
 				
-				"\u003CPosition>k__BackingField": {
-					"x": -0.0298999548,
-					"y": 0.485899985,
-					"z": -0.0858
+				"_position": {
+					"x": 0,
+					"y": 0.3,
+					"z": 2.6474612E-07
 				},
 				
-				"\u003CScale>k__BackingField": {
+				"_scale": {
 					"x": 13,
 					"y": 13,
 					"z": 13
 				},
 				
-				"\u003CRotation>k__BackingField": {
+				"_rotation": {
 					"x": 0,
 					"y": 1,
 					"z": 0,
@@ -879,29 +720,187 @@
 				}
 			},
 			{
-				"Name": "bot_leg_right_red/0_bot_leg_right_red",
+				"Name": "bot_arm_right_black",
 				"ColorA": {
-					"r": 0.9852941,
-					"g": 0.332282215,
-					"b": 0.318771631,
+					"r": 0.980392158,
+					"g": 0.623529434,
+					"b": 0.243137255,
 					"a": 1
 				},
 				"ColorB": {
-					"r": 0.8897059,
-					"g": 0.788643956,
-					"b": 0.366349459,
+					"r": 0.0235294122,
+					"g": 0.0392156877,
+					"b": 0.02745098,
 					"a": 1
 				},
 				"ColorC": {
+					"r": 0.623529434,
+					"g": 0.623529434,
+					"b": 0.623529434,
+					"a": 1
+				},
+				"Position": {
+					"x": 0,
+					"y": 0.3,
+					"z": 0
+				},
+				"Scale": {
+					"x": 13,
+					"y": 13,
+					"z": 13
+				},
+				"Rotation": {
+					"x": 0,
+					"y": 1,
+					"z": 0,
+					"w": 0
+				},
+				
+				"_name": "bot_arm_right_black",
+				
+				"_colorA": {
+					"r": 0.980392158,
+					"g": 0.623529434,
+					"b": 0.243137255,
+					"a": 1
+				},
+				
+				"_colorB": {
+					"r": 0.0235294122,
+					"g": 0.0392156877,
+					"b": 0.02745098,
+					"a": 1
+				},
+				
+				"_colorC": {
+					"r": 0.623529434,
+					"g": 0.623529434,
+					"b": 0.623529434,
+					"a": 1
+				},
+				
+				"_position": {
+					"x": 0,
+					"y": 0.3,
+					"z": 0
+				},
+				
+				"_scale": {
+					"x": 13,
+					"y": 13,
+					"z": 13
+				},
+				
+				"_rotation": {
+					"x": 0,
+					"y": 1,
+					"z": 0,
+					"w": 0
+				}
+			},
+			{
+				"Name": "bot_leg_left_black",
+				"ColorA": {
+					"r": 0.980392158,
+					"g": 0.623529434,
+					"b": 0.243137255,
+					"a": 1
+				},
+				"ColorB": {
+					"r": 0.0235294122,
+					"g": 0.0392156877,
+					"b": 0.02745098,
+					"a": 1
+				},
+				"ColorC": {
+					"r": 0.623529434,
+					"g": 0.623529434,
+					"b": 0.623529434,
+					"a": 1
+				},
+				"Position": {
+					"x": 0,
+					"y": 0.3,
+					"z": -1.49011612E-08
+				},
+				"Scale": {
+					"x": 13,
+					"y": 13,
+					"z": 13
+				},
+				"Rotation": {
+					"x": 0,
+					"y": 1,
+					"z": 0,
+					"w": 0
+				},
+				
+				"_name": "bot_leg_left_black",
+				
+				"_colorA": {
+					"r": 0.980392158,
+					"g": 0.623529434,
+					"b": 0.243137255,
+					"a": 1
+				},
+				
+				"_colorB": {
+					"r": 0.0235294122,
+					"g": 0.0392156877,
+					"b": 0.02745098,
+					"a": 1
+				},
+				
+				"_colorC": {
+					"r": 0.623529434,
+					"g": 0.623529434,
+					"b": 0.623529434,
+					"a": 1
+				},
+				
+				"_position": {
+					"x": 0,
+					"y": 0.3,
+					"z": -1.49011612E-08
+				},
+				
+				"_scale": {
+					"x": 13,
+					"y": 13,
+					"z": 13
+				},
+				
+				"_rotation": {
+					"x": 0,
+					"y": 1,
+					"z": 0,
+					"w": 0
+				}
+			},
+			{
+				"Name": "bot_leg_right_blue",
+				"ColorA": {
 					"r": 1,
 					"g": 1,
+					"b": 1,
+					"a": 1
+				},
+				"ColorB": {
+					"r": 0.545098066,
+					"g": 0.435294122,
+					"b": 0.2784314,
+					"a": 1
+				},
+				"ColorC": {
+					"r": 0.1764706,
+					"g": 0.5254902,
 					"b": 1,
 					"a": 1
 				},
 				"Position": {
 					"x": 0.0298999548,
-					"y": 0.485899985,
-					"z": -0.0858000144
+					"y": 0.3,
+					"z": -2.01165676E-07
 				},
 				"Scale": {
 					"x": 13,
@@ -915,42 +914,42 @@
 					"w": -1.62920685E-07
 				},
 				
-				"\u003CName>k__BackingField": "bot_leg_right_red/0_bot_leg_right_red",
+				"_name": "bot_leg_right_blue",
 				
-				"\u003CColorA>k__BackingField": {
-					"r": 0.9852941,
-					"g": 0.332282215,
-					"b": 0.318771631,
-					"a": 1
-				},
-				
-				"\u003CColorB>k__BackingField": {
-					"r": 0.8897059,
-					"g": 0.788643956,
-					"b": 0.366349459,
-					"a": 1
-				},
-				
-				"\u003CColorC>k__BackingField": {
+				"_colorA": {
 					"r": 1,
 					"g": 1,
 					"b": 1,
 					"a": 1
 				},
 				
-				"\u003CPosition>k__BackingField": {
-					"x": 0.0298999548,
-					"y": 0.485899985,
-					"z": -0.0858000144
+				"_colorB": {
+					"r": 0.545098066,
+					"g": 0.435294122,
+					"b": 0.2784314,
+					"a": 1
 				},
 				
-				"\u003CScale>k__BackingField": {
+				"_colorC": {
+					"r": 0.1764706,
+					"g": 0.5254902,
+					"b": 1,
+					"a": 1
+				},
+				
+				"_position": {
+					"x": 0.0298999548,
+					"y": 0.3,
+					"z": -2.01165676E-07
+				},
+				
+				"_scale": {
 					"x": 13,
 					"y": 13,
 					"z": 13
 				},
 				
-				"\u003CRotation>k__BackingField": {
+				"_rotation": {
 					"x": 0,
 					"y": 1,
 					"z": 0,
@@ -959,6 +958,8 @@
 			}
 		],
 	
-	"\u003CStickerMesh>k__BackingField": 
-		[]
+	"_stickerMesh": 
+		[],
+	
+	"_selectedRobotName": "save_test2"
 }
