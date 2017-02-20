@@ -1,0 +1,414 @@
+/**
+ * Copyright 2015 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+body {
+  margin: 0;
+  padding: 0 20px auto;
+  font-family: naum-barun-gothic-regular, "roboto", "Helvetica Neue", Arial, "맑은 고딕", malgun gothic, "돋움", Dotum, sans-serif;
+  background-color: #f5f5f5;
+  font-size: 1.0rem;
+}
+
+main {
+  display: block;
+  background-color: white;
+}
+
+a img {
+  border: 0px;
+}
+
+::-webkit-selection, ::-moz-selection, ::selection {
+  background-color:  #6ab344;
+  color: #eee;
+}
+
+.section-frontal {
+  height: 480px;
+  position: absolute;
+  background: url(/3dbot_portal/img/kid-on-ipad.jpg) center / cover;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  z-index: -1;
+}
+
+.section-frontal .container {
+  position: relative;
+  top: 350px;
+}
+
+.hidden-frontal {
+  height: 416px;
+  display: hidden;
+}
+
+.main-wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: white;
+}
+
+.card-content {
+  min-height: 150px;
+}
+
+.header-wrapper {
+  margin: 0;
+  background-color: rgba(255,255,255,0.4);
+}
+
+nav {
+  box-shadow: 0 0 0 0 rgba(0,0,0,0.14);
+  background-color: transparent;
+}
+
+.logo-image {
+  margin: 5px;
+  height: 80px;
+}
+
+.logo-horizontal {
+  margin: 0px 4px;
+  padding: 2px;
+  height: 60px !important;
+}
+
+.section-frontal{
+  color: #eee;
+  font-weight: 700;
+  text-shadow: 1px 1px darkgray;
+}
+
+.subtitle {
+  padding: 0 0;
+  margin: 0 0;
+}
+
+.card-container {
+  overflow: hidden;
+}
+
+nav a, nav ul a {
+  color: black;
+}
+
+nav a:hover, nav ul a:hover {
+  border-bottom: 4px solid white; /* #8bc34a;*/
+  font-weight: 900;
+  color: white;
+}
+
+nav .brand-logo:hover {
+  border-bottom: 0px solid white;
+}
+
+nav a.button-collapse:hover {
+  border-bottom: 0px solid white;
+  color: #f88977;
+  font-weight: 900;
+}
+
+.btn {
+  background-color: pink;
+}
+
+.btn:hover {
+  background-color: deeppink;
+}
+
+.breadcrumb:before {
+  font-size: 1em;
+}
+
+.theme-basic {
+  background-color: rgba(255,255,255,0.4);
+  color: black;
+}
+
+.theme-student {
+  border: 2px solid #f88977;
+}
+
+.theme-title-student {
+  background-color: #f88977;  
+  color: white;
+}
+
+.theme-title-student-light {
+  background-color: #f0bfb7;
+  color: black;
+}
+
+.theme-text-student {
+  color: #f88977;
+  background-color: white;
+}
+
+.theme-educator {
+  border: 2px solid #4987b0;
+}
+
+.theme-title-educator {
+  background-color: #4987b0;
+  color: white;
+}
+
+.theme-title-educator-light {
+  background-color: #8db4cd;
+  color: black;
+}
+
+.theme-text-educator {
+  color: #4987b0;
+  background-color: white;
+}
+
+.theme-hour-of-code {
+  border: 2px solid #29b5a0;
+}
+
+.theme-title-hour-of-code {
+  background-color: #29b5a0;
+  color: white;
+}
+
+.theme-title-hour-of-code-light {
+  background-color: #ace3dc;
+  color: black;
+}
+
+.theme-text-hour-of-code {
+  color: #29b5a0;
+  background-color: white;
+}
+
+.theme-map-editor {
+  border: 1px solid #f89c41;
+}
+
+.theme-title-map-editor-light {
+  background-color: #fcdab4;
+  color:white;
+}
+
+.theme-title-map-editor {
+  background-color: #f89c41;
+  color: white;
+}
+
+.theme-text-map-editor {
+  color: #f89c41;
+  background-color: white;
+}
+
+.info-feature, .info-subfeature {
+  display: table;
+  white-space: nowrap;
+}
+
+.info-subfeature-span {
+  border-radius: 5px;
+  color: white;
+  background-color: darkblue; 
+  display: inline-block;
+  font-size: 0.7em;
+  width: 200px;
+}
+
+.info-feature-span {
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  background-color: #f49c30; 
+  display: inline-block;
+  font-size: 0.7em;
+  width: 250px;
+}
+
+.info-feature:before, .info-feature:after {
+  border-top: 2px solid darkgray;
+  content: '';
+  display: table-cell;
+  position: relative;
+  top: 0.75em;
+  width: 45%;
+}
+
+.info-title {
+  display: table;
+  margin: 0 0 20px;
+  padding: 0 0 0 10px;
+  border-color: #4987b0;
+  clear: left;
+  border-style: solid;
+  border-width: 0 0 0 7px;
+}
+
+.info-text {
+  font-size: 1.2em;
+}
+
+.footer-wrapper {
+  background-color: #f5f5f5;
+}
+
+.footer-copyright {
+  border-radius: 10px 10px 0 0;
+}
+
+footer.page-footer {
+  background-color: #f5f5f5 !important;
+  color: #757575 !important;
+}
+
+footer.page-footer::after {
+  border-bottom: none;
+}
+
+.puzzle-icon {
+  padding: 0px;
+  width: 24px;
+  height: 24px;
+}
+
+.button-done {
+  background-color: greenyellow !important;
+  color: white;
+}
+
+.collapsible {
+  border-width: 0;
+  box-shadow: 0 0 0 0 rgba(0,0,0,0);
+}
+
+.collapsible-header, .collapsible-body {
+  border-bottom-width: 0;
+}
+
+.lesson-card {
+  width: 100%;
+}
+
+.lesson-card .card-title {
+    background-color:#ace3dc;
+    color: #222;
+}
+
+.lesson-card .card-action {
+  background-color: #a3a3a3;
+}
+
+.lesson-card .level {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  background-color:#29b5a0;
+  color: white;
+  font-size: 0.7em;
+  line-height: 30px;
+  height: 30px;
+  border-radius: 3px;
+  margin: 7px 5px;
+}
+
+.lesson-card .card-action .button-accent {
+  background-color: rgb(255,64,129) !important;
+  color: white;
+}
+
+.lesson-card .button-clicked {
+  background-color: rgb(255,64,129) !important;
+  color: white !important;
+}
+
+.lesson-card .color-teal {
+  background-color: #f88977 !important;
+  color: white;
+  margin: 4px;
+}
+
+.lesson-card .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
+  margin-right: 5px;
+}
+
+.lesson-card .btn-floating {
+  text-align: center;
+  background-color: white;
+  color: darkgray;
+}
+
+.collapsible-header i {
+  text-align: center;
+  width: 100%;
+}
+
+.lesson-card .chip {
+  margin: 0 5px;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 20px;
+  color: darkgray !important;
+  padding: 0 10px 0 0;
+  background-color: white;
+}
+
+.lesson-card .chip img {
+  margin: 4px;
+}
+
+.lesson-card .card-content {
+  background-color: lightgrey;
+  width: 100%;
+}
+
+.horizontal .card-image img {
+  border-radius: 50% !important;
+}
+
+.collapsible .collapsible-body {
+  background-color: lightblue;
+  color: darkslategray;
+}
+
+.curriculum {
+  background-color: lightblue;
+  position: relative;
+  padding: 20px;
+  color: darkslategray;
+}
+
+.curriculum-btn {
+  position: relative;
+  float: right;
+  width: 70px;
+  bottom: 80px;
+  right: 10px;
+}
+
+.puzzlecraft-title {
+  color: deepskyblue;
+}
+
+.puzzlecraft-container {
+  width: 854px;
+  height:480px;
+  background-image: url('/3dbot_portal/img/puzzlecraft-screen.png');
+}
+
+.puzzlecraft-load-btn { position: relative; z-index: 100; bottom: 100px;}
